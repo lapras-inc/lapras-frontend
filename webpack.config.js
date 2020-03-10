@@ -5,14 +5,22 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname + '/src/plugin.js'),
+  entry: path.resolve(__dirname + '/src/index.ts'),
   output: {
-    filename: 'lapras-frontend.min.js',
+    filename: 'index.js',
     libraryTarget: 'window',
     library: 'LaprasFrontend'
   },
   module: {
     rules: [
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader',
+        exclude: '/node_modules/',
+        options: {
+          appendTsSuffixTo: [/\.vue$/]
+        }
+      },
       {
         test: /\.vue$/,
         use: {
@@ -30,7 +38,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.vue', '.js'],
+    extensions: ['.vue', '.ts', '.js'],
     alias: {
       '@src': path.resolve(__dirname, 'src'),
       '@components': path.resolve(__dirname, 'src', 'components'),
