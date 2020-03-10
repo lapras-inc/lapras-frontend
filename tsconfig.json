@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "types": ["node", "jest"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@": ["src"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts",
+    "src/*.vue",
+    "src/**/*.vue"
+  ],
+  "exclude": ["node_modules"],
+  "noImplicitAny": false,
+  "strictNullChecks": false,
+  "strictFunctionTypes": false,
+  "strictBindCallApply": false,
+  "strictPropertyInitialization": false,
+  "noImplicitThis": true
+}
