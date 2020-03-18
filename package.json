@@ -5,9 +5,8 @@
   "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "license": "private",
-  "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack -p",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

@@ -27,10 +27,5 @@
     "src/**/*.vue"
   ],
   "exclude": ["node_modules"],
-  "noImplicitAny": false,
-  "strictNullChecks": false,
-  "strictFunctionTypes": false,
-  "strictBindCallApply": false,
-  "strictPropertyInitialization": false,
-  "noImplicitThis": true
+  "strict": true
 }

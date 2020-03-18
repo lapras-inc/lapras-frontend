@@ -1,10 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV || "development",
   entry: path.resolve(__dirname + '/src/index.ts'),
   output: {
     filename: 'index.js',
