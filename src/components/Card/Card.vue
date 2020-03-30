@@ -5,12 +5,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
 export default Vue.extend({
-  name: 'Card',
-  functional: true,
-})
+  name: "Card",
+  functional: true
+});
 </script>
 
 <style lang="scss">

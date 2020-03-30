@@ -1,31 +1,36 @@
 {
-  "files": [
-    "shims-vue.d.ts"
-  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "downlevelIteration": true,
     "baseUrl": ".",
+    "types": [
+      "webpack-env"
+    ],
     "paths": {
-      "@/*": ["src/*"],
-      "@": ["src"]
+      "@/*": [
+        "src/*"
+      ]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
   },
   "include": [
-    "storybook/*.ts",
-    "src/*.ts",
     "src/**/*.ts",
-    "src/*.vue",
-    "src/**/*.vue"
+    "src/**/*.tsx",
+    "src/**/*.vue",
   ],
-  "exclude": ["node_modules"],
-  "strict": true
+  "exclude": [
+    "node_modules"
+  ]
 }
