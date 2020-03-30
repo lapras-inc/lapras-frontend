@@ -1,0 +1,166 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+$lapras-blue: #1E86DE;
+$lapras-sec: #003089;
+$white: #FFFFFF;
+$lapras-mid-blue: #BCE0FD;
+$lapras-light-blue: #D6E3ED;
+$red: #ff5a5f;
+$orange: #FFAB00;
+$yellow: #FFD600;
+$black: #000;
+$text-base: #2C2C2C;
+$semi-black: #424242;
+$dark-gray: #616161;
+$gray: #7F7F7F;
+$light-gray: #C8C8C8;
+$line-color: #E0E0E0;
+$line-color-light: #EAEAEA;
+$ultra-light-gray: #EAEAEA;
+$background: #F5F5F5;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+// `$breakpoint-up`に対応するルートフォントサイズを指定します。
+// `none`はメディアクエリなしで使用されるので指定必須です。
+$font-size: (
+  'none': 14,
+  'md': 14,
+) !default;
+
+// 注釈などに使用するフォントサイズ
+$font-size-secondary: 0.85em !default;
+
+// ベースになるline-height
+$line-height: 1.6 !default;
+
+$font-family-ja: 'Noto Sans JP', sans-serif;
+$font-family-en: 'Roboto', 'Noto Sans JP', sans-serif;
+
+// ==========================================================================
+// Media query
+// ==========================================================================
+
+// `sm`: iPhone6幅（ポートレート・縦）
+// `md`: iPad幅（ポートレート・縦）
+// `lg`: iPad幅（ランドスケープ・横）
+// `xl`: デスクトップ想定
+$breakpoint-up: (
+  'sm': 'print, screen and (min-width: 300px)',
+  'md': 'print, screen and (min-width: 768px)',
+  'lg': 'print, screen and (min-width: 1024px)',
+  'xl': 'print, screen and (min-width: 1440px)',
+) !default;
+
+@mixin mq-up($breakpoint) {
+  @if map-has-key($breakpoint-up, $breakpoint) {
+    @media #{inspect(map-get($breakpoint-up, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Please make sure it is defined in `$breakpoint-up` map.";
+  }
+}
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+// コンテンツの最大幅
+$max-width: 1080px !default;
+
+// グリッドシステムのガター幅
+$grid-column-gap: 15px !default;
+$grid-row-gap: 15px !default;
+$grid-column-gap-md: 30px !default;
+$grid-row-gap-md: 30px !default;
+
+// セクションのマージン
+$margin-section2: 70px !default;
+$margin-section3: 40px !default;
+$margin-section4: 30px !default;
+$margin-section5: 20px !default;
+
+// 見出しのマージン
+$margin-heading2: 20px !default;
+$margin-heading3: 15px !default;
+$margin-heading4: 10px !default;
+$margin-heading5: 10px !default;
+
+// ブロックとテキストのマージン
+$margin-block: 15px !default;
+$margin-lead: 25px !default;
+$margin-text: 15px !default;
+$margin-small-text: 10px !default;
+
+
+// ==========================================================================
+// Animation
+// ==========================================================================
+
+$opacity: 0.7 !default;
+$transition-duration: 0.3s !default;
+$transition-timing-function: ease !default;
+
+// ==========================================================================
+// Form
+// ==========================================================================
+
+$form-border: 1px solid #767676 !default;
+$form-boder-color: #767676 !default;
+$form-border-radius: 3px !default;
+$form-transition-duration: 0.3s !default;
+$form-transition-property: border-color, box-shadow, background-color !default;
+$form-focus-border-color: #1589ee !default;
+$form-focus-box-shadow: 0 0 5px #1589ee !default;
+$form-placeholder-color: #767676 !default;
+$form-disabled-cursor: not-allowed !default;
+$form-disabled-opacity: 0.5 !default;
+$form-disabled-background-color: #ddd !default;
+
+// @desc - pxをremに変換します。
+// @param {Number} $px - 指定したいピクセル値。
+// @param {String} $key [sm] - 指定するブレイクポイントを`$font-size`のキーで指定。
+// @example - rem(15px) => 1rem
+@function rem($px, $key: 'none') {
+  $value: map-get($font-size, $key);
+  @return ($px / $value) * 1rem;
+}
+
+// clearfix
+@mixin clearfix{
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// マウスオーバーイベントをまとめて指定
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// 角R
+$corner-r: 4px;
+$corner-r-l: 10px;
