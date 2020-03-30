@@ -1,15 +1,15 @@
 {
   "name": "lapras-frontend",
   "version": "0.1.0",
-  "main": "dist/lapras-frontend.common.js",
-  "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
-  "author": "nasum <tomato.wonder.life@gmail.com>",
-  "license": "private",
   "private": true,
+  "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
+  "main": "dist/lapras-frontend.common.js",
   "files": [
     "dist"
   ],
@@ -18,6 +18,12 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@storybook/addon-actions": ">=5.3.0",
+    "@storybook/addon-docs": ">=5.3.0",
+    "@storybook/addon-knobs": ">=5.3.0",
+    "@storybook/addon-links": ">=5.3.0",
+    "@storybook/addon-notes": ">=5.3.0",
+    "@storybook/vue": ">=5.3.0",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "@vue/cli-plugin-babel": "^4.2.0",
@@ -33,6 +39,9 @@
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.7.5",
+    "vue-cli-plugin-storybook": "^1.2.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "license": "private",
+  "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git"
 }
