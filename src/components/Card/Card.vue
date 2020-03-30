@@ -1,16 +1,16 @@
 <template functional>
-  <div class="card">
+  <div class="card" v-bind="data.attrs" v-on="listeners">
     <slot />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 
 export default Vue.extend({
-  name: "Card",
-  functional: true
-});
+  name: 'Card',
+  functional: true,
+})
 </script>
 
 <style lang="scss">
