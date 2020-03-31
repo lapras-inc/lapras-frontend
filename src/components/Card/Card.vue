@@ -1,5 +1,5 @@
 <template functional>
-  <div class="card">
+  <div class="card" v-bind="data.attrs" v-on="listeners">
     <slot />
   </div>
 </template>
@@ -15,8 +15,8 @@ export default Vue.extend({
 
 <style lang="scss">
 .card {
-  background: #ffffff;
-  border-radius: 10px;
+  background: $white;
+  border-radius: $corner-r-l;
   box-shadow: 0 0 4px 0 #d0d0d0;
 }
 </style>

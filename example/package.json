@@ -1,0 +1,11 @@
+{
+  "name": "lapras-frontend-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "echo test"
+  },
+  "dependencies": {
+    "lapras-frontend": "file:../",
+  }
+}

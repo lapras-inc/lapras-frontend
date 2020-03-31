@@ -1,7 +1,4 @@
 {
-  "files": [
-    "shims-vue.d.ts"
-  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -13,6 +10,7 @@
     "sourceMap": true,
     "downlevelIteration": true,
     "baseUrl": ".",
+    "types": ["node"],
     "paths": {
       "@/*": ["src/*"],
       "@": ["src"]
@@ -20,12 +18,16 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
-    "storybook/*.ts",
     "src/*.ts",
     "src/**/*.ts",
     "src/*.vue",
     "src/**/*.vue"
   ],
   "exclude": ["node_modules"],
-  "strict": true
+  "noImplicitAny": false,
+  "strictNullChecks": false,
+  "strictFunctionTypes": false,
+  "strictBindCallApply": false,
+  "strictPropertyInitialization": false,
+  "noImplicitThis": true
 }

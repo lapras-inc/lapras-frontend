@@ -1,0 +1,20 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links'
+import Card from './Card.vue';
+
+<Meta title="Card" component={Card} />
+
+# Card
+
+<Props of={Card} />
+
+<Preview>
+  <Story name="default">
+    {{
+        components: { Card },
+        template: '<Card @click="action">There is always light<br>behind the clouds.</Card>',
+        methods: { action: action("clicked") }
+    }}
+  </Story>
+</Preview>
