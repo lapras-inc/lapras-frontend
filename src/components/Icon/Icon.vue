@@ -1,7 +1,7 @@
 <template functional>
-  <i class="icon" v-bind="data.attrs" v-on="listeners">
-    {{ props.icons[props.name] }}
-  </i>
+  <span class="icon" v-bind="data.attrs" v-on="listeners">
+    <i class="inner">{{ props.icons[props.name] }}</i>
+  </span>
 </template>
 
 <script lang="ts">
@@ -38,7 +38,7 @@ $font_dir: '../../../fonts';
   font-style: normal;
 }
 
-.icon {
+.inner {
   font-family: 'scouty-icon' !important;
   font-style: normal;
   font-weight: normal;
@@ -48,5 +48,6 @@ $font_dir: '../../../fonts';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
+  user-select: none;
 }
 </style>
