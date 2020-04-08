@@ -1,0 +1,72 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import ToggleLabelSet from './ToggleLabelSet.vue';
+import CheckBox from '@/components/CheckBox/CheckBox.vue';
+import ToggleSwitch from '@/components/ToggleSwitch/ToggleSwitch.vue';
+
+<Meta title="ToggleLabelSet" component={ToggleLabelSet} />
+
+# ToggleLabelSet
+
+<Preview>
+  <Story name="default">
+    {{
+      data() {return {value: true}},
+      components: { ToggleLabelSet, CheckBox },
+      template: `
+        <ToggleLabelSet>
+          <template #toggle><CheckBox v-model="value" /></template>
+          <template #default>label</template>
+        </ToggleLabelSet>
+      `,
+    }}
+  </Story>
+  <Story name="disabled">
+    {{
+      data() {return {value: true}},
+      components: { ToggleLabelSet, CheckBox },
+      template: `
+        <ToggleLabelSet disabled>
+          <template #toggle><CheckBox v-model="value" /></template>
+          <template #default>label</template>
+        </ToggleLabelSet>
+      `,
+    }}
+  </Story>
+  <Story name="flipped">
+    {{
+      data() {return {value: true}},
+      components: { ToggleLabelSet, ToggleSwitch },
+      template: `
+        <ToggleLabelSet isFlipped>
+          <template #toggle><ToggleSwitch v-model="value" /></template>
+          <template #default>label</template>
+        </ToggleLabelSet>
+      `,
+    }}
+  </Story>
+  <Story name="button">
+    {{
+      data() {return {value: true}},
+      components: { ToggleLabelSet, CheckBox },
+      template: `
+        <ToggleLabelSet isButton :isActive="value">
+          <template #toggle><CheckBox v-model="value" /></template>
+          <template #default>label</template>
+        </ToggleLabelSet>
+      `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { ToggleLabelSet } from 'lapras-frontend'
+```
+
+```html
+<ToggleLabelSet>
+  <template #toggle><CheckBox v-model="value" /></template>
+  <template #default>label</template>
+</ToggleLabelSet>
+```
+
+<Props of={ToggleLabelSet} />
