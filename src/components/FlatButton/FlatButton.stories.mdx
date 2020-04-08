@@ -1,0 +1,163 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi)
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import FlatButton from './FlatButton.vue';
+import Icon from '../Icon/Icon.vue';
+
+<Meta title="FlatButton" component={FlatButton} />
+
+# FlatButton
+
+<Preview>
+  <Story name="default">
+    {{
+      components: { FlatButton },
+      template: '<FlatButton @click="action">label</FlatButton>',
+      methods: { action: action("clicked") }
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { FlatButton } from 'lapras-frontend'
+```
+
+```html
+<FlatButton>label</FlatButton>
+```
+
+<Props of={FlatButton} />
+
+## Skins
+
+<Preview>
+  <Story name="skin primary">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="primary">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="skin primary line">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="primary-line">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="skin secondary">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="secondary">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="skin tertiary">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="tertiary">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="skin muted">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="muted">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="skin disabled">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton skin="disabled">label</FlatButton>',
+    }}
+  </Story>
+</Preview>
+
+## Sizes
+
+<Preview>
+  <Story name="size xl">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton size="xl">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="size l">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton size="l">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="size m">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton size="m">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="size s">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton size="s">label</FlatButton>',
+    }}
+  </Story>
+  <Story name="size xs">
+    {{
+        components: { FlatButton },
+        template: '<FlatButton size="xs">label</FlatButton>',
+    }}
+  </Story>
+</Preview>
+
+## With icon
+
+<Preview>
+  <Story name="has icons">
+    {{
+        components: { FlatButton, Icon },
+        template: `
+          <FlatButton>
+            <template #default>label</template>
+            <template #rightIcon><Icon name="arrow-right" /></template>
+            <template #leftIcon><Icon name="arrow-left" /></template>
+          </FlatButton>
+        `,
+    }}
+  </Story>
+  <Story name="has left icon">
+    {{
+      components: { FlatButton, Icon },
+      template: `
+        <FlatButton>
+          <template #default>label</template>
+          <template #leftIcon><Icon name="arrow-left" /></template>
+        </FlatButton>
+      `,
+    }}
+  </Story>
+  <Story name="has right icon">
+    {{
+      components: { FlatButton, Icon },
+      template: `
+        <FlatButton>
+          <template #default>label</template>
+          <template #rightIcon><Icon name="arrow-right" /></template>
+        </FlatButton>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Pill design
+
+<Preview>
+  <Story name="pill">
+    {{
+        components: { FlatButton, Icon },
+        template: `
+          <FlatButton skin="primary-line" size="xs" pill>
+            <template #default>label</template>
+            <template #rightIcon><Icon name="arrow-right" /></template>
+          </FlatButton>
+        `,
+    }}
+  </Story>
+</Preview>
