@@ -3,8 +3,6 @@ import VueCompositionApi from '@vue/composition-api'
 Vue.use(VueCompositionApi)
 
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { action } from "@storybook/addon-actions";
-import { linkTo } from '@storybook/addon-links'
 import ToggleSwitch from './ToggleSwitch.vue';
 
 <Meta title="ToggleSwitch" component={ToggleSwitch} />
@@ -22,7 +20,6 @@ import ToggleSwitch from './ToggleSwitch.vue';
         <p>{{value ? 'on' : 'off'}}</p>
       </div>
       `,
-      methods: { action: action("clicked") }
     }}
   </Story>
   <Story name="has label">

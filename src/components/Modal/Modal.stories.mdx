@@ -3,8 +3,6 @@ import VueCompositionApi from '@vue/composition-api'
 Vue.use(VueCompositionApi);
 
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { action } from "@storybook/addon-actions";
-import { linkTo } from '@storybook/addon-links'
 import Modal from './Modal.vue';
 
 <Meta title="Modal" component={Modal} />
@@ -28,13 +26,13 @@ import Modal from './Modal.vue';
       `,
     }}
   </Story>
-  <Story name="long">
+  <Story name="scroll">
     {{
       components: { Modal },
       data() {
         return {
           visible: false,
-          longTextHtml: 'long text<br />'.repeat(50),
+          longTextHtml: 'scroll<br />'.repeat(50),
         }
       },
       template: `

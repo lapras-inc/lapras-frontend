@@ -3,8 +3,6 @@ import VueCompositionApi from '@vue/composition-api'
 Vue.use(VueCompositionApi);
 
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { action } from "@storybook/addon-actions";
-import { linkTo } from '@storybook/addon-links'
 import FieldGroup from './FieldGroup.vue';
 import TextInput from '../TextInput/TextInput.vue';
 
@@ -21,7 +19,7 @@ import TextInput from '../TextInput/TextInput.vue';
       <FieldGroup label="email"><TextInput /></FieldGroup>`,
     }}
   </Story>
-  <Story name="hasOptions">
+  <Story name="has options">
     {{
       components: { FieldGroup, TextInput },
       template: `

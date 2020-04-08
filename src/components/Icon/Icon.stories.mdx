@@ -3,8 +3,6 @@ import VueCompositionApi from '@vue/composition-api'
 Vue.use(VueCompositionApi);
 
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { action } from "@storybook/addon-actions";
-import { linkTo } from '@storybook/addon-links'
 import Icon from './Icon.vue';
 import iconMap from './iconMap';
 
@@ -31,21 +29,20 @@ import { Icon } from 'lapras-frontend'
 
 <Props of={Icon} />
 
-## Icon List
+## icon list
 
 <Preview>
-  <Story name="iconList">
+  <Story name="icon list">
     {{
         components: { Icon },
         template: `<table width="100%" style="color: #2C2C2C;">
           <tr v-for="name in Object.keys(iconMap)" :key="name">
             <td style="font-size: 38px; border-bottom: 1px solid #efefef; width: 80px;">
-              <Icon :name="name" class="hoge" />
+              <Icon :name="name" />
             </td>
             <td style="border-bottom: 1px solid #efefef;">{{name}}</td>
           </tr>
         </table>`,
-        methods: { action: action("clicked") },
         props: {
           iconMap: {
             default: iconMap,
