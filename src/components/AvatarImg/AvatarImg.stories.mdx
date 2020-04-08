@@ -1,0 +1,40 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import AvatarImg from './AvatarImg.vue';
+
+<Meta title="AvatarImg" component={AvatarImg} />
+
+# AvatarImg
+
+<Preview>
+  <Story name="default">
+    {{
+      components: { AvatarImg },
+      data() {
+        return {
+          image: require('../../../storybook-sample-image/avatar-sample.jpg'),
+        }
+      },
+      template: '<AvatarImg :src="image" />',
+    }}
+  </Story>
+  <Story name="no-src">
+    {{
+      components: { AvatarImg },
+      template: '<AvatarImg src="" />',
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { AvatarImg } from 'lapras-frontend'
+```
+
+```html
+<AvatarImg src="//placehold.jp/150x150.png" />
+```
+
+<Props of={AvatarImg} />
