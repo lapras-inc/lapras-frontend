@@ -1,0 +1,49 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi)
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links'
+import ToggleSwitch from './ToggleSwitch.vue';
+
+<Meta title="ToggleSwitch" component={ToggleSwitch} />
+
+# ToggleSwitch
+
+<Preview>
+  <Story name="default">
+    {{
+      data() {return {value: false}},
+      components: { ToggleSwitch },
+      template: `
+      <div>
+        <ToggleSwitch v-model="value" />
+        <p>{{value ? 'on' : 'off'}}</p>
+      </div>
+      `,
+      methods: { action: action("clicked") }
+    }}
+  </Story>
+  <Story name="has label">
+    {{
+      components: { ToggleSwitch },
+      template: `
+      <div>
+        <ToggleSwitch disabled />
+        <p>disabled</p>
+      </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { ToggleSwitch } from 'lapras-frontend'
+```
+
+```html
+<ToggleSwitch v-model="value" />
+```
+
+<Props of={ToggleSwitch} />
