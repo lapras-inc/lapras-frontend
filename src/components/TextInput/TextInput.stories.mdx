@@ -1,0 +1,52 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import TextInput from './TextInput.vue';
+
+<Meta title="TextInput" component={TextInput} />
+
+# TextInput
+
+<Preview>
+  <Story name="default">
+    {{
+        data() { return { value: '' } },
+        components: { TextInput },
+        template: `
+          <div>
+            <TextInput v-model="value" placeholder="placeholder" />
+            <p>{{value}}</p>
+          </div>
+        `,
+    }}
+  </Story>
+  <Story name="multiline">
+    {{
+        data() { return { value: '' } },
+        components: { TextInput },
+        template: `
+          <div>
+            <TextInput v-model="value" placeholder="placeholder" multiline />
+            <p>{{value}}</p>
+          </div>
+        `,
+    }}
+  </Story>
+  <Story name="disabled">
+    {{
+        components: { TextInput },
+        template: `
+          <TextInput placeholder="disabled" disabled />
+        `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { TextInput } from 'lapras-frontend'
+```
+
+```html
+<TextInput v-model="value" />
+```
+
+<Props of={TextInput} />
