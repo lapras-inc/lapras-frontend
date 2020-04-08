@@ -1,25 +1,26 @@
-<template functional>
-  <span class="icon" v-bind="data.attrs" v-on="listeners">
-    <i class="inner">{{ props.icons[props.name] }}</i>
-  </span>
+<template>
+  <i class="icon" v-bind="context.attrs" v-on="context.listeners">{{ char }}</i>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import icons from './iconMap'
+import { defineComponent, PropType } from '@vue/composition-api'
+import iconMap from './iconMap'
 
-export default Vue.extend({
-  name: 'Icon',
-  functional: true,
+type IconKey = keyof typeof iconMap
+
+export default defineComponent({
   props: {
     name: {
-      type: String,
+      type: String as PropType<IconKey>,
       required: true,
     },
-    icons: {
-      type: Object,
-      default: () => icons,
-    },
+  },
+  setup(props, context) {
+    const char = (iconMap as { [key: string]: string })[props.name]
+    return {
+      char,
+      context,
+    }
   },
 })
 </script>
@@ -38,8 +39,8 @@ $font_dir: '../../../fonts';
   font-style: normal;
 }
 
-.inner {
-  font-family: 'scouty-icon' !important;
+.icon {
+  font-family: 'scouty-icon';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

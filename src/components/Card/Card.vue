@@ -1,15 +1,18 @@
-<template functional>
-  <div class="card" v-bind="data.attrs" v-on="listeners">
+<template>
+  <div class="card" v-bind="context.attrs" v-on="context.listeners">
     <slot />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from '@vue/composition-api'
 
-export default Vue.extend({
-  name: 'Card',
-  functional: true,
+export default defineComponent({
+  setup(props, context) {
+    return {
+      context,
+    }
+  },
 })
 </script>
 
