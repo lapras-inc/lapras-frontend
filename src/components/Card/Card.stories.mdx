@@ -16,6 +16,18 @@ import Card from './Card.vue';
       template: '<Card>There is always light<br>behind the clouds.</Card>',
     }}
   </Story>
+  <Story name="skin: background">
+    {{
+      components: { Card },
+      template: '<Card skin="background">There is always light<br>behind the clouds.</Card>',
+    }}
+  </Story>
+  <Story name="skin: background line">
+    {{
+      components: { Card },
+      template: '<Card skin="background-line">There is always light<br>behind the clouds.</Card>',
+    }}
+  </Story>
 </Preview>
 
 <Props of={Card} />
