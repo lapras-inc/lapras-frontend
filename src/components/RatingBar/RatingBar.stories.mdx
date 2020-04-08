@@ -1,0 +1,41 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import RatingBar from './RatingBar.vue';
+
+<Meta title="RatingBar" component={RatingBar} />
+
+# RatingBar
+
+<Preview>
+  <Story name="default">
+    {{
+      components: { RatingBar },
+      template: '<RatingBar :value="3.5" />',
+    }}
+  </Story>
+  <Story name="high">
+    {{
+      components: { RatingBar },
+      template: '<RatingBar :value="3.5" :highThreshold="3.5" />',
+    }}
+  </Story>
+  <Story name="color">
+    {{
+      components: { RatingBar },
+      template: '<RatingBar :value="3.5" barColor="#58ba0c" />',
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { RatingBar } from 'lapras-frontend'
+```
+
+```html
+<RatingBar :value="3.5" />
+```
+
+<Props of={RatingBar} />
