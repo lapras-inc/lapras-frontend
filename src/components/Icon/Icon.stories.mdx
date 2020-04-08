@@ -1,3 +1,7 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from "@storybook/addon-actions";
 import { linkTo } from '@storybook/addon-links'
@@ -8,16 +12,24 @@ import iconMap from './iconMap';
 
 # Icon
 
-<Props of={Icon} />
-
 <Preview>
   <Story name="default">
     {{
-        components: { Icon },
-        template: '<Icon name="thumbs-up" />'
+      components: { Icon },
+      template: '<Icon name="thumbs-up" />',
     }}
   </Story>
 </Preview>
+
+```typescript
+import { Icon } from 'lapras-frontend'
+```
+
+```html
+<Icon name="thumbs-up" />
+```
+
+<Props of={Icon} />
 
 ## Icon List
 
@@ -26,13 +38,13 @@ import iconMap from './iconMap';
     {{
         components: { Icon },
         template: `<table width="100%" style="color: #2C2C2C;">
-            <tr v-for="name in Object.keys(iconMap)" :key="name">
-              <td style="font-size: 38px; border-bottom: 1px solid #efefef; width: 80px;">
-                <Icon :name="name" />
-              </td>
-              <td style="border-bottom: 1px solid #efefef;">{{name}}</td>
-            </tr>
-          </table>`,
+          <tr v-for="name in Object.keys(iconMap)" :key="name">
+            <td style="font-size: 38px; border-bottom: 1px solid #efefef; width: 80px;">
+              <Icon :name="name" class="hoge" />
+            </td>
+            <td style="border-bottom: 1px solid #efefef;">{{name}}</td>
+          </tr>
+        </table>`,
         methods: { action: action("clicked") },
         props: {
           iconMap: {
