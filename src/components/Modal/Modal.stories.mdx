@@ -1,0 +1,66 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links'
+import Modal from './Modal.vue';
+
+<Meta title="Modal" component={Modal} />
+
+# Modal
+
+<Preview>
+  <Story name="default">
+    {{
+      components: { Modal },
+      data() {
+        return { visible: false, }
+      },
+      template: `
+        <div>
+          <button @click="visible=true">SHOW MODAL</button>
+          <Modal :visible="visible" @close="visible = false">
+            <span>hello</span>
+          </Modal>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name="long">
+    {{
+      components: { Modal },
+      data() {
+        return {
+          visible: false,
+          longTextHtml: 'long text<br />'.repeat(50),
+        }
+      },
+      template: `
+        <div>
+          <span v-html="longTextHtml"></span>
+          <br /><br />
+          <button @click="visible=true">SHOW MODAL</button>
+          <Modal :visible="visible" @close="visible = false">
+            <span v-html="longTextHtml"></span>
+          </Modal>
+          <br /><br />
+          <span v-html="longTextHtml"></span>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { Modal } from 'lapras-frontend'
+```
+
+```html
+<Modal :visible="visible">
+  hoge
+</Modal>
+```
+
+<Props of={Modal} />
