@@ -13,12 +13,7 @@ import AvatarImg from './AvatarImg.vue';
   <Story name="default">
     {{
       components: { AvatarImg },
-      data() {
-        return {
-          image: require('../../../storybook-sample-image/avatar-sample.jpg'),
-        }
-      },
-      template: '<AvatarImg :src="image" />',
+      template: '<AvatarImg src="//placehold.jp/150x150.png" />',
     }}
   </Story>
   <Story name="no image">
