@@ -1,0 +1,47 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import CheckBox from './CheckBox.vue';
+
+<Meta title="CheckBox" component={CheckBox} />
+
+# CheckBox
+
+<Preview>
+  <Story name="default">
+    {{
+      data() {return {value: true}},
+      components: { CheckBox },
+      template: `
+        <div>
+          <CheckBox v-model="value" class="additional" />
+          <p>{{ value ? 'on' : 'off' }}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name="disabled">
+    {{
+      data() {return {value: true}},
+      components: { CheckBox },
+      template: `
+        <div>
+          <CheckBox v-model="value" disabled />
+          <p>disabled</p>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { CheckBox } from 'lapras-frontend'
+```
+
+```html
+<CheckBox v-model="value" />
+```
+
+<Props of={CheckBox} />

@@ -1,20 +1,41 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { action } from "@storybook/addon-actions";
-import { linkTo } from '@storybook/addon-links'
 import Card from './Card.vue';
 
 <Meta title="Card" component={Card} />
 
 # Card
 
-<Props of={Card} />
-
 <Preview>
-  <Story name="default">
+  <Story name="skin: default">
     {{
-        components: { Card },
-        template: '<Card @click="action">There is always light<br>behind the clouds.</Card>',
-        methods: { action: action("clicked") }
+      components: { Card },
+      template: '<Card>There is always light<br>behind the clouds.</Card>',
+    }}
+  </Story>
+  <Story name="skin: background">
+    {{
+      components: { Card },
+      template: '<Card skin="background">There is always light<br>behind the clouds.</Card>',
+    }}
+  </Story>
+  <Story name="skin: background line">
+    {{
+      components: { Card },
+      template: '<Card skin="background-line">There is always light<br>behind the clouds.</Card>',
     }}
   </Story>
 </Preview>
+
+<Props of={Card} />
+
+```typescript
+import { Card } from 'lapras-frontend'
+```
+
+```html
+<Card>There is always light<br>behind the clouds.</Card>
+```
