@@ -106,6 +106,7 @@ export default defineComponent({
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0 auto;
+  height: 0;
 }
 
 .modal-body {
