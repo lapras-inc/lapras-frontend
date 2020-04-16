@@ -53,9 +53,7 @@ export default defineComponent({
   display: block;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 
   &.is-disabled {
     opacity: 0.5;

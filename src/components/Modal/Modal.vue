@@ -125,9 +125,7 @@ export default defineComponent({
   display: inline-block;
   margin: 0;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 }
 
 .panel {

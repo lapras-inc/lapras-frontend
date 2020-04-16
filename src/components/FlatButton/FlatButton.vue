@@ -91,9 +91,7 @@ export default defineComponent({
   border-radius: 4px;
   outline: 0;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 
   &.skin-primary {
     color: $white;

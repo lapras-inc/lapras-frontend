@@ -43,12 +43,6 @@ export default defineComponent({
   display: inline-block;
 }
 
-.label {
-  font-size: 12px;
-  margin-right: 8px;
-  text-align: right;
-}
-
 .switch-base {
   position: relative;
   width: 40px;
@@ -57,6 +51,8 @@ export default defineComponent({
   transition: background 0.5s ease;
   border-radius: 10px;
   background: $line-color;
+
+  @include base-hover;
 
   &.is-disabled {
     opacity: 0.5;
