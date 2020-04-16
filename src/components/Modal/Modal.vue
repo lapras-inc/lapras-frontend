@@ -7,6 +7,7 @@
       @click="$emit('close')"
       :style="{
         background: filterBackground,
+        zIndex,
       }"
     >
       <div class="modal-container" :style="{ padding: `${gutter}px` }">
@@ -59,6 +60,10 @@ export default defineComponent({
     gutter: {
       type: Number,
       default: 20,
+    },
+    zIndex: {
+      type: Number,
+      default: 10,
     },
   },
   watch: {
