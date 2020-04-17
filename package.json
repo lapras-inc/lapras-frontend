@@ -1,5 +1,5 @@
 {
-  "name": "lapras-frontend",
+  "name": "@lapras-inc/lapras-frontend",
   "version": "0.0.5",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
