@@ -1,6 +1,6 @@
 {
   "name": "lapras-frontend",
-  "version": "0.1.0",
+  "version": "0.0.5",
   "private": true,
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
@@ -14,6 +14,7 @@
   "files": [
     "dist"
   ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "dependencies": {
     "@popperjs/core": "^2.2.1",
     "@types/body-scroll-lock": "^2.6.1",
