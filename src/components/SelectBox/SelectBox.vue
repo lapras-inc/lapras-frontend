@@ -66,9 +66,7 @@ export default defineComponent({
   border-radius: 4px;
   background: $white;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 }
 
 .select {

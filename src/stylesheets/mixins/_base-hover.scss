@@ -1,0 +1,9 @@
+@mixin base-hover() {
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transition-duration: 0.2s;
+    opacity: $hover-opacity;
+  }
+}

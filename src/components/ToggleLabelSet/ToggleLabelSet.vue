@@ -46,9 +46,7 @@ export default defineComponent({
   max-width: fit-content;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 
   &.is-button {
     max-width: 100%;

@@ -7,6 +7,7 @@
       @click="$emit('close')"
       :style="{
         background: filterBackground,
+        zIndex,
       }"
     >
       <div class="modal-container" :style="{ padding: `${gutter}px` }">
@@ -60,6 +61,10 @@ export default defineComponent({
       type: Number,
       default: 20,
     },
+    zIndex: {
+      type: Number,
+      default: 10,
+    },
   },
   watch: {
     visible: {
@@ -101,6 +106,7 @@ export default defineComponent({
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0 auto;
+  height: 0;
 }
 
 .modal-body {
@@ -120,9 +126,7 @@ export default defineComponent({
   display: inline-block;
   margin: 0;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 }
 
 .panel {

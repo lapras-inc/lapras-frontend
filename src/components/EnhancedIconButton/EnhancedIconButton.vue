@@ -81,9 +81,7 @@ export default defineComponent({
   display: block;
   min-width: 20px;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  @include base-hover;
 }
 
 .svg {

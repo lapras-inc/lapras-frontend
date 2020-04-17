@@ -78,6 +78,8 @@ export default defineComponent({
 .trigger {
   display: inline-block;
 
+  @include base-hover;
+
   &:not(:hover) + .container:not(:hover) {
     visibility: collapse;
     opacity: 0;
