@@ -1,0 +1,297 @@
+Info 0    [11:54:53.59] Starting TS Server
+Info 1    [11:54:53.60] Version: 3.8.3
+Info 2    [11:54:53.60] Arguments: /home/nasum/.anyenv/envs/nodenv/versions/12.1.0/bin/node /home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/.bin/tsserver --logFile /home/nasum/src/github.com/lapras-inc/lapras-frontend/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/fd49a8c1dbe79b80caa4dfa0da84fdfc/tscancellation*
+Info 3    [11:54:53.60] Platform: linux NodeVersion: 12 CaseSensitive: true
+Info 4    [11:54:53.72] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src
+Info 5    [11:54:53.74] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: Config file name: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 6    [11:54:53.74] Opened configuration file /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 7    [11:54:53.90] Config: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json : {
+ "rootNames": [
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts"
+ ],
+ "options": {
+  "target": 99,
+  "module": 99,
+  "strict": true,
+  "importHelpers": true,
+  "moduleResolution": 2,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "sourceMap": true,
+  "downlevelIteration": true,
+  "baseUrl": "/home/nasum/src/github.com/lapras-inc/lapras-frontend",
+  "paths": {
+   "@/*": [
+    "src/*"
+   ],
+   "@": [
+    "src"
+   ]
+  },
+  "lib": [
+   "lib.esnext.d.ts",
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.scripthost.d.ts"
+  ],
+  "configFilePath": "/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json"
+ }
+}
+Info 8    [11:54:53.117] Starting updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 9    [11:54:54.558] Finishing updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Version: 1 structureChanged: true Elapsed: 1441ms
+Info 10   [11:54:54.558] Project '/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json' (Configured) 
+Info 11   [11:54:54.558] 	Files (124)
+
+Info 12   [11:54:54.558] -----------------------------------------------
+Info 13   [11:55:6.53] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card
+Info 14   [11:55:6.53] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: Config file name: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 15   [12:27:26.879] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 16   [12:27:26.895] Elapsed:: 15ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 17   [12:27:26.895] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 18   [12:27:26.907] Elapsed:: 12ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 19   [12:27:26.907] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 20   [12:27:26.916] Elapsed:: 9ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 21   [12:27:26.916] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 22   [12:27:26.924] Elapsed:: 8ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 23   [12:27:26.924] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 24   [12:27:26.931] Elapsed:: 7ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 25   [12:27:26.931] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 26   [12:27:26.938] Elapsed:: 7ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 27   [12:27:29.152] FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 1:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Config file
+Info 28   [12:27:29.152] Elapsed:: 0ms FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 1:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Config file
+Info 29   [12:27:29.403] Reloading configured project /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 30   [12:27:29.411] Config: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json : {
+ "rootNames": [
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts"
+ ],
+ "options": {
+  "target": 99,
+  "module": 99,
+  "strict": true,
+  "importHelpers": true,
+  "moduleResolution": 2,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "sourceMap": true,
+  "downlevelIteration": true,
+  "baseUrl": "/home/nasum/src/github.com/lapras-inc/lapras-frontend",
+  "paths": {
+   "@/*": [
+    "src/*"
+   ],
+   "@": [
+    "src"
+   ]
+  },
+  "lib": [
+   "lib.esnext.d.ts",
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.scripthost.d.ts"
+  ],
+  "configFilePath": "/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json"
+ }
+}
+Info 31   [12:27:29.421] Starting updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 32   [12:27:29.430] Finishing updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Version: 2 structureChanged: false Elapsed: 9ms
+Info 33   [12:27:29.430] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 34   [12:27:29.435] Structure before ensureProjectForOpenFiles:
+Info 35   [12:27:29.435] Structure after ensureProjectForOpenFiles:
+Info 36   [12:27:29.435] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
+Info 37   [16:30:53.953] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 38   [16:30:53.960] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 39   [16:30:53.960] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 40   [16:30:53.960] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 41   [16:30:56.977] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 42   [16:30:56.991] Elapsed:: 14ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 43   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 44   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 45   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 46   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 47   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.storybook :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 48   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.storybook :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 49   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.vue :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 50   [16:30:56.992] Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Detected file add/remove of non supported extension: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.vue
+Info 51   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.vue :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 52   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.vue :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 53   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.vue :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 54   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 55   [16:30:56.992] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 56   [16:30:56.992] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 57   [16:30:56.993] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 58   [16:30:56.993] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 59   [16:30:57.1] Elapsed:: 8ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 60   [16:30:57.1] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 61   [16:30:57.9] Elapsed:: 8ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/webpack.config.js :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 62   [16:30:57.9] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 63   [16:30:57.9] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/yarn.lock :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 64   [16:30:57.9] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 65   [16:30:57.10] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 66   [16:30:57.10] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 67   [16:30:57.10] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 68   [16:30:57.10] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 69   [16:30:57.10] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Wild card directory
+Info 70   [16:30:57.10] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 71   [16:30:57.18] Elapsed:: 8ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src 1 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 72   [16:30:57.18] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 73   [16:30:57.18] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 74   [16:30:57.18] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.gitignore :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 75   [16:30:57.18] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.gitignore :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 76   [16:30:57.19] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.gitignore :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 77   [16:30:57.19] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/.gitignore :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 78   [16:30:57.19] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 79   [16:30:57.25] Elapsed:: 6ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 80   [16:30:57.25] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 81   [16:30:57.32] Elapsed:: 7ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/package.json :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend 0 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Failed Lookup Locations
+Info 82   [16:30:57.274] Starting updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 83   [16:30:57.288] Finishing updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Version: 3 structureChanged: true Elapsed: 14ms
+Info 84   [16:30:57.288] Project '/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json' (Configured) 
+Info 85   [16:30:57.288] 	Files (0)
+
+Info 86   [16:30:57.288] -----------------------------------------------
+Info 87   [16:30:57.288] Structure before ensureProjectForOpenFiles:
+Info 88   [16:30:57.289] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 89   [16:30:57.908] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 619ms
+Info 90   [16:30:57.908] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 91   [16:30:57.908] 	Files (112)
+
+Info 92   [16:30:57.908] -----------------------------------------------
+Info 93   [16:30:57.910] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 94   [16:30:57.966] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 1 structureChanged: true Elapsed: 56ms
+Info 95   [16:30:57.966] Project '/dev/null/inferredProject2*' (Inferred) 
+Info 96   [16:30:57.966] 	Files (106)
+
+Info 97   [16:30:57.966] -----------------------------------------------
+Info 98   [16:30:57.968] Structure after ensureProjectForOpenFiles:
+Info 99   [16:30:57.968] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
+Info 100  [16:30:59.355] FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Config file
+Info 101  [16:30:59.356] `remove Project::
+Info 102  [16:30:59.356] Project '/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json' (Configured) 
+Info 103  [16:30:59.356] 	Files (0)
+
+Info 104  [16:30:59.356] -----------------------------------------------
+Info 105  [16:30:59.357] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src
+Info 106  [16:30:59.358] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: No config files found.
+Info 107  [16:30:59.358] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card
+Info 108  [16:30:59.358] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: No config files found.
+Info 109  [16:30:59.358] Elapsed:: 3ms FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json WatchType: Config file
+Info 110  [16:30:59.358] FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts 2:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts 500 undefined Project:  WatchType: Closed Script info
+Info 111  [16:30:59.359] Elapsed:: 0ms FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts 2:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts 500 undefined Project:  WatchType: Closed Script info
+Info 112  [16:30:59.608] Structure before ensureProjectForOpenFiles:
+Info 113  [16:30:59.608] Structure after ensureProjectForOpenFiles:
+Info 114  [16:30:59.608] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
+Info 115  [16:31:0.796] DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card 0 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 116  [16:31:0.801] Elapsed:: 5ms DirectoryWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card :: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card 0 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 117  [16:31:1.51] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 118  [16:31:1.92] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 2 structureChanged: true Elapsed: 41ms
+Info 119  [16:31:1.92] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 120  [16:31:1.92] Structure before ensureProjectForOpenFiles:
+Info 121  [16:31:1.92] Structure after ensureProjectForOpenFiles:
+Info 122  [16:31:1.92] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
+Err 123   [16:31:1.433] Exception on executing command {"command":"getCodeFixes","seq":20,"type":"request","arguments":{"file":"/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts","startLine":1,"startOffset":1,"endLine":1,"endOffset":1,"errorCodes":[2307]}}:
+
+    Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+
+    Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+        at Object.cast (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:1371:25)
+        at tryGetImportedPackageName (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:128796:33)
+        at Object.getCodeActions (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:128764:35)
+        at /home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:124540:77
+        at Object.flatMap (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getFixes (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:124540:23)
+        at /home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:135666:35
+        at Object.flatMap (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getCodeFixesAtPosition (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:135664:23)
+        at IOSession.Session.getCodeFixes (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:145753:64)
+        at Session.handlers.ts.createMapFromTemplate._a.<computed> (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:144510:61)
+        at /home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:146003:88
+        at IOSession.Session.executeWithRequestId (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:145994:28)
+        at IOSession.Session.executeCommand (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:146003:33)
+        at IOSession.Session.onMessage (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:146027:35)
+        at Interface.<anonymous> (/home/nasum/src/github.com/lapras-inc/lapras-frontend/node_modules/typescript/lib/tsserver.js:147342:27)
+        at Interface.emit (events.js:196:13)
+        at Interface._onLine (readline.js:314:10)
+        at Interface._normalWrite (readline.js:459:12)
+        at Socket.ondata (readline.js:170:10)
+        at Socket.emit (events.js:196:13)
+        at addChunk (_stream_readable.js:290:12)
+        at readableAddChunk (_stream_readable.js:271:11)
+        at Socket.Readable.push (_stream_readable.js:226:10)
+        at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+Info 124  [16:31:1.855] FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 0:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project:  WatchType: Config file for the inferred project root
+Info 125  [16:31:1.855] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src
+Info 126  [16:31:1.855] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts :: Config file name: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 127  [16:31:1.856] Opened configuration file /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 128  [16:31:1.857] Search path: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card
+Info 129  [16:31:1.857] For info: /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts :: Config file name: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 130  [16:31:1.857] Elapsed:: 2ms FileWatcher:: Triggered with /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 0:: WatchInfo: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json 2000 undefined Project:  WatchType: Config file for the inferred project root
+Info 131  [16:31:2.108] Reloading configured project /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 132  [16:31:2.115] Config: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json : {
+ "rootNames": [
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/shims-vue.d.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts",
+  "/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts"
+ ],
+ "options": {
+  "target": 99,
+  "module": 99,
+  "strict": true,
+  "importHelpers": true,
+  "moduleResolution": 2,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "sourceMap": true,
+  "downlevelIteration": true,
+  "baseUrl": "/home/nasum/src/github.com/lapras-inc/lapras-frontend",
+  "paths": {
+   "@/*": [
+    "src/*"
+   ],
+   "@": [
+    "src"
+   ]
+  },
+  "lib": [
+   "lib.esnext.d.ts",
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.scripthost.d.ts"
+  ],
+  "configFilePath": "/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json"
+ }
+}
+Info 133  [16:31:2.123] Starting updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 134  [16:31:2.674] Finishing updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Version: 1 structureChanged: true Elapsed: 551ms
+Info 135  [16:31:2.674] Project '/home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json' (Configured) 
+Info 136  [16:31:2.675] 	Files (124)
+
+Info 137  [16:31:2.675] -----------------------------------------------
+Info 138  [16:31:2.678] Structure before ensureProjectForOpenFiles:
+Info 139  [16:31:2.678] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 140  [16:31:2.686] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: true Elapsed: 8ms
+Info 141  [16:31:2.686] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 142  [16:31:2.686] 	Files (0)
+
+Info 143  [16:31:2.686] -----------------------------------------------
+Info 144  [16:31:2.687] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 145  [16:31:2.693] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 3 structureChanged: true Elapsed: 6ms
+Info 146  [16:31:2.693] Project '/dev/null/inferredProject2*' (Inferred) 
+Info 147  [16:31:2.693] 	Files (0)
+
+Info 148  [16:31:2.693] -----------------------------------------------
+Info 149  [16:31:2.693] Structure after ensureProjectForOpenFiles:
+Info 150  [16:31:2.693] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
+Info 151  [16:31:2.766] Starting updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json
+Info 152  [16:31:2.782] Finishing updateGraphWorker: Project: /home/nasum/src/github.com/lapras-inc/lapras-frontend/tsconfig.json Version: 2 structureChanged: false Elapsed: 16ms
+Info 153  [16:31:2.782] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 154  [16:31:3.60] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 155  [16:31:3.60] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false Elapsed: 0ms
+Info 156  [16:31:3.60] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 157  [16:31:3.61] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 4 structureChanged: false Elapsed: 1ms
+Info 158  [16:31:3.61] Structure before ensureProjectForOpenFiles:
+Info 159  [16:31:3.61] Structure after ensureProjectForOpenFiles:
+Info 160  [16:31:3.61] got projects updated in background, updating diagnostics for /home/nasum/src/github.com/lapras-inc/lapras-frontend/src/index.ts,/home/nasum/src/github.com/lapras-inc/lapras-frontend/src/components/Card/Card.stories.ts
