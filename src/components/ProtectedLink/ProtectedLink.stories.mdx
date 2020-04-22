@@ -46,10 +46,28 @@ import ProtectedLink from './ProtectedLink.vue';
       template: '<ProtectedLink href="example"> example </ProtectedLink>',
     }}
   </Story>
+  <Story name="valid attrs inherited">
+    {{
+      components: { ProtectedLink },
+      template: `
+        <ProtectedLink
+          href="https://placehold.jp/150x150.png"
+        >
+          https://placehold.jp/150x150.png
+        </ProtectedLink>
+      `,
+    }}
+  </Story>
   <Story name="xss javascript scheme">
     {{
       components: { ProtectedLink },
-      template: '<ProtectedLink href="javascript:alert(document.domain)"> javascript:alert(document.domain) </ProtectedLink>',
+      template: `
+        <ProtectedLink
+          href="javascript:alert(document.domain)"
+        >
+          javascript:alert(document.domain)
+        </ProtectedLink>
+      `,
     }}
   </Story>
 </Preview>

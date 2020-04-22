@@ -16,11 +16,17 @@ import Modal from './Modal.vue';
       data() {
         return { visible: false, }
       },
+      methods: {
+        action() {
+          console.log('button pressed!')
+        },
+      },
       template: `
         <div>
           <button @click="visible=true">SHOW MODAL</button>
           <Modal :visible="visible" @close="visible = false">
-            <span>hello</span>
+            <button @click="action">button</button><br />
+            <a href="/">link</a>
           </Modal>
         </div>
       `,

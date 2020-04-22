@@ -20,7 +20,7 @@
           <div
             class="content"
             :class="{ panel }"
-            @click.prevent="e => e.stopPropagation()"
+            @click="e => e.stopPropagation()"
           >
             <slot />
           </div>

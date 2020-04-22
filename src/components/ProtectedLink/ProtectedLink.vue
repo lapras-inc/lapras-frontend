@@ -1,25 +1,22 @@
 <template>
-  <a v-bind="$attrs" :href="_href" :src="_src" :srcset="_srcset" :rel="_rel"
-    ><slot></slot
-  ></a>
+  <div>
+    <a v-bind="$attrs" :href="_href"><slot></slot></a>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
 
-const filterXSSScheme = (attr: string | undefined) => {
-  if (!attr) return ''
+const filterXSSScheme = (attr: string | undefined): string | undefined => {
+  if (!attr) return undefined
   if (attr.includes(':') && !attr.match(/^https?:\/\//)) {
-    return ''
+    return undefined
   }
   return attr
 }
 
 type ProtectedLinkProps = {
   href: string | undefined
-  src: string | undefined
-  srcset: string | undefined
-  rel: string | undefined
 }
 
 export default defineComponent<ProtectedLinkProps>({
@@ -27,23 +24,17 @@ export default defineComponent<ProtectedLinkProps>({
   // https://jp.vuejs.org/v2/guide/components-props.html
   inheritAttrs: false,
   props: {
-    href: String,
-    src: String,
-    srcset: String,
-    rel: String,
+    href: {
+      type: String,
+      validator: value => {
+        // validator type safe
+        return !!filterXSSScheme(value)
+      },
+    },
   },
   computed: {
-    _href(this: ProtectedLinkProps): string {
+    _href(this: ProtectedLinkProps): string | undefined {
       return filterXSSScheme(this.href as string)
-    },
-    _src(this: ProtectedLinkProps): string {
-      return filterXSSScheme(this.src as string)
-    },
-    _srcset(this: ProtectedLinkProps): string {
-      return filterXSSScheme(this.srcset as string)
-    },
-    _rel(this: ProtectedLinkProps): string {
-      return filterXSSScheme(this.rel as string)
     },
   },
 })
