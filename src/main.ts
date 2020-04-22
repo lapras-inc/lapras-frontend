@@ -5,6 +5,7 @@ import EnhancedIconButton from '@/components/EnhancedIconButton/EnhancedIconButt
 import FieldGroup from '@/components/FieldGroup/FieldGroup.vue'
 import FlatButton from '@/components/FlatButton/FlatButton.vue'
 import Icon from '@/components/Icon/Icon.vue'
+import ProtectedLink from '@/components/ProtectedLink/ProtectedLink.vue'
 import Modal from '@/components/Modal/Modal.vue'
 import Radio from '@/components/Radio/Radio.vue'
 import RatingBar from '@/components/RatingBar/RatingBar.vue'
@@ -24,6 +25,7 @@ export {
   FlatButton,
   Icon,
   Modal,
+  ProtectedLink,
   Radio,
   RatingBar,
   SelectBox,
