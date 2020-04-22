@@ -70,6 +70,19 @@ import ProtectedLink from './ProtectedLink.vue';
       `,
     }}
   </Story>
+  <Story name="force permit any link">
+    {{
+      components: { ProtectedLink },
+      template: `
+        <ProtectedLink
+          href="javascript:alert(document.domain)"
+          force
+        >
+          javascript:alert(document.domain)
+        </ProtectedLink>
+      `,
+    }}
+  </Story>
 </Preview>
 
 ```typescript
