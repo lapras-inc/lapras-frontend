@@ -14,7 +14,7 @@
         <div class="modal-body">
           <div class="close-wrap">
             <p class="close" v-if="hasClose">
-              <Icon name="cross" alt="閉じる" />
+              <Icon name="close" alt="閉じる" />
             </p>
           </div>
           <div

@@ -5,10 +5,10 @@
     v-bind="context.attrs"
     v-on="context.listeners"
   >
-    <p class="sub" v-if="context.slots.subLabel">
+    <p class="sub" v-if="hasSubLabel">
       <slot name="subLabel" />
     </p>
-    <p class="main">
+    <p class="main" :class="{ 'has-sub-label': hasSubLabel }">
       <slot />
     </p>
   </div>
@@ -29,8 +29,10 @@ export default defineComponent({
     },
   },
   setup(_, context) {
+    const hasSubLabel = !!context.slots.subLabel
     return {
       context,
+      hasSubLabel,
     }
   },
 })
@@ -60,5 +62,9 @@ export default defineComponent({
   text-align: center;
   padding: 5px 10px;
   margin: 0;
+
+  &.has-sub-label {
+    padding: 5px 7px;
+  }
 }
 </style>

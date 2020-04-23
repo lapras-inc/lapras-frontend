@@ -78,7 +78,7 @@ export default defineComponent({
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 1em;
+  padding: 0 0.6em;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
