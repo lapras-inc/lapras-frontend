@@ -55,16 +55,11 @@ export default defineComponent({
       type: String,
       default: 'button',
     },
-    pill: {
-      type: Boolean,
-      default: false,
-    },
   },
   setup(props, context) {
     const classNames = [
       `skin-${props.skin}`,
       `size-${props.size}`,
-      props.pill && 'is-pill',
     ]
     return {
       classNames,
@@ -83,7 +78,7 @@ export default defineComponent({
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 1em;
+  padding: 0 0.6em;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -150,11 +145,6 @@ export default defineComponent({
   &.size-xs {
     font-size: 12px;
     min-height: 28px;
-  }
-
-  &.is-pill {
-    border-radius: 68px;
-    padding: 0 2em;
   }
 }
 

@@ -3,6 +3,7 @@
     :value="value"
     @input="e => onInput(e.target.value)"
     class="text-input is-multi-line"
+    :class="{ 'has-error': error }"
     v-bind="context.attrs"
     v-if="multiline"
   ></textarea>
@@ -10,6 +11,7 @@
     :value="value"
     @input="e => onInput(e.target.value)"
     class="text-input is-single-line"
+    :class="{ 'has-error': error }"
     type="text"
     v-bind="context.attrs"
     v-else
@@ -28,6 +30,10 @@ export default defineComponent({
     value: {
       type: String,
       default: '',
+    },
+    error: {
+      type: Boolean,
+      default: false,
     },
   },
   setup(_, context) {
@@ -50,6 +56,10 @@ export default defineComponent({
   color: $text-base;
   border: 0;
   outline: 0;
+
+  &.has-error {
+    border-color: $red;
+  }
 }
 
 .is-single-line {

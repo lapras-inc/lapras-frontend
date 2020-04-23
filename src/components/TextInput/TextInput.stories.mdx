@@ -35,6 +35,14 @@ import TextInput from './TextInput.vue';
         `,
     }}
   </Story>
+  <Story name="error">
+    {{
+        components: { TextInput },
+        template: `
+          <TextInput placeholder="placeholder" error />
+        `,
+    }}
+  </Story>
   <Story name="disabled">
     {{
         components: { TextInput },

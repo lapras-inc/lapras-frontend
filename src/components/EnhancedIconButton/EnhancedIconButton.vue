@@ -34,7 +34,7 @@
             stroke="#012F89"
             mask="url(#mask-2)"
             stroke-width="2"
-            stroke-dasharray="3,3"
+            stroke-dasharray="2.2,2.2"
             xlink:href="#path1"
           ></use>
           <path

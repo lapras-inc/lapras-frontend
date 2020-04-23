@@ -1,6 +1,6 @@
 <template>
   <div class="field-group" v-bind="context.attrs" v-on="context.listeners">
-    <div class="label-line">
+    <div class="label-line" v-if="label">
       <p class="label">
         {{ label }}<small v-if="subLabel">{{ subLabel }}</small>
       </p>

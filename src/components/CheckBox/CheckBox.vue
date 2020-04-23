@@ -75,7 +75,7 @@ export default defineComponent({
   font-size: 15px;
   position: absolute;
   top: -2px;
-  left: 3px;
+  left: 2px;
   transition: all 0.3s ease;
   color: $lapras-blue;
 }
