@@ -1,6 +1,6 @@
 {
   "name": "@lapras-inc/lapras-frontend",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
@@ -13,7 +13,9 @@
   "files": [
     "dist"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@popperjs/core": "^2.2.1",
     "@types/body-scroll-lock": "^2.6.1",
