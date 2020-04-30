@@ -57,10 +57,7 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const classNames = [
-      `skin-${props.skin}`,
-      `size-${props.size}`,
-    ]
+    const classNames = [`skin-${props.skin}`, `size-${props.size}`]
     return {
       classNames,
       context,
