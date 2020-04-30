@@ -1,8 +1,8 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
-      :checked="value"
-      @change="e => onInput(e.target.checked)"
+      :checked="innerChecked"
+      @change="e => onChange(e.target.checked)"
       class="input"
       type="radio"
       v-bind="context.attrs"
@@ -12,33 +12,50 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import Icon from '@/components/Icon/Icon.vue'
 
-export default defineComponent({
+type Props = {
+  checked: string | number | boolean
+  value: string | number | boolean
+  disabled: boolean
+}
+
+export default defineComponent<Props>({
   components: {
     Icon,
   },
+  model: {
+    prop: 'checked',
+    event: 'change',
+  },
   props: {
-    value: {
-      type: Boolean,
+    checked: {
+      type: [String, Number, Boolean],
       default: false,
+    },
+    value: {
+      type: [String, Number, Boolean],
+      default: null,
     },
     disabled: {
       type: Boolean,
       default: false,
     },
   },
-  setup(_, context) {
-    const onInput = (checked: boolean) => {
-      if (checked) {
-        context.emit('input', true)
-      }
+  setup(props, context) {
+    const hasValue = props.value !== null
+
+    if (hasValue) {
+      const onChange = (checked: boolean) =>
+        context.emit('change', checked ? props.value : null)
+      const innerChecked = computed(() => props.checked === props.value)
+      return { context, innerChecked, onChange }
     }
-    return {
-      context,
-      onInput,
-    }
+
+    const onChange = (checked: boolean) => context.emit('change', checked)
+    const innerChecked = props.checked
+    return { context, innerChecked, onChange }
   },
 })
 </script>

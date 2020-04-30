@@ -12,13 +12,37 @@ import Radio from './Radio.vue';
 <Preview>
   <Story name="default">
     {{
-      data() {return {value: 'a'}},
+      data() {return {value: false}},
       components: { Radio },
       template: `
         <div>
-          <Radio @input="value = 'a'" :value="value === 'a'" />
-          <Radio @input="value = 'b'" :value="value === 'b'" />
-          <p>{{ value }}</p>
+          <Radio v-model="value" />
+          <p>{{value}}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name=":checked / @change (boolean)">
+    {{
+      data() {return {value: false}},
+      components: { Radio },
+      template: `
+        <div>
+          <Radio :checked="value" @change="v => value = v" />
+          <p>{{value}}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name="v-model (string)">
+    {{
+      data() {return {value: 'B'}},
+      components: { Radio },
+      template: `
+        <div>
+          <label><Radio value="A" v-model="value" /> A</label>
+          <label><Radio value="B" v-model="value" /> B</label>
+          <p>{{value}}</p>
         </div>
       `,
     }}
