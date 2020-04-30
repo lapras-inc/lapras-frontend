@@ -41,10 +41,12 @@ import ToggleSwitch from '@/components/ToggleSwitch/ToggleSwitch.vue';
       data() {return {value: true}},
       components: { ToggleLabelSet, ToggleSwitch },
       template: `
-        <ToggleLabelSet isFlipped>
-          <template #toggle><ToggleSwitch v-model="value" /></template>
-          <template #default>label</template>
-        </ToggleLabelSet>
+        <div style="width: fit-content;">
+          <ToggleLabelSet isFlipped>
+            <template #toggle><ToggleSwitch v-model="value" /></template>
+            <template #default>label</template>
+          </ToggleLabelSet>
+        </div>
       `,
     }}
   </Story>

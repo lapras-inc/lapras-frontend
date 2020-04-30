@@ -1,8 +1,8 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
-      :checked="value"
-      @change="e => onInput(e.target.checked)"
+      :checked="innerChecked"
+      @change="e => onChange(e.target.checked)"
       class="input"
       type="checkbox"
       v-bind="context.attrs"
@@ -14,29 +14,69 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import Icon from '@/components/Icon/Icon.vue'
 
-export default defineComponent({
+type Props = {
+  checked: string | number | boolean | string[]
+  value: string | number | boolean
+  disabled: boolean
+}
+
+export default defineComponent<Props>({
   components: {
     Icon,
   },
   props: {
-    value: {
-      type: Boolean,
+    checked: {
+      type: [String, Number, Boolean, Array],
       default: false,
+    },
+    value: {
+      type: [String, Number, Boolean],
+      default: null,
     },
     disabled: {
       type: Boolean,
       default: false,
     },
   },
-  setup(_, context) {
-    const onInput = (value: boolean) => context.emit('input', value)
-    return {
-      context,
-      onInput,
+  model: {
+    prop: 'checked',
+    event: 'change',
+  },
+  setup(props, context) {
+    const isModelArray = Array.isArray(props.checked)
+    const isModelSingle = props.value !== null
+
+    if (isModelArray) {
+      // modelが配列だったとき
+      const innerChecked = computed(() =>
+        (props.checked as string[]).includes(props.value)
+      )
+      const onChange = (checked: boolean) => {
+        const activeValues: string[] = props.checked
+        if (checked) {
+          context.emit('change', activeValues.concat([props.value]))
+        } else {
+          context.emit(
+            'change',
+            activeValues.filter(value => value !== props.value)
+          )
+        }
+      }
+      return { innerChecked, context, onChange }
+    } else if (isModelSingle) {
+      // modelが配列ではなく、valueが設定されているとき
+      const innerChecked = computed(() => props.value === props.checked)
+      const onChange = (checked: boolean) =>
+        context.emit('change', checked ? props.value : null)
+      return { context, innerChecked, onChange }
     }
+
+    const innerChecked = props.checked
+    const onChange = (checked: boolean) => context.emit('change', checked)
+    return { context, innerChecked, onChange }
   },
 })
 </script>
