@@ -43,13 +43,11 @@ export default defineComponent({
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  max-width: fit-content;
   cursor: pointer;
 
   @include base-hover;
 
   &.is-button {
-    max-width: 100%;
     padding: 12px;
     user-select: none;
     border: 1px solid $line-color;
