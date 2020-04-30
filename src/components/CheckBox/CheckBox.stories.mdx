@@ -16,8 +16,47 @@ import CheckBox from './CheckBox.vue';
       components: { CheckBox },
       template: `
         <div>
-          <CheckBox v-model="value" class="additional" />
-          <p>{{ value ? 'on' : 'off' }}</p>
+          <CheckBox v-model="value" />
+          <p>{{ value }}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name=":checked / @change (boolean)">
+    {{
+      data() {return {value: true}},
+      components: { CheckBox },
+      template: `
+        <div>
+          <CheckBox :checked="value" @change="v => value = v" />
+          <p>{{ value }}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name=":checked / @change (string)">
+    {{
+      data() {return {value: 'A'}},
+      components: { CheckBox },
+      template: `
+        <div>
+          <label style="display: flex;"><CheckBox value="A" v-model="value" /> A</label>
+          <label style="display: flex;"><CheckBox value="B" v-model="value" /> B</label>
+          <p>{{ value }}</p>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name="v-model(Array)">
+    {{
+      data() {return {activeMembers: ['B']}},
+      components: { CheckBox },
+      template: `
+        <div>
+          <label style="display: flex;"><CheckBox value="A" v-model="activeMembers" /> A</label>
+          <label style="display: flex;"><CheckBox value="B" v-model="activeMembers" /> B</label>
+          <label style="display: flex;"><CheckBox value="C" v-model="activeMembers" /> C</label>
+          <p>{{ activeMembers }}</p>
         </div>
       `,
     }}
