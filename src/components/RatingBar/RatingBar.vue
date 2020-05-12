@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 
 export default defineComponent({
   props: {
@@ -37,9 +37,11 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const isHigh = props.value >= props.highThreshold
-    const background = isHigh ? props.highBarColor : props.barColor
-    const width = `${(props.value / props.max) * 100}%`
+    const background = computed(() => {
+      const isHigh = props.value >= props.highThreshold
+      return isHigh ? props.highBarColor : props.barColor
+    })
+    const width = computed(() => `${(props.value / props.max) * 100}%`)
     return {
       background,
       width,

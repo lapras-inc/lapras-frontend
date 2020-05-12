@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import avatarDefault from '@/assets/images/avatar_default.svg'
 
 export default defineComponent({
@@ -23,9 +23,12 @@ export default defineComponent({
     },
   },
   setup(props, context) {
+    const backgroundImage = computed(
+      () => `url(${props.src || props.defaultSrc})`
+    )
     return {
       context,
-      backgroundImage: `url(${props.src || props.defaultSrc})`,
+      backgroundImage,
     }
   },
 })

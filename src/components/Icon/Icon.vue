@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from '@vue/composition-api'
+import { defineComponent, PropType, computed } from '@vue/composition-api'
 import iconMap from './iconMap'
 
 type IconKey = keyof typeof iconMap
@@ -16,7 +16,9 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const char = (iconMap as { [key: string]: string })[props.name]
+    const char = computed(
+      () => (iconMap as { [key: string]: string })[props.name]
+    )
     return {
       char,
       context,
