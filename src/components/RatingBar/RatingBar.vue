@@ -3,15 +3,15 @@
     <div
       class="inner"
       :style="{
-        width,
-        background,
+        width: `${(value / max) * 100}%`,
+        background: value >= highThreshold ? highBarColor : barColor,
       }"
     ></div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
   props: {
@@ -37,14 +37,7 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const background = computed(() => {
-      const isHigh = props.value >= props.highThreshold
-      return isHigh ? props.highBarColor : props.barColor
-    })
-    const width = computed(() => `${(props.value / props.max) * 100}%`)
     return {
-      background,
-      width,
       context,
     }
   },

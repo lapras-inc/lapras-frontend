@@ -1,6 +1,6 @@
 <template>
   <component
-    :class="classNames"
+    :class="[`skin-${skin}`, `size-${size}`]"
     :disabled="disabled"
     :is="tag"
     class="flat-button"
@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, computed } from '@vue/composition-api'
+import { defineComponent, PropType } from '@vue/composition-api'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
@@ -57,12 +57,7 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const classNames = computed(() => [
-      `skin-${props.skin}`,
-      `size-${props.size}`,
-    ])
     return {
-      classNames,
       context,
     }
   },

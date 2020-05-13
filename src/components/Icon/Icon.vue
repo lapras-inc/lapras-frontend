@@ -1,9 +1,11 @@
 <template>
-  <i class="icon" v-bind="context.attrs" v-on="context.listeners">{{ char }}</i>
+  <i class="icon" v-bind="context.attrs" v-on="context.listeners">{{
+    iconMap[name]
+  }}</i>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, computed } from '@vue/composition-api'
+import { defineComponent, PropType } from '@vue/composition-api'
 import iconMap from './iconMap'
 
 type IconKey = keyof typeof iconMap
@@ -16,12 +18,9 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const char = computed(
-      () => (iconMap as { [key: string]: string })[props.name]
-    )
     return {
-      char,
       context,
+      iconMap,
     }
   },
 })
