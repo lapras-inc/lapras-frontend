@@ -5,17 +5,17 @@
     v-bind="context.attrs"
     v-on="context.listeners"
   >
-    <p class="sub" v-if="hasSubLabel">
+    <p class="sub" v-if="context.slots.subLabel">
       <slot name="subLabel" />
     </p>
-    <p class="main" :class="{ 'has-sub-label': hasSubLabel }">
+    <p class="main" :class="{ 'has-sub-label': context.slots.subLabel }">
       <slot />
     </p>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
   props: {
@@ -29,10 +29,8 @@ export default defineComponent({
     },
   },
   setup(_, context) {
-    const hasSubLabel = computed(() => !!context.slots.subLabel)
     return {
       context,
-      hasSubLabel,
     }
   },
 })
