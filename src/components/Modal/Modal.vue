@@ -116,7 +116,7 @@ export default defineComponent({
 
 .close-wrap {
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .close {
@@ -125,6 +125,7 @@ export default defineComponent({
   cursor: pointer;
   display: inline-block;
   margin: 0;
+  font-size: 18px;
 
   @include base-hover;
 }
