@@ -67,12 +67,14 @@ jobs:
           git config --local user.name "GitHub Action"
       - name: Version increment
         run: yarn release
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: release
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tags: true
       - name: deploy github package registry
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: GitHub Push
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tags: true
+
