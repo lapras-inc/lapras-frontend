@@ -67,14 +67,26 @@ jobs:
           git config --local user.name "GitHub Action"
       - name: Version increment
         run: yarn release
+      - name: Get package-version
+        id: package-version
+        run: echo "::set-output name=package_version::v$(node -p "require('./package.json').version")"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
           branch: release
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tags: true
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ steps.package-version.outputs.package_version }}
+          release_name: Release ${{ steps.package-version.outputs.package_version }}
       - name: deploy github package registry
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
 
