@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Lint
-        run: yarn lint
+        run: yarn lint:ci --from=origin/master
       - name: build node package
         run: yarn build
       - name: node package test

@@ -4,9 +4,11 @@
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
-    "lint": "vue-cli-service lint && yarn lint:commit",
-    "lint:commit": "commitlint --from=master",
+    "lint": "vue-cli-service lint",
+    "lint:commit": "commitlint",
+    "lint:ci": "yarn lint && yarn lint:commit",
     "test": "echo 'not implemented now'",
+    "commit": "git-cz",
     "release": "standard-version",
     "storybook:deploy": "gh-pages -d storybook-static",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
@@ -46,6 +48,7 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "3.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
@@ -58,5 +61,10 @@
     "vue-template-compiler": "^2.6.11"
   },
   "license": "UNLICENSED",
-  "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git"
+  "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
