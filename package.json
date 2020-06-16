@@ -6,7 +6,7 @@
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
     "lint": "vue-cli-service lint",
     "lint:commit": "commitlint",
-    "lint:ci": "yarn lint && yarn lint:commit",
+    "lint:ci": "yarn lint && yarn lint:commit --from=origin/master",
     "test": "echo 'not implemented now'",
     "commit": "git-cz",
     "release": "standard-version",
