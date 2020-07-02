@@ -1,37 +1,17 @@
-import AvatarImg from '@/components/AvatarImg/AvatarImg.vue'
-import Card from '@/components/Card/Card.vue'
-import CheckBox from '@/components/CheckBox/CheckBox.vue'
-import EnhancedIconButton from '@/components/EnhancedIconButton/EnhancedIconButton.vue'
-import FieldGroup from '@/components/FieldGroup/FieldGroup.vue'
-import FlatButton from '@/components/FlatButton/FlatButton.vue'
-import Icon from '@/components/Icon/Icon.vue'
-import ProtectedLink from '@/components/ProtectedLink/ProtectedLink.vue'
-import Modal from '@/components/Modal/Modal.vue'
-import Radio from '@/components/Radio/Radio.vue'
-import RatingBar from '@/components/RatingBar/RatingBar.vue'
-import SelectBox from '@/components/SelectBox/SelectBox.vue'
-import TagLabel from '@/components/TagLabel/TagLabel.vue'
-import TextInput from '@/components/TextInput/TextInput.vue'
-import ToggleLabelSet from '@/components/ToggleLabelSet/ToggleLabelSet.vue'
-import ToggleSwitch from '@/components/ToggleSwitch/ToggleSwitch.vue'
-import Tooltip from '@/components/Tooltip/Tooltip.vue'
-
-export {
-  AvatarImg,
-  Card,
-  CheckBox,
-  EnhancedIconButton,
-  FieldGroup,
-  FlatButton,
-  Icon,
-  Modal,
-  ProtectedLink,
-  Radio,
-  RatingBar,
-  SelectBox,
-  TagLabel,
-  TextInput,
-  ToggleLabelSet,
-  ToggleSwitch,
-  Tooltip,
-}
+export { default as AvatarImg } from '@/components/AvatarImg/AvatarImg.vue'
+export { default as Card } from '@/components/Card/Card.vue'
+export { default as CheckBox } from '@/components/CheckBox/CheckBox.vue'
+export { default as EnhancedIconButton } from '@/components/EnhancedIconButton/EnhancedIconButton.vue'
+export { default as FieldGroup } from '@/components/FieldGroup/FieldGroup.vue'
+export { default as FlatButton } from '@/components/FlatButton/FlatButton.vue'
+export { default as Icon } from '@/components/Icon/Icon.vue'
+export { default as ProtectedLink } from '@/components/ProtectedLink/ProtectedLink.vue'
+export { default as Modal } from '@/components/Modal/Modal.vue'
+export { default as Radio } from '@/components/Radio/Radio.vue'
+export { default as RatingBar } from '@/components/RatingBar/RatingBar.vue'
+export { default as SelectBox } from '@/components/SelectBox/SelectBox.vue'
+export { default as TagLabel } from '@/components/TagLabel/TagLabel.vue'
+export { default as TextInput } from '@/components/TextInput/TextInput.vue'
+export { default as ToggleLabelSet } from '@/components/ToggleLabelSet/ToggleLabelSet.vue'
+export { default as ToggleSwitch } from '@/components/ToggleSwitch/ToggleSwitch.vue'
+export { default as Tooltip } from '@/components/Tooltip/Tooltip.vue'

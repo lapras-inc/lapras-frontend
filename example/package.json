@@ -6,6 +6,6 @@
     "start": "echo test"
   },
   "dependencies": {
-    "lapras-frontend": "file:../",
+    "lapras-frontend": "file:../"
   }
 }

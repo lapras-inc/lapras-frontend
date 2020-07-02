@@ -21,5 +21,6 @@ yarn-error.log*
 *.sw?
 
 # exclude built products in repository
-/dist
+/dist/*
+!/dist/types
 
