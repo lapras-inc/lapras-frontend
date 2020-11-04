@@ -93,4 +93,10 @@ export default {
   'arrow-right3': '\ue968',
   'job': '\ue962',
   'home2': '\ue963',
+  'report-problem': '\ue964',
+  'person-arrow': '\ue965',
+  'mail-line': '\ue966',
+  'people2': '\ue967',
+  'file': '\ue969',
+  'clock': '\ue96a',
 }
