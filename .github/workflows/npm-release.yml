@@ -38,6 +38,10 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      - name: commit dist
+        run: |
+          git add -A
+          git commit -m 'add dist'
       - name: Version increment
         run: yarn release
       - name: Get package-version
@@ -61,5 +65,3 @@ jobs:
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-
