@@ -57,6 +57,7 @@ jobs:
         with:
           tag_name: ${{ steps.package-version.outputs.package_version }}
           release_name: Release ${{ steps.package-version.outputs.package_version }}
+          files: "dist/**"
       - name: deploy github package registry
         run: yarn publish
         env:
