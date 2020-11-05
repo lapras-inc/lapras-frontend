@@ -72,7 +72,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./lapras-frontend.tar.gz
-          asset_name: "lapras-frontend-v${{ steps.package-version.outputs.package_version }}.tar.gz"
+          asset_name: "lapras-frontend-${{ steps.package-version.outputs.package_version }}.tar.gz"
           asset_content_type: application/zip
 
 
