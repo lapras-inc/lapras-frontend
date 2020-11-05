@@ -49,9 +49,9 @@ jobs:
           branch: release
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tags: true
-      - name: Zip output
+      - name: Archive output
         run: |
-          zip -i "dist/*.*" "types/*.*" "package.json" "yarn.lock" "README.md" "CHANGELOG.md" -r lapras-frontend .  
+          tar zcvf lapras-frontend.tar.gz dist types package.json README.md CHANGELOG.md  
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -71,8 +71,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./lapras-frontend.zip
-          asset_name: lapras-frontend.zip
+          asset_path: ./lapras-frontend.tar.gz
+          asset_name: "lapras-frontend-v${{ steps.package-version.outputs.package_version }}.tar.gz"
           asset_content_type: application/zip
 
 
