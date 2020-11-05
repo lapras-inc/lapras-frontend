@@ -51,7 +51,7 @@ jobs:
           tags: true
       - name: Zip output
         run: |
-          zip lapras-scout *.*
+          zip lapras-frontend *.*
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
