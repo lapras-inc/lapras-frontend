@@ -51,7 +51,7 @@ jobs:
           tags: true
       - name: Archive output
         run: |
-          tar zcvf lapras-frontend.tar.gz dist types package.json README.md CHANGELOG.md  
+          tar zcvf lapras-frontend.tar.gz dist types package.json README.md CHANGELOG.md
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -72,7 +72,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./lapras-frontend.tar.gz
-          asset_name: "lapras-frontend-${{ steps.package-version.outputs.package_version }}.tar.gz"
+          asset_name: "lapras-frontend.tar.gz"
           asset_content_type: application/zip
 
 
