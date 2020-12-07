@@ -10,6 +10,7 @@ export declare class FieldGroup extends Vue {}
 export declare class FlatButton extends Vue {}
 export declare class Icon extends Vue {}
 export declare class Modal extends Vue {}
+export declare class ShortModal extends Vue {}
 export declare class ProtectedLink extends Vue {}
 export declare class Radio extends Vue {}
 export declare class RatingBar extends Vue {}
