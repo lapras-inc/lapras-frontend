@@ -16,9 +16,10 @@
         }"
       >
         <div class="modal-body">
-          <div class="close-wrap">
+          <div class="close-wrap" :class="{ 'outer-close': outerClose }">
             <p class="close" v-if="hasClose">
-              <Icon name="close" alt="閉じる" />
+              <Icon name="close" alt="閉じる" v-if="outerClose" />
+              <i class="icon-cancel" v-else></i>
             </p>
           </div>
           <div
@@ -68,6 +69,12 @@ export default defineComponent({
       type: Number,
       default: 10,
     },
+    // バツボタンをダイアログの外に表示するか否か
+    // 基本的に SCOUT は true、LAPRAS は false
+    outerClose: {
+      type: Boolean,
+      default: true,
+    },
   },
 })
 </script>
@@ -100,25 +107,56 @@ export default defineComponent({
 }
 
 .close-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 33px;
   text-align: right;
-  margin-bottom: 3px;
+
+  &.outer-close {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: auto auto 3px;
+
+    .close {
+      color: $white;
+      font-size: 18px;
+    }
+  }
 }
 
 .close {
-  color: $white;
+  color: #c8cdd5;
   line-height: 1;
   cursor: pointer;
   display: inline-block;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.2rem;
+  font-weght: bold;
 
   @include base-hover;
 }
 
+.icon-cancel::before {
+  content: '\e930';
+}
+
 .panel {
   overflow: hidden;
-  max-width: 850px;
   border-radius: $corner-r;
   background: $white;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    height: auto;
+    width: auto;
+    max-width: 850px;
+    padding-top: 20px;
+  }
 }
 </style>
