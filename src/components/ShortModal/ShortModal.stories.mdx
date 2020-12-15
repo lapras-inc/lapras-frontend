@@ -1,0 +1,70 @@
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+Vue.use(VueCompositionApi);
+
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import ShortModal from './ShortModal.vue';
+
+<Meta title="ShortModal" component={ShortModal} />
+
+# ShortModal
+
+<Preview>
+  <Story name="default">
+    {{
+      components: { ShortModal },
+      data() {
+        return { visible: false, }
+      },
+      methods: {
+        action() {
+          console.log('button pressed!')
+        },
+      },
+      template: `
+        <div>
+          <button @click="visible=true">SHOW MODAL</button>
+          <ShortModal :visible="visible" @close="visible = false">
+            <button @click="action">button</button><br />
+            <a href="/">link</a>
+          </ShortModal>
+        </div>
+      `,
+    }}
+  </Story>
+  <Story name="scroll">
+    {{
+      components: { ShortModal },
+      data() {
+        return {
+          visible: false,
+          longTextHtml: 'scroll<br />'.repeat(50),
+        }
+      },
+      template: `
+        <div>
+          <span v-html="longTextHtml"></span>
+          <br /><br />
+          <button @click="visible=true">SHOW MODAL</button>
+          <ShortModal :visible="visible" @close="visible = false">
+            <span>short</span>
+          </ShortModal>
+          <br /><br />
+          <span v-html="longTextHtml"></span>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+```typescript
+import { ShortModal } from 'lapras-frontend'
+```
+
+```html
+<ShortModal :visible="visible">
+  hoge
+</ShortModal>
+```
+
+<Props of={ShortModal} />
