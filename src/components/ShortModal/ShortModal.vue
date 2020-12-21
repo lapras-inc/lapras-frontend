@@ -108,9 +108,8 @@ export default defineComponent({
 
 .close-wrap {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 33px;
+  top: 33px;
+  right: 33px;
   text-align: right;
 
   &.outer-close {
@@ -146,8 +145,8 @@ export default defineComponent({
   overflow: hidden;
   border-radius: $corner-r;
   background: $white;
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);
+  width: calc(100vw - 40px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
