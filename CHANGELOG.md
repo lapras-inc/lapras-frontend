@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.26](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.25...v0.0.26) (2021-02-08)
+
+
+### Features
+
+* **icon:** likeアイコンを追加 ([674f85b](https://github.com/lapras-inc/lapras-frontend/commit/674f85b06c6a0af1e87be9c8c6b8587cc2a0ae19))
+
 ### [0.0.25](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.24...v0.0.25) (2020-12-21)
 
 
