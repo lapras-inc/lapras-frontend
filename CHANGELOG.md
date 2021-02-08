@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.25](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.24...v0.0.25) (2020-12-21)
+
+
+### Features
+
+* release 20201221 ([0426f2b](https://github.com/lapras-inc/lapras-frontend/commit/0426f2b3ee92386ca7f56b600472f1c278cddb28))
+
+
+### Bug Fixes
+
+* スマホでTagを非表示にしようとしたときに出るモーダルの x ボタンが効かない(または推しにくくて押せていない) ([0485214](https://github.com/lapras-inc/lapras-frontend/commit/0485214006f118c8f8f770f620d5a0da55d309a9))
+
+### [0.0.24](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.13...v0.0.24) (2020-12-15)
+
+
+### Features
+
+* release 12/14 ([d60885f](https://github.com/lapras-inc/lapras-frontend/commit/d60885f547dfedb1385c1ab5ec440913b344bcea))
+* **component:** shortModal はスマフォで大きく表示する ([c4572d2](https://github.com/lapras-inc/lapras-frontend/commit/c4572d27bb5d486db9bf639ea62c0a005bb22a7c))
+* **component:** 短かめの内容向けに ShortModal を追加 ([3a15954](https://github.com/lapras-inc/lapras-frontend/commit/3a1595462ba06c79fc917e84c0cac2442ce06fe0))
+
+
+### Bug Fixes
+
+* 🐛 ciでdistをリリースに含むときのコミットメッセージを修正 ([5779bec](https://github.com/lapras-inc/lapras-frontend/commit/5779bec1683af06943103c70453896be2ec91b45))
+
 ### [0.0.23](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.22...v0.0.23) (2020-11-05)
 
 ### [0.0.22](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.21...v0.0.22) (2020-11-05)
