@@ -86,6 +86,7 @@ export default {
   'stock': '\ue957',
   'share': '\ue95a',
   'close': '\ue95b',
+  'like': '\ue95c',
   'stop': '\uea6c',
   'arrow-down-bold': '\ue95e',
   'close-bold': '\ue95d',
