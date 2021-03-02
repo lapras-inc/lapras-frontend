@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.33](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.32...v0.0.33) (2021-03-02)
+
+
+### Features
+
+* debug2 ([153bc52](https://github.com/lapras-inc/lapras-frontend/commit/153bc52d44b7753e3752cf4fa237eb1b1c56ac3c))
+
 ### [0.0.32](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.31...v0.0.32) (2021-03-02)
 
 
