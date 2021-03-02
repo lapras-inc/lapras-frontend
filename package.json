@@ -1,6 +1,6 @@
 {
   "name": "@lapras-inc/lapras-frontend",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
