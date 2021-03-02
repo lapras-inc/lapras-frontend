@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.31](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.30...v0.0.31) (2021-03-02)
+
+
+### Features
+
+* 環境変数渡すの忘れてた ([2b98c59](https://github.com/lapras-inc/lapras-frontend/commit/2b98c59b2d9a5bc6ef6ac4d1966d3b041ae89a45))
+
 ### [0.0.30](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.29...v0.0.30) (2021-03-02)
 
 
