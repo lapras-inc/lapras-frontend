@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.28](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.27...v0.0.28) (2021-03-02)
+
+
+### Bug Fixes
+
+* build storybook assets before dploying ([a2e14ee](https://github.com/lapras-inc/lapras-frontend/commit/a2e14ee9a8bdfba8389832c588aac7e0ee8c9aa7))
+
 ### [0.0.27](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.26...v0.0.27) (2021-03-02)
 
 
