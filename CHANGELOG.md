@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.34](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.33...v0.0.34) (2021-03-02)
+
+
+### Bug Fixes
+
+* add username ([99342e1](https://github.com/lapras-inc/lapras-frontend/commit/99342e16845fb8f2e20cd9c7f030921fd5017fb1))
+
 ### [0.0.33](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.32...v0.0.33) (2021-03-02)
 
 
