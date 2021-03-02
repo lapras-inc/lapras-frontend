@@ -41,7 +41,7 @@ jobs:
       - name: commit dist
         run: |
           git add -A
-          git commit -m 'chore: add dist'
+          git diff-index --quiet HEAD || git commit -m 'chore: add dist'
       - name: Version increment
         run: yarn release
       - name: Get package-version
