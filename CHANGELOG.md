@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.29](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.28...v0.0.29) (2021-03-02)
+
+
+### Features
+
+* ci でのリリース用のタスク追加 ([dc2a522](https://github.com/lapras-inc/lapras-frontend/commit/dc2a5225a9b5ea98dea5a9292e12d578d0a5b34f))
+
 ### [0.0.28](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.27...v0.0.28) (2021-03-02)
 
 
