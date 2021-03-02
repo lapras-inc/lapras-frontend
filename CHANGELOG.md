@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.27](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.26...v0.0.27) (2021-03-02)
+
+
+### Features
+
+* package.json の version は固定にする ([1c20713](https://github.com/lapras-inc/lapras-frontend/commit/1c207136ef8c8ce5a9ca52b217bb1875cc28b63e))
+* storybook をリリース時にデプロイする ([904864a](https://github.com/lapras-inc/lapras-frontend/commit/904864a1aa8adbba633316ff867c9c4d3f52b1b2))
+* update version ([98235c4](https://github.com/lapras-inc/lapras-frontend/commit/98235c4ba88dd3f4329f295d848186648b56aece))
+
+
+### Bug Fixes
+
+* release 時に build して差分がないときコケないようにする ([99dfe3e](https://github.com/lapras-inc/lapras-frontend/commit/99dfe3e877d0a2a9c90f684937642c01521097fb))
+
 ### [0.0.26](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.25...v0.0.26) (2021-02-08)
 
 
