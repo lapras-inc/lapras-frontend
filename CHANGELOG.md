@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.30](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.29...v0.0.30) (2021-03-02)
+
+
+### Bug Fixes
+
+* gh-pages の設定間違えてたので修正 ([ebfde0e](https://github.com/lapras-inc/lapras-frontend/commit/ebfde0e1a6c08c4961196193dc2bc80a567a1cd2))
+
 ### [0.0.29](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.28...v0.0.29) (2021-03-02)
 
 
