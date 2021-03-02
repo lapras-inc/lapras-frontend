@@ -67,3 +67,5 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Storybook deploy
         run: yarn storybook:build && yarn storybook:deploy:ci
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
