@@ -11,6 +11,7 @@
     "commit": "git-cz",
     "release": "standard-version",
     "storybook:deploy": "gh-pages -d storybook-static",
+    "storybook:deploy:ci": "gh-pages -r 'https://'$GITHUB_TOKEN'@github.com/lapras-inc/lapras-frontend.git' -x",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
