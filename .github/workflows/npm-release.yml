@@ -65,3 +65,5 @@ jobs:
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Storybook deploy
+        run: yarn storybook:deploy
