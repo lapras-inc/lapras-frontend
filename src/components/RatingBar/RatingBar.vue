@@ -59,7 +59,7 @@ export default defineComponent({
 }
 
 .inner {
-  height: 4px;
+  height: 40px;
   animation: innerAnim 1.2s ease 0s forwards;
   transform-origin: left top;
 }
