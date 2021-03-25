@@ -35,3 +35,7 @@ jobs:
         run: yarn build
       - name: node package test
         run: yarn test
+      - name: deploy chromatic
+        run: yarn chromatic
+        env:
+          CHROMATIC_TOKEN: ${{secrets.CHROMATIC_TOKEN}}
