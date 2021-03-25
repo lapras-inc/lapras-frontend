@@ -144,7 +144,7 @@ export default defineComponent({
   }
 
   &.skin-rainbow {
-    background: -webkit-linear-gradient(left, orange, violet);
+    background: -webkit-linear-gradient(left, red, violet);
   }
 }
 
