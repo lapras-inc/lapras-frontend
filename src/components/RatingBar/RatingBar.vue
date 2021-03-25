@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .score-bar {
-  background: $ultra-light-gray;
+  background: $gray;
 }
 
 @keyframes innerAnim {
