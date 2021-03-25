@@ -39,6 +39,7 @@ export default defineComponent({
         | 'secondary'
         | 'tertiary'
         | 'muted'
+        | 'rainbow'
         | 'disabled'
       >,
       default: 'primary',
@@ -140,6 +141,10 @@ export default defineComponent({
   &.size-xs {
     font-size: 12px;
     min-height: 28px;
+  }
+
+  &.skin-rainbow {
+    background: -webkit-linear-gradient(left, orange, violet);
   }
 }
 
