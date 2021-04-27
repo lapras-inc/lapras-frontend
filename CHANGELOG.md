@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.35](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.34...v0.0.35) (2021-04-27)
+
+
+### Features
+
+* **protectedlink:** 別タブで開くときは rel="noopener" をつける ([054fbdd](https://github.com/lapras-inc/lapras-frontend/commit/054fbddf4311bb5a80a9b967fa10a133285e92bc)), closes [lapras-inc/scouty#10930](https://github.com/lapras-inc/scouty/issues/10930)
+* chromatic ([1eb4e04](https://github.com/lapras-inc/lapras-frontend/commit/1eb4e04f2889cfe726f53096b9139364b5cdc69d))
+* github actions ([bafdca5](https://github.com/lapras-inc/lapras-frontend/commit/bafdca59cb4512dd70da30a8c4c030880cf09deb))
+
+
+### Bug Fixes
+
+* github actions ([4aba0cb](https://github.com/lapras-inc/lapras-frontend/commit/4aba0cb8d9ccb020ee4c24c9137a0c0bd83d3254))
+
 ### [0.0.34](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.33...v0.0.34) (2021-03-02)
 
 
