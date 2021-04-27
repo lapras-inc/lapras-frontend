@@ -13,7 +13,8 @@
     "storybook:deploy": "gh-pages -d storybook-static",
     "storybook:deploy:ci": "gh-pages -r 'https://action:'$GITHUB_TOKEN'@github.com/lapras-inc/lapras-frontend.git' -x -d storybook-static",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
+    "chromatic": "npx chromatic storybook:build --project-token $CHROMATIC_TOKEN -b storybook:build --exit-zero-on-changes"
   },
   "main": "dist/lapras-frontend.common.js",
   "types": "types/lapras-frontend.d.ts",
@@ -50,6 +51,7 @@
     "@vue/cli-service": "^4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
+    "chromatic": "^5.7.0",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "3.2.0",
     "eslint": "^6.7.2",

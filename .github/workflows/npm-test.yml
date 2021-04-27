@@ -3,9 +3,7 @@
 
 name: npm test
 
-on:
-  pull_request:
-    types: [opened, synchronize]
+on: push
 
 jobs:
   test:
@@ -35,3 +33,12 @@ jobs:
         run: yarn build
       - name: node package test
         run: yarn test
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        # Chromatic GitHub Action options
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+          projectToken: ${{ secrets.CHROMATIC_TOKEN }}
+          exitZeroOnChanges: true
+          buildScriptName: storybook:build
