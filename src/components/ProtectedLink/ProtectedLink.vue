@@ -1,5 +1,7 @@
 <template>
-  <a v-bind="$attrs" :href="_href"><slot></slot></a>
+  <a v-bind="$attrs" :href="_href" :rel="_rel" :target="target"
+    ><slot></slot
+  ></a>
 </template>
 
 <script lang="ts">
@@ -21,6 +23,8 @@ const filterXSSScheme = (attr: string | undefined): string | undefined => {
 type ProtectedLinkProps = {
   href: string | undefined
   force: boolean
+  rel: string | undefined
+  target: string | undefined
 }
 
 export default defineComponent<ProtectedLinkProps>({
@@ -39,11 +43,23 @@ export default defineComponent<ProtectedLinkProps>({
       type: Boolean,
       default: false,
     },
+    target: {
+      type: String,
+    },
+    rel: {
+      type: String,
+    },
   },
   computed: {
     _href(this: ProtectedLinkProps): string | undefined {
       if (this.force) return this.href
       return filterXSSScheme(this.href as string)
+    },
+    _rel(this: ProtectedLinkProps): string | undefined {
+      if (this.target === '_blank') {
+        return `noopener ${this.rel || ''}`.replace(/\s$/, '')
+      }
+      return this.rel
     },
   },
 })
