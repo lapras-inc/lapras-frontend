@@ -145,3 +145,21 @@ import { FlatButton } from 'lapras-frontend'
     }}
   </Story>
 </Preview>
+
+## inline
+
+<Preview>
+  <Story name="inline">
+    {{
+      components: { FlatButton, Icon },
+      template: `
+        <span style="display: inline-block;">
+          <FlatButton>
+            <template #default>Button</template>
+            <template #leftIcon><Icon name="cross" /></template>
+          </FlatButton>
+        </span>
+      `,
+    }}
+  </Story>
+</Preview>
