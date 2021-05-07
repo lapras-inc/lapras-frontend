@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.36](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.35...v0.0.36) (2021-05-07)
+
+
+### Features
+
+* **flatbutton:** https://github.com/lapras-inc/scouty/issues/10806 ([7dc075d](https://github.com/lapras-inc/lapras-frontend/commit/7dc075dc53804ad111cadf5664ffd21aa23b86e1))
+
 ### [0.0.35](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.34...v0.0.35) (2021-04-27)
 
 
