@@ -7,17 +7,11 @@
     v-bind="context.attrs"
     v-on="context.listeners"
   >
-    <div
-      class="icon-wrap is-left"
-      v-if="context.slots.leftIcon || context.slots.rightIcon"
-    >
+    <div class="icon-wrap is-left" v-if="context.slots.leftIcon">
       <slot name="leftIcon" />
     </div>
     <div class="body"><slot /></div>
-    <div
-      class="icon-wrap is-right"
-      v-if="context.slots.leftIcon || context.slots.rightIcon"
-    >
+    <div class="icon-wrap is-right" v-if="context.slots.rightIcon">
       <slot name="rightIcon" />
     </div>
   </component>
@@ -73,7 +67,7 @@ export default defineComponent({
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 0.6em;
+  padding: 0 0.8em;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -149,14 +143,14 @@ export default defineComponent({
 }
 
 .icon-wrap {
-  min-width: 2em;
-
   &.is-left {
     text-align: left;
+    margin-right: 0.5em;
   }
 
   &.is-right {
     text-align: right;
+    margin-left: 0.5em;
   }
 }
 </style>
