@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.37](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.36...v0.0.37) (2021-06-07)
+
+
+### Features
+
+* **icon:** [clean] StoryBook でアイコンを個々の Story として出力するようにした ([a7bc204](https://github.com/lapras-inc/lapras-frontend/commit/a7bc204fc2e767a57b1320d4189f0b2f63b02bb3))
+* **icon:** icon ([e9caaf6](https://github.com/lapras-inc/lapras-frontend/commit/e9caaf65921207457b5fa83f186c4232f62b743d))
+
 ### [0.0.36](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.35...v0.0.36) (2021-05-07)
 
 
