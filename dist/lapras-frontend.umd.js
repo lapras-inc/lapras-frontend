@@ -96,17 +96,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
-/***/ "00cd":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_110f4921_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("856d");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_110f4921_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_110f4921_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_110f4921_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "0366":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1019,6 +1008,13 @@ fixRegExpWellKnownSymbolLogic('replace', 2, function (REPLACE, nativeReplace, ma
 
 /***/ }),
 
+/***/ "5400":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "5692":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1619,13 +1615,6 @@ module.exports = function (object, key, value) {
   else object[propertyKey] = value;
 };
 
-
-/***/ }),
-
-/***/ "856d":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -2682,6 +2671,17 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+
+/***/ "ca4d":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_2c43d2b0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("5400");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_2c43d2b0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_2c43d2b0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FlatButton_vue_vue_type_style_index_0_id_2c43d2b0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -4891,12 +4891,12 @@ var FieldGroup_component = normalizeComponent(
 )
 
 /* harmony default export */ var FieldGroup = (FieldGroup_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a917eaae-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FlatButton/FlatButton.vue?vue&type=template&id=110f4921&scoped=true&
-var FlatButtonvue_type_template_id_110f4921_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.tag,_vm._g(_vm._b({tag:"component",staticClass:"flat-button",class:[("skin-" + _vm.skin), ("size-" + _vm.size)],attrs:{"disabled":_vm.disabled}},'component',_vm.context.attrs,false),_vm.context.listeners),[(_vm.context.slots.leftIcon)?_c('div',{staticClass:"icon-wrap is-left"},[_vm._t("leftIcon")],2):_vm._e(),_c('div',{staticClass:"body"},[_vm._t("default")],2),(_vm.context.slots.rightIcon)?_c('div',{staticClass:"icon-wrap is-right"},[_vm._t("rightIcon")],2):_vm._e()])}
-var FlatButtonvue_type_template_id_110f4921_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a917eaae-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FlatButton/FlatButton.vue?vue&type=template&id=2c43d2b0&scoped=true&
+var FlatButtonvue_type_template_id_2c43d2b0_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.tag,_vm._g(_vm._b({tag:"component",staticClass:"flat-button",class:[("skin-" + _vm.skin), ("size-" + _vm.size), _vm.enhanced && 'is-enhanced'],attrs:{"disabled":_vm.disabled}},'component',_vm.context.attrs,false),_vm.context.listeners),[(_vm.context.slots.leftIcon)?_c('div',{staticClass:"icon-wrap is-left"},[_vm._t("leftIcon")],2):_vm._e(),_c('div',{staticClass:"body"},[_vm._t("default")],2),(_vm.context.slots.rightIcon)?_c('div',{staticClass:"icon-wrap is-right"},[_vm._t("rightIcon")],2):_vm._e()])}
+var FlatButtonvue_type_template_id_2c43d2b0_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FlatButton/FlatButton.vue?vue&type=template&id=110f4921&scoped=true&
+// CONCATENATED MODULE: ./src/components/FlatButton/FlatButton.vue?vue&type=template&id=2c43d2b0&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--14-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FlatButton/FlatButton.vue?vue&type=script&lang=ts&
 
@@ -4918,6 +4918,10 @@ var FlatButtonvue_type_template_id_110f4921_scoped_true_staticRenderFns = []
       type: Boolean,
       default: false
     },
+    enhanced: {
+      type: Boolean,
+      default: false
+    },
     tag: {
       type: String,
       default: 'button'
@@ -4931,8 +4935,8 @@ var FlatButtonvue_type_template_id_110f4921_scoped_true_staticRenderFns = []
 }));
 // CONCATENATED MODULE: ./src/components/FlatButton/FlatButton.vue?vue&type=script&lang=ts&
  /* harmony default export */ var FlatButton_FlatButtonvue_type_script_lang_ts_ = (FlatButtonvue_type_script_lang_ts_); 
-// EXTERNAL MODULE: ./src/components/FlatButton/FlatButton.vue?vue&type=style&index=0&id=110f4921&lang=scss&scoped=true&
-var FlatButtonvue_type_style_index_0_id_110f4921_lang_scss_scoped_true_ = __webpack_require__("00cd");
+// EXTERNAL MODULE: ./src/components/FlatButton/FlatButton.vue?vue&type=style&index=0&id=2c43d2b0&lang=scss&scoped=true&
+var FlatButtonvue_type_style_index_0_id_2c43d2b0_lang_scss_scoped_true_ = __webpack_require__("ca4d");
 
 // CONCATENATED MODULE: ./src/components/FlatButton/FlatButton.vue
 
@@ -4945,11 +4949,11 @@ var FlatButtonvue_type_style_index_0_id_110f4921_lang_scss_scoped_true_ = __webp
 
 var FlatButton_component = normalizeComponent(
   FlatButton_FlatButtonvue_type_script_lang_ts_,
-  FlatButtonvue_type_template_id_110f4921_scoped_true_render,
-  FlatButtonvue_type_template_id_110f4921_scoped_true_staticRenderFns,
+  FlatButtonvue_type_template_id_2c43d2b0_scoped_true_render,
+  FlatButtonvue_type_template_id_2c43d2b0_scoped_true_staticRenderFns,
   false,
   null,
-  "110f4921",
+  "2c43d2b0",
   null
   
 )
