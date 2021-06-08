@@ -1,6 +1,6 @@
 <template>
   <component
-    :class="[`skin-${skin}`, `size-${size}`]"
+    :class="[`skin-${skin}`, `size-${size}`, enhanced && 'is-enhanced']"
     :disabled="disabled"
     :is="tag"
     class="flat-button"
@@ -45,6 +45,10 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    enhanced: {
+      type: Boolean,
+      default: false,
+    },
     tag: {
       type: String,
       default: 'button',
@@ -59,6 +63,32 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .flat-button {
   font: inherit;
   position: relative;
@@ -134,6 +164,12 @@ export default defineComponent({
   &.size-xs {
     font-size: 12px;
     min-height: 28px;
+  }
+
+  &:not(:hover).is-enhanced {
+    animation-duration: 2s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
   }
 }
 
