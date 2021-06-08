@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.38](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.37...v0.0.38) (2021-06-08)
+
+
+### Features
+
+* **flatbutton:** 点滅するバリエーション ([317dafd](https://github.com/lapras-inc/lapras-frontend/commit/317dafd9c38bb4a12723ffe124e8b26d001d7945))
+
 ### [0.0.37](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.36...v0.0.37) (2021-06-07)
 
 
