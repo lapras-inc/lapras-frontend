@@ -17,4 +17,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
+  // # Storybookのビルド時に生成される一時ファイル
+  ignorePatterns: ["generated-stories-entry.js"],
 }

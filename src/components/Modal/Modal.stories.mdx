@@ -5,55 +5,70 @@ Vue.use(VueCompositionApi);
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import Modal from './Modal.vue';
 
-<Meta title="Modal" component={Modal} />
+<Meta
+  title="Modal"
+  component={Modal}
+  args={{
+    filterBackground: "rgba(0, 48, 137, 0.14)",
+    hasClose: true,
+    visible: true,
+    panel: true,
+    gutter: 20,
+    zIndex: 10
+  }}
+  argTypes={{ onClose: { action: 'onClose' } }}
+  />
 
 # Modal
 
-<Preview>
-  <Story name="default">
-    {{
-      components: { Modal },
-      data() {
-        return { visible: false, }
-      },
-      methods: {
-        action() {
-          console.log('button pressed!')
-        },
-      },
-      template: `
-        <div>
-          <button @click="visible=true">SHOW MODAL</button>
-          <Modal :visible="visible" @close="visible = false">
-            <button @click="action">button</button><br />
-            <a href="/">link</a>
-          </Modal>
-        </div>
-      `,
-    }}
-  </Story>
-  <Story name="scroll">
-    {{
-      components: { Modal },
-      data() {
-        return {
-          visible: false,
-          longTextHtml: 'scroll<br />'.repeat(50),
-        }
-      },
-      template: `
+export const DefaultTemplate = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { Modal },
+  methods: {
+    action() {
+      console.log('button pressed!')
+    },
+  },
+  template: `
+    <Modal v-bind="$props" @close="onClose">
+      <button @click="action">button</button><br />
+      <a href="/">link</a>
+    </Modal>
+  `,
+});
+
+export const ScrollTemplate = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { Modal },
+  data() {
+    return {
+      longTextHtml: 'scroll<br />'.repeat(50),
+    }
+  },
+  methods: {
+    action() {
+      console.log('button pressed!')
+    },
+  },
+  template: `
         <div>
           <span v-html="longTextHtml"></span>
           <br /><br />
-          <button @click="visible=true">SHOW MODAL</button>
-          <Modal :visible="visible" @close="visible = false">
+          <Modal v-bind="$props" @close="onClose">
             <span v-html="longTextHtml"></span>
           </Modal>
           <br /><br />
           <span v-html="longTextHtml"></span>
         </div>
-      `,
-    }}
+  `,
+});
+
+<Preview>
+  <Story name="default">
+    {DefaultTemplate.bind({})}
+  </Story>
+  <Story name="scroll">
+    {ScrollTemplate.bind({})}
   </Story>
 </Preview>
 
