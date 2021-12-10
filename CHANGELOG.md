@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.39](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.38...v0.0.39) (2021-12-10)
+
+
+### Features
+
+* **protectedlink:** httpsだけでなくHTTPSも許容する ([26e0872](https://github.com/lapras-inc/lapras-frontend/commit/26e08720b8524025e56e043e7c562ab59967aea1))
+* essentials addonの追加 ([c85b465](https://github.com/lapras-inc/lapras-frontend/commit/c85b465a549870ec867fcddb2d4be64d565e223b))
+* essentials addonを有効化 ([ce6b6ee](https://github.com/lapras-inc/lapras-frontend/commit/ce6b6eecbbb5418f3a381823e5da564136ca6ba9))
+
 ### [0.0.38](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.37...v0.0.38) (2021-06-08)
 
 
