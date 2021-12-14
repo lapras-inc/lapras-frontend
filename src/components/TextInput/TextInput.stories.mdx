@@ -15,9 +15,10 @@ import TextInput from './TextInput.vue';
     {{
         data() { return { value: '' } },
         components: { TextInput },
+        methods: { action: action("event") },
         template: `
           <div>
-            <TextInput v-model="value" placeholder="placeholder" />
+            <TextInput v-model="value" placeholder="placeholder" v-on:focus="action"/>
             <p>{{value}}</p>
           </div>
         `,
