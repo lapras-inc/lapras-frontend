@@ -5,6 +5,7 @@
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
     v-bind="context.attrs"
+    v-on="context.listeners"
     v-if="multiline"
   ></textarea>
   <input
@@ -14,6 +15,7 @@
     :class="{ 'has-error': error }"
     type="text"
     v-bind="context.attrs"
+    v-on="context.listeners"
     v-else
   />
 </template>
