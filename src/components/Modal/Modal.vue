@@ -2,26 +2,24 @@
   <transition name="fade">
     <div
       class="modal"
-      ref="modal"
+      role="dialog"
+      aria-modal
       v-if="visible"
-      @click="$emit('close')"
-      :style="{
-        background: filterBackground,
-        zIndex,
-      }"
+      :style="{ zIndex }"
     >
+      <div
+        class="filter"
+        @click="$emit('close')"
+        :style="{ background: filterBackground }"
+      ></div>
       <div class="modal-container" :style="{ padding: `${gutter}px` }">
         <div class="modal-body">
-          <div class="close-wrap">
-            <p class="close" v-if="hasClose">
-              <Icon name="close" alt="閉じる" />
-            </p>
+          <div class="close-wrap" v-if="hasClose">
+            <button class="close" aria-label="閉じる" @click="$emit('close')">
+              <Icon name="close" />
+            </button>
           </div>
-          <div
-            class="content"
-            :class="{ panel }"
-            @click="e => e.stopPropagation()"
-          >
+          <div class="content" :class="{ panel }">
             <slot />
           </div>
         </div>
@@ -31,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, watch } from '@vue/composition-api'
 
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import Icon from '@/components/Icon/Icon.vue'
@@ -66,17 +64,18 @@ export default defineComponent({
       default: 10,
     },
   },
-  watch: {
-    visible: {
-      immediate: true,
-      handler(visible) {
-        const $el = document.body
+  setup(props) {
+    watch(
+      () => props.visible,
+      visible => {
         if (visible) {
-          return disableBodyScroll($el)
+          disableBodyScroll(document.body)
+        } else {
+          clearAllBodyScrollLocks()
         }
-        clearAllBodyScrollLocks()
-      },
-    },
+      }
+    )
+    return {}
   },
 })
 </script>
@@ -89,6 +88,9 @@ export default defineComponent({
   right: 0;
   bottom: 0;
   overflow: scroll;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
 }
 
 .fade-enter-active,
@@ -101,17 +103,14 @@ export default defineComponent({
   opacity: 0;
 }
 
-.modal-container {
-  display: table;
-  box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0 auto;
-  height: 0;
+.filter {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
 }
 
-.modal-body {
-  display: table-cell;
-  vertical-align: middle;
+.modal-container {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .close-wrap {
@@ -135,5 +134,17 @@ export default defineComponent({
   max-width: 850px;
   border-radius: $corner-r;
   background: $white;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  font: inherit;
+  padding: 0;
+  appearance: none;
+
+  &:not(:focus-visible) {
+    outline: none;
+  }
 }
 </style>
