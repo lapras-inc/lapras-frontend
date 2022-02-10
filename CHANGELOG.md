@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.41](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.40...v0.0.41) (2022-02-10)
+
+
+### Bug Fixes
+
+* **modal:** setup 関数内で watch() を使わないようにする ([29b8ed5](https://github.com/lapras-inc/lapras-frontend/commit/29b8ed5b764d5a896288364815a798822f5a85e5)), closes [#139](https://github.com/lapras-inc/lapras-frontend/issues/139)
+
 ### [0.0.40](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.39...v0.0.40) (2022-02-10)
 
 
