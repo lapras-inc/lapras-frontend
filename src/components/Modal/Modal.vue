@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, watch } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import Icon from '@/components/Icon/Icon.vue'
@@ -64,18 +64,17 @@ export default defineComponent({
       default: 10,
     },
   },
-  setup(props) {
-    watch(
-      () => props.visible,
-      visible => {
+  watch: {
+    visible: {
+      immediate: true,
+      handler(visible) {
+        const $el = document.body
         if (visible) {
-          disableBodyScroll(document.body)
-        } else {
-          clearAllBodyScrollLocks()
+          return disableBodyScroll($el)
         }
-      }
-    )
-    return {}
+        clearAllBodyScrollLocks()
+      },
+    },
   },
 })
 </script>
