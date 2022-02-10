@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.40](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.39...v0.0.40) (2022-02-10)
+
+
+### Features
+
+* emit v-on listeners of TextInput ([96b4c2b](https://github.com/lapras-inc/lapras-frontend/commit/96b4c2b4bfea3a069fb197c20346e296d2a1d7e8))
+
+
+### Bug Fixes
+
+* **modal:** modal の DOM 構造を修正し event.stopPropagation を使わないようにした ([353fbc5](https://github.com/lapras-inc/lapras-frontend/commit/353fbc59790897650b01c0d0bed4abd240ea2275))
+
 ### [0.0.39](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.38...v0.0.39) (2021-12-10)
 
 
