@@ -1,27 +1,25 @@
 <template>
   <textarea
     :value="value"
-    @input="e => onInput(e.target.value)"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
     v-bind="context.attrs"
-    v-on="context.listeners"
+    v-on="inputListeners"
     v-if="multiline"
   ></textarea>
   <input
     :value="value"
-    @input="e => onInput(e.target.value)"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
     type="text"
     v-bind="context.attrs"
-    v-on="context.listeners"
+    v-on="inputListeners"
     v-else
   />
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 
 export default defineComponent({
   props: {
@@ -39,10 +37,16 @@ export default defineComponent({
     },
   },
   setup(_, context) {
-    const onInput = (value: string) => context.emit('input', value)
+    const inputListeners = computed(() => {
+      return Object.assign({}, context.listeners, {
+        input: (e: { target: HTMLInputElement }) => {
+          context.emit('input', e.target.value)
+        },
+      })
+    })
     return {
       context,
-      onInput,
+      inputListeners,
     }
   },
 })
