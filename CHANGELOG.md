@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.42](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.41...v0.0.42) (2022-03-03)
+
+
+### Bug Fixes
+
+* **textinput:** v-on:input が使えなくなってしまっていたので修正 ([8b60683](https://github.com/lapras-inc/lapras-frontend/commit/8b606830eb92a6cc8b12f5fb61a2a322ca657a2d)), closes [#134](https://github.com/lapras-inc/lapras-frontend/issues/134)
+
 ### [0.0.41](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.40...v0.0.41) (2022-02-10)
 
 
