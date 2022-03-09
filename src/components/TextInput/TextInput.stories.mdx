@@ -6,51 +6,54 @@ import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from "@storybook/addon-actions";
 import TextInput from './TextInput.vue';
 
-<Meta title="TextInput" component={TextInput} />
+<Meta
+  title="TextInput"
+  component={TextInput}
+  args={{
+    multiline: false,
+    error: false,
+    disabled: false,
+    placeholder: 'placeholder',
+    autoExpand: false,
+    baseTextareaHeight: 56,
+  }}
+  argTypes={{
+    value: {
+      table: { disable: true },
+    },
+  }}
+  />
 
 # TextInput
 
+export const DefaultTemplate = (args, { argTypes }) => ({
+  props: Object.keys(argTypes).filter((x) => x !== 'value'),
+  components: { TextInput },
+  data() {
+    return { value: "" }
+  },
+  methods: {
+    onFocus: action('focus'),
+  },
+  template: `
+    <TextInput v-bind="$props" v-model="value" @focus="onFocus"/>
+  `,
+});
+
 <Preview>
   <Story name="default">
-    {{
-        data() { return { value: '' } },
-        components: { TextInput },
-        methods: { action: action("event") },
-        template: `
-          <div>
-            <TextInput v-model="value" placeholder="placeholder" v-on:focus="action"/>
-            <p>{{value}}</p>
-          </div>
-        `,
-    }}
+    {DefaultTemplate.bind({})}
   </Story>
-  <Story name="multiline">
-    {{
-        data() { return { value: '' } },
-        components: { TextInput },
-        template: `
-          <div>
-            <TextInput v-model="value" placeholder="placeholder" multiline />
-            <p>{{value}}</p>
-          </div>
-        `,
+</Preview>
+
+<Preview>
+  <Story
+    name="multiline"
+    args={{
+      multiline: true,
     }}
-  </Story>
-  <Story name="error">
-    {{
-        components: { TextInput },
-        template: `
-          <TextInput placeholder="placeholder" error />
-        `,
-    }}
-  </Story>
-  <Story name="disabled">
-    {{
-        components: { TextInput },
-        template: `
-          <TextInput placeholder="disabled" disabled />
-        `,
-    }}
+  >
+    {DefaultTemplate.bind({})}
   </Story>
 </Preview>
 
