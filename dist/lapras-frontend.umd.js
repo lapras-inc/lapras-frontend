@@ -588,17 +588,6 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ "3f39":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("e34d");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "3f43":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3130,6 +3119,17 @@ module.exports =
 
 /***/ }),
 
+/***/ "dab9":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_24cbd5ef_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("e053");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_24cbd5ef_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_24cbd5ef_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextInput_vue_vue_type_style_index_0_id_24cbd5ef_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "dbb4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3176,7 +3176,7 @@ module.exports = Object.keys || function keys(O) {
 
 /***/ }),
 
-/***/ "e34d":
+/***/ "e053":
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -5776,17 +5776,18 @@ var TagLabel_component = normalizeComponent(
 )
 
 /* harmony default export */ var TagLabel = (TagLabel_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"33612702-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/TextInput/TextInput.vue?vue&type=template&id=6ea6739c&scoped=true&
-var TextInputvue_type_template_id_6ea6739c_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.multiline)?_c('textarea',_vm._g(_vm._b({staticClass:"text-input is-multi-line",class:{ 'has-error': _vm.error },domProps:{"value":_vm.value}},'textarea',_vm.context.attrs,false),_vm.inputListeners)):_c('input',_vm._g(_vm._b({staticClass:"text-input is-single-line",class:{ 'has-error': _vm.error },attrs:{"type":"text"},domProps:{"value":_vm.value}},'input',_vm.context.attrs,false),_vm.inputListeners))}
-var TextInputvue_type_template_id_6ea6739c_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"33612702-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/TextInput/TextInput.vue?vue&type=template&id=24cbd5ef&scoped=true&
+var TextInputvue_type_template_id_24cbd5ef_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.multiline)?_c('textarea',_vm._g(_vm._b({ref:"textarea",staticClass:"text-input is-multi-line",class:{ 'has-error': _vm.error },domProps:{"value":_vm.value}},'textarea',_vm.context.attrs,false),_vm.inputListeners)):_c('input',_vm._g(_vm._b({staticClass:"text-input is-single-line",class:{ 'has-error': _vm.error },attrs:{"type":"text"},domProps:{"value":_vm.value}},'input',_vm.context.attrs,false),_vm.inputListeners))}
+var TextInputvue_type_template_id_24cbd5ef_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/TextInput/TextInput.vue?vue&type=template&id=6ea6739c&scoped=true&
+// CONCATENATED MODULE: ./src/components/TextInput/TextInput.vue?vue&type=template&id=24cbd5ef&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.assign.js
 var es_object_assign = __webpack_require__("cca6");
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--14-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/TextInput/TextInput.vue?vue&type=script&lang=ts&
+
 
 
 /* harmony default export */ var TextInputvue_type_script_lang_ts_ = (defineComponent({
@@ -5802,9 +5803,17 @@ var es_object_assign = __webpack_require__("cca6");
     error: {
       type: Boolean,
       default: false
+    },
+    autoExpand: {
+      type: Boolean,
+      default: false
+    },
+    baseTextareaHeight: {
+      type: Number,
+      default: 56
     }
   },
-  setup: function setup(_, context) {
+  setup: function setup(props, context) {
     var inputListeners = computed(function () {
       return Object.assign({}, context.listeners, {
         input: function input(e) {
@@ -5812,16 +5821,35 @@ var es_object_assign = __webpack_require__("cca6");
         }
       });
     });
+    var textarea = ref(null);
+
+    var resizeTextareaIfAutoExpand = function resizeTextareaIfAutoExpand() {
+      if (textarea.value && props.autoExpand) {
+        textarea.value.style.height = '';
+        textarea.value.style.height = "".concat(Math.max(textarea.value.scrollHeight, props.baseTextareaHeight), "px");
+      }
+    };
+
+    var _toRefs = toRefs(props),
+        value = _toRefs.value;
+
+    watch(value, function () {
+      resizeTextareaIfAutoExpand();
+    });
+    onMounted(function () {
+      resizeTextareaIfAutoExpand();
+    });
     return {
       context: context,
+      textarea: textarea,
       inputListeners: inputListeners
     };
   }
 }));
 // CONCATENATED MODULE: ./src/components/TextInput/TextInput.vue?vue&type=script&lang=ts&
  /* harmony default export */ var TextInput_TextInputvue_type_script_lang_ts_ = (TextInputvue_type_script_lang_ts_); 
-// EXTERNAL MODULE: ./src/components/TextInput/TextInput.vue?vue&type=style&index=0&id=6ea6739c&lang=scss&scoped=true&
-var TextInputvue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true_ = __webpack_require__("3f39");
+// EXTERNAL MODULE: ./src/components/TextInput/TextInput.vue?vue&type=style&index=0&id=24cbd5ef&lang=scss&scoped=true&
+var TextInputvue_type_style_index_0_id_24cbd5ef_lang_scss_scoped_true_ = __webpack_require__("dab9");
 
 // CONCATENATED MODULE: ./src/components/TextInput/TextInput.vue
 
@@ -5834,11 +5862,11 @@ var TextInputvue_type_style_index_0_id_6ea6739c_lang_scss_scoped_true_ = __webpa
 
 var TextInput_component = normalizeComponent(
   TextInput_TextInputvue_type_script_lang_ts_,
-  TextInputvue_type_template_id_6ea6739c_scoped_true_render,
-  TextInputvue_type_template_id_6ea6739c_scoped_true_staticRenderFns,
+  TextInputvue_type_template_id_24cbd5ef_scoped_true_render,
+  TextInputvue_type_template_id_24cbd5ef_scoped_true_staticRenderFns,
   false,
   null,
-  "6ea6739c",
+  "24cbd5ef",
   null
   
 )
