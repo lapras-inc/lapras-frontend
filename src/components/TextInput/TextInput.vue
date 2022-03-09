@@ -6,6 +6,7 @@
     v-bind="context.attrs"
     v-on="inputListeners"
     v-if="multiline"
+    ref="textarea"
   ></textarea>
   <input
     :value="value"
@@ -19,7 +20,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from '@vue/composition-api'
+import {
+  defineComponent,
+  ref,
+  watch,
+  toRefs,
+  computed,
+  Ref,
+  onMounted,
+} from '@vue/composition-api'
 
 export default defineComponent({
   props: {
@@ -35,8 +44,16 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    autoExpand: {
+      type: Boolean,
+      default: false,
+    },
+    baseTextareaHeight: {
+      type: Number,
+      default: 56,
+    },
   },
-  setup(_, context) {
+  setup(props, context) {
     const inputListeners = computed(() => {
       return Object.assign({}, context.listeners, {
         input: (e: { target: HTMLInputElement }) => {
@@ -44,8 +61,30 @@ export default defineComponent({
         },
       })
     })
+
+    const textarea = ref<HTMLElement | null>(null)
+    const resizeTextareaIfAutoExpand = () => {
+      if (textarea.value && props.autoExpand) {
+        textarea.value.style.height = ''
+        textarea.value.style.height = `${Math.max(
+          textarea.value.scrollHeight,
+          props.baseTextareaHeight
+        )}px`
+      }
+    }
+
+    const { value } = toRefs(props)
+    watch(value, () => {
+      resizeTextareaIfAutoExpand()
+    })
+
+    onMounted(() => {
+      resizeTextareaIfAutoExpand()
+    })
+
     return {
       context,
+      textarea,
       inputListeners,
     }
   },
