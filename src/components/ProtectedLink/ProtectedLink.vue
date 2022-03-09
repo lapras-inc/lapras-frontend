@@ -14,7 +14,7 @@ import { defineComponent } from '@vue/composition-api'
 // クエリパラメータとして:がvalueにある場合は、forceをつけることで許容する
 const filterXSSScheme = (attr: string | undefined): string | undefined => {
   if (!attr) return undefined
-  if (attr.includes(':') && !attr.match(/^https?:\/\//i, )) {
+  if (attr.includes(':') && !attr.match(/^https?:\/\//i)) {
     return undefined
   }
   return attr

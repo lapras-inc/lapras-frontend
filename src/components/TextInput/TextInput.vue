@@ -26,7 +26,6 @@ import {
   watch,
   toRefs,
   computed,
-  Ref,
   onMounted,
 } from '@vue/composition-api'
 
