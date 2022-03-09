@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.43](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.42...v0.0.43) (2022-03-09)
+
+
+### Features
+
+* textareaを自動拡張するオプションを追加 ([f9fe753](https://github.com/lapras-inc/lapras-frontend/commit/f9fe753bd17d4e4616dc93fd081fbbd4090a93bb))
+
 ### [0.0.42](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.41...v0.0.42) (2022-03-03)
 
 
