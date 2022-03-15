@@ -26,7 +26,7 @@ import {
   watch,
   toRefs,
   computed,
-  onMounted,
+  nextTick,
 } from '@vue/composition-api'
 
 export default defineComponent({
@@ -73,13 +73,14 @@ export default defineComponent({
     }
 
     const { value } = toRefs(props)
-    watch(value, () => {
-      resizeTextareaIfAutoExpand()
-    })
-
-    onMounted(() => {
-      resizeTextareaIfAutoExpand()
-    })
+    watch(
+      value,
+      async () => {
+        await nextTick()
+        resizeTextareaIfAutoExpand()
+      },
+      { immediate: true }
+    )
 
     return {
       context,
