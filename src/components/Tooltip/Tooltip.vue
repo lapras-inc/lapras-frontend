@@ -21,7 +21,6 @@
 import {
   createPopper,
   Options as PopperOptions,
-  Placement,
   Instance as PopperInstance,
 } from '@popperjs/core'
 import { defineComponent, PropType, ref } from '@vue/composition-api'
