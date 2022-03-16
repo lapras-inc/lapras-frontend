@@ -4,6 +4,7 @@
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
+    "build:vite": "vite build",
     "lint": "vue-cli-service lint",
     "lint:commit": "commitlint",
     "lint:ci": "yarn lint && yarn lint:commit --from=origin/master",
@@ -28,11 +29,19 @@
   "dependencies": {
     "@popperjs/core": "^2.2.1",
     "@types/body-scroll-lock": "^2.6.1",
-    "@vue/composition-api": "^1.4.9",
     "body-scroll-lock": "^3.0.1",
     "core-js": "^3.6.4",
     "gh-pages": "^2.2.0",
-    "vue": "^2.6.11"
+    "vue-demi": "^0.12.4"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.4.9",
+    "vue": "^2.6.13 || >=3.2.31"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -44,6 +53,7 @@
     "@storybook/vue": ">=6.4.8",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
+    "@vitejs/plugin-vue": "^2.2.4",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-typescript": "^4.2.0",
@@ -62,8 +72,10 @@
     "sass-loader": "^8.0.2",
     "standard-version": "^8.0.0",
     "typescript": "^4.6.2",
+    "vite": "^2.8.6",
     "vue-cli-plugin-storybook": "^2.1.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vue": "^3.2.31"
   },
   "license": "UNLICENSED",
   "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",

@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from '@vue/composition-api'
+import { defineComponent, PropType } from 'vue-demi'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({

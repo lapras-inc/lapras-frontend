@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from '@vue/composition-api'
+import { defineComponent, PropType } from 'vue-demi'
 import Icon from '../Icon/Icon.vue'
 
 export interface SelectBoxOption {

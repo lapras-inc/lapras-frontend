@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueCompositionAPI from '@vue/composition-api'
+import VueCompositionAPI from 'vue-demi'
 
 // [vue-composition-api] must call Vue.use(plugin) before using any function.というエラーの対応
 // 読み込んだ Vue に Composition API が追加されていない場合は追加する

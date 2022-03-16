@@ -30,7 +30,7 @@ import {
   watch,
   toRefs,
   nextTick,
-} from '@vue/composition-api'
+} from 'vue-demi'
 
 export default defineComponent({
   props: {
