@@ -1,3 +1,5 @@
+import { install } from 'vue-demi'
+install()
 export { default as AvatarImg } from '@/components/AvatarImg/AvatarImg.vue'
 export { default as Card } from '@/components/Card/Card.vue'
 export { default as CheckBox } from '@/components/CheckBox/CheckBox.vue'

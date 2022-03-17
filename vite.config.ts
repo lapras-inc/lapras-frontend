@@ -26,6 +26,8 @@ export default defineConfig({
     lib: {
       name,
       entry: 'src/main.ts',
+      fileName: format => `lapras-frontend.${format}.js`,
+      formats: ['umd', 'cjs', 'es'],
     },
     rollupOptions: {
       external: ['svelte-jsoneditor/dist/jsoneditor.js', 'vue', 'vue-demi'],

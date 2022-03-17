@@ -67,6 +67,9 @@ export default defineComponent({
       }
     }
 
+    // eslint-disable-next-line
+    console.log("ほほほほほｈ")
+
     const { value } = toRefs(props)
     watch(
       value,

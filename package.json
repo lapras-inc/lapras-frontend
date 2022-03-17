@@ -19,7 +19,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "main": "dist/lapras-frontend.common.js",
+  "main": "dist/lapras-frontend.cjs.js",
   "types": "types/lapras-frontend.d.ts",
   "files": [
     "dist",
