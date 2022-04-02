@@ -1,12 +1,13 @@
 <template>
   <transition name="fade">
-    <div class="modal" ref="modal" v-if="visible" @click="$emit('close')">
+    <div class="modal" ref="modal" v-if="visible">
       <div
         class="modal-overlay"
         :style="{
           background: filterBackground,
           zIndex,
         }"
+        @click="$emit('close')"
       ></div>
       <div
         class="modal-container"
@@ -17,16 +18,12 @@
       >
         <div class="modal-body">
           <div class="close-wrap" :class="{ 'outer-close': outerClose }">
-            <p class="close" v-if="hasClose">
+            <p class="close" v-if="hasClose" @click="$emit('close')">
               <Icon name="close" alt="閉じる" v-if="outerClose" />
               <i class="icon-cancel" v-else></i>
             </p>
           </div>
-          <div
-            class="content"
-            :class="{ panel }"
-            @click="e => e.stopPropagation()"
-          >
+          <div class="content" :class="{ panel }">
             <slot />
           </div>
         </div>
