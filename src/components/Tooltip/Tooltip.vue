@@ -21,7 +21,6 @@
 import {
   createPopper,
   Options as PopperOptions,
-  Placement,
   Instance as PopperInstance,
 } from '@popperjs/core'
 import { defineComponent, PropType, ref } from '@vue/composition-api'
@@ -33,7 +32,7 @@ export default defineComponent({
   },
   props: {
     options: {
-      type: Object as PropType<PopperOptions>,
+      type: Object as PropType<Partial<PopperOptions>>,
       default: () => ({}),
     },
     skeleton: {
@@ -46,8 +45,8 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const trigger = ref<HTMLElement>(null)
-    const container = ref<HTMLElement>(null)
+    const trigger = ref<HTMLElement | null>(null)
+    const container = ref<HTMLElement | null>(null)
     let popper: PopperInstance
 
     const hoverEvent = () => {
@@ -60,7 +59,7 @@ export default defineComponent({
       }
 
       popper = createPopper(trigger.value, container.value, {
-        placement: 'top' as Placement,
+        placement: 'top',
         ...props.options,
       })
     }

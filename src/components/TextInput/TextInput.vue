@@ -4,8 +4,10 @@
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
     v-bind="context.attrs"
-    v-on="inputListeners"
     v-if="multiline"
+    @input="$emit('input', $event.target.value)"
+    @focus="$emit('focus')"
+    @blur="$emit('blur')"
     ref="textarea"
   ></textarea>
   <input
@@ -14,7 +16,9 @@
     :class="{ 'has-error': error }"
     type="text"
     v-bind="context.attrs"
-    v-on="inputListeners"
+    @input="$emit('input', $event.target.value)"
+    @focus="$emit('focus')"
+    @blur="$emit('blur')"
     v-else
   />
 </template>
@@ -25,9 +29,7 @@ import {
   ref,
   watch,
   toRefs,
-  computed,
-  Ref,
-  onMounted,
+  nextTick,
 } from '@vue/composition-api'
 
 export default defineComponent({
@@ -54,14 +56,6 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const inputListeners = computed(() => {
-      return Object.assign({}, context.listeners, {
-        input: (e: { target: HTMLInputElement }) => {
-          context.emit('input', e.target.value)
-        },
-      })
-    })
-
     const textarea = ref<HTMLElement | null>(null)
     const resizeTextareaIfAutoExpand = () => {
       if (textarea.value && props.autoExpand) {
@@ -74,18 +68,18 @@ export default defineComponent({
     }
 
     const { value } = toRefs(props)
-    watch(value, () => {
-      resizeTextareaIfAutoExpand()
-    })
-
-    onMounted(() => {
-      resizeTextareaIfAutoExpand()
-    })
+    watch(
+      value,
+      async () => {
+        await nextTick()
+        resizeTextareaIfAutoExpand()
+      },
+      { immediate: true }
+    )
 
     return {
       context,
       textarea,
-      inputListeners,
     }
   },
 })
