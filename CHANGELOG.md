@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.44](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.43...v0.0.44) (2022-04-04)
+
+
+### Bug Fixes
+
+* **component:** shortModal で click を stopPropagation しない ([43800c5](https://github.com/lapras-inc/lapras-frontend/commit/43800c540be300a5b8b130b716fdbf93c51e4f0d))
+* vue composition api の api が使えない件の修正 ([1164c00](https://github.com/lapras-inc/lapras-frontend/commit/1164c0062f42be68160a20df2bb7b2421fa52bf8))
+* ライブラリとして使うとリアクティブが失われる件の修正 ([a124419](https://github.com/lapras-inc/lapras-frontend/commit/a1244192bffa497cda5a7bd480f1009f682441c5))
+
 ### [0.0.43](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.42...v0.0.43) (2022-03-09)
 
 
