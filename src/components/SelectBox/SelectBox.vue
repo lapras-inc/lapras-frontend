@@ -3,7 +3,7 @@
     <select
       class="select"
       :value="value"
-      @change="e => onInput(e.target.value)"
+      @change="(e: Event) => onInput((e.target as HTMLSelectElement).value)"
     >
       <option :value="null" v-if="placeholder" v-show="false">{{
         placeholder

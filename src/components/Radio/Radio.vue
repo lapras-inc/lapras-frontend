@@ -2,7 +2,7 @@
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
       :checked="value"
-      @change="e => onInput(e.target.checked)"
+      @change="(e: Event) => onInput((e.target as HTMLInputElement).checked)"
       class="input"
       type="radio"
       v-bind="context.attrs"

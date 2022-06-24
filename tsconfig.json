@@ -11,6 +11,7 @@
     "sourceMap": true,
     "downlevelIteration": true,
     "baseUrl": ".",
+    "jsx": "preserve",
     "types": ["node"],
     "paths": {
       "@/*": ["src/*"],
