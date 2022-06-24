@@ -3,7 +3,9 @@
   "version": "0.0.26",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
+    "build": "npm run build:vue",
+    "build:vue": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly",
     "lint": "vue-cli-service lint",
     "lint:commit": "commitlint",
     "lint:ci": "yarn lint && yarn lint:commit --from=origin/master",
