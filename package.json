@@ -3,7 +3,7 @@
   "version": "0.0.26",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
-    "build": "npm run build:vue",
+    "build": "npm run build:types && npm run build:vue",
     "build:vue": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly && tsc-alias -p tsconfig.json",
     "lint": "vue-cli-service lint",
