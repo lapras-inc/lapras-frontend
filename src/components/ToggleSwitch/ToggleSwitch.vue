@@ -3,7 +3,7 @@
     <input
       :checked="value"
       :disabled="disabled"
-      @change="(e: Event) => onInput((e.target as HTMLInputElement).checked)"
+      @change="onInput"
       class="checkbox"
       type="checkbox"
       v-bind="context.attrs"
@@ -29,7 +29,9 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const onInput = (value: boolean) => context.emit('input', value)
+    const emitInput = (value: boolean) => context.emit('input', value)
+    const onInput = (e: Event) =>
+      emitInput((e.target as HTMLInputElement).checked)
     return {
       onInput,
       context,
