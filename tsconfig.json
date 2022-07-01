@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "outDir": "types/",
     "module": "esnext",
     "strict": true,
     "importHelpers": true,
@@ -10,6 +11,7 @@
     "sourceMap": true,
     "downlevelIteration": true,
     "baseUrl": ".",
+    "jsx": "preserve",
     "types": ["node"],
     "paths": {
       "@/*": ["src/*"],
