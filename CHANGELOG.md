@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.45](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.44...v0.0.45) (2022-07-01)
+
+
+### Bug Fixes
+
+* build時にtemplate内の型アノテーション部分でなぜかパースエラーが起きるので、script内に型アノテーションを移動 ([7b7c100](https://github.com/lapras-inc/lapras-frontend/commit/7b7c1007ad4159eb3cdb622150b8a64fb8c18f70))
+
 ### [0.0.44](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.43...v0.0.44) (2022-04-04)
 
 
