@@ -1,10 +1,6 @@
 <template>
   <div class="select-box">
-    <select
-      class="select"
-      :value="value"
-      @change="e => onInput(e.target.value)"
-    >
+    <select class="select" :value="value" @change="onInput">
       <option :value="null" v-if="placeholder" v-show="false">{{
         placeholder
       }}</option>
@@ -49,7 +45,9 @@ export default defineComponent({
     },
   },
   setup(_, context) {
-    const onInput = (value: string) => context.emit('input', value)
+    const emitInput = (value: string) => context.emit('input', value)
+    const onInput = (e: Event) =>
+      emitInput((e.target as HTMLSelectElement).value)
     return {
       context,
       onInput,

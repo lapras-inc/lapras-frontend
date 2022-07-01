@@ -2,7 +2,7 @@
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
       :checked="value"
-      @change="e => onInput(e.target.checked)"
+      @change="onInput"
       class="input"
       type="radio"
       v-bind="context.attrs"
@@ -30,11 +30,13 @@ export default defineComponent({
     },
   },
   setup(_, context) {
-    const onInput = (checked: boolean) => {
+    const emitInput = (checked: boolean) => {
       if (checked) {
         context.emit('input', true)
       }
     }
+    const onInput = (e: Event) =>
+      emitInput((e.target as HTMLInputElement).checked)
     return {
       context,
       onInput,
