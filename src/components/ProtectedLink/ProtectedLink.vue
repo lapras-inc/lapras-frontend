@@ -1,5 +1,6 @@
 <template>
   <a v-bind="$attrs" :href="_href" :rel="_rel" :target="target"
+     :disabled="disabled"
     ><slot></slot
   ></a>
 </template>
@@ -25,6 +26,7 @@ type ProtectedLinkProps = {
   force: boolean
   rel: string | undefined
   target: string | undefined
+  disabled: boolean
 }
 
 export default defineComponent<ProtectedLinkProps>({
@@ -49,9 +51,14 @@ export default defineComponent<ProtectedLinkProps>({
     rel: {
       type: String,
     },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     _href(this: ProtectedLinkProps): string | undefined {
+      if (this.disabled) return ""
       if (this.force) return this.href
       return filterXSSScheme(this.href as string)
     },
