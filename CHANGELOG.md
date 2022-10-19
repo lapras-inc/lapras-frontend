@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.47](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.46...v0.0.47) (2022-10-19)
+
+
+### Features
+
+* **flatbutton.vue:** add important skin to flatbutton component ([7fe2215](https://github.com/lapras-inc/lapras-frontend/commit/7fe22159597fe09b479e434e9c09390d0afbb15c))
+* **icon:** add balloon icon ([70f8d21](https://github.com/lapras-inc/lapras-frontend/commit/70f8d2153f723be1d89e538a096e66202ba6d87a))
+
 ### [0.0.46](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.45...v0.0.46) (2022-07-04)
 
 
