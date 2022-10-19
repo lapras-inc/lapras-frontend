@@ -3,7 +3,7 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
     context: import("@vue/composition-api").SetupContext<{}>;
 }> & import("@vue/composition-api").Data, {}, {}, {
     skin: {
-        type: PropType<"disabled" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted">;
+        type: PropType<"disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted">;
         default: string;
     };
     size: {
@@ -25,13 +25,13 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
 }, {
     disabled: boolean;
     size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
+    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
     tag: string;
     enhanced: boolean;
 } & {}> & Omit<import("vue").VueConstructor<import("vue").default>, never> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
     disabled: boolean;
     size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
+    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
     tag: string;
     enhanced: boolean;
 } & {}, import("@vue/composition-api").ShallowUnwrapRef<{
@@ -39,13 +39,13 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
 }>, import("@vue/composition-api").Data, {}, {}, {}, {}, {}, {
     disabled: boolean;
     size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
+    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
     tag: string;
     enhanced: boolean;
 } & {}, {
     disabled: boolean;
     size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
+    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
     tag: string;
     enhanced: boolean;
 }, true>);

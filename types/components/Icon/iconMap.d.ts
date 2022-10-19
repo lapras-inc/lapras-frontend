@@ -114,5 +114,6 @@ declare const _default: {
     trush: string;
     unopened: string;
     view: string;
+    balloon: string;
 };
 export default _default;
