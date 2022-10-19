@@ -115,4 +115,5 @@ export default {
   'trush': '\ue90d',
   'unopened': '\ue940',
   'view': '\ue942',
+  'balloon': '\ue96c',
 }

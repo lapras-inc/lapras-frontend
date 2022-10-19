@@ -28,6 +28,7 @@ export default defineComponent({
   props: {
     skin: {
       type: String as PropType<
+        | 'important'
         | 'primary'
         | 'primary-line'
         | 'secondary'
@@ -106,6 +107,11 @@ export default defineComponent({
   outline: 0;
 
   @include base-hover;
+
+  &.skin-important {
+    color: $white;
+    background: $green;
+  }
 
   &.skin-primary {
     color: $white;
