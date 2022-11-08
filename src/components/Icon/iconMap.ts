@@ -116,4 +116,5 @@ export default {
   'unopened': '\ue940',
   'view': '\ue942',
   'balloon': '\ue96c',
+  'lightbulb': '\ue96d',
 }
