@@ -7473,7 +7473,8 @@ var Iconvue_type_template_id_3fee4333_scoped_true_staticRenderFns = []
   'trush': "\uE90D",
   'unopened': "\uE940",
   'view': "\uE942",
-  'balloon': "\uE96C"
+  'balloon': "\uE96C",
+  'lightbulb': "\uE96D"
 });
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--14-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Icon/Icon.vue?vue&type=script&lang=ts&
 
