@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.50](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.49...v0.0.50) (2022-11-08)
+
+
+### Features
+
+* **icon:** add lightbulb icon ([5b343aa](https://github.com/lapras-inc/lapras-frontend/commit/5b343aada781737e116cd0d50a93698eb5a6cd2e))
+
 ### [0.0.49](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.46...v0.0.49) (2022-10-20)
 
 
