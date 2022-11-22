@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from 'vue'
 
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import Icon from '@/components/Icon/Icon.vue'
