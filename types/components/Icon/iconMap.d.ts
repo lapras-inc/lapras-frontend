@@ -115,5 +115,6 @@ declare const _default: {
     unopened: string;
     view: string;
     balloon: string;
+    lightbulb: string;
 };
 export default _default;

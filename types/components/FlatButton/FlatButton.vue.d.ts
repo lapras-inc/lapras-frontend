@@ -1,13 +1,11 @@
-import { PropType } from '@vue/composition-api';
-declare const _default: import("vue").ComponentOptions<import("vue").default, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-}> & import("@vue/composition-api").Data, {}, {}, {
+import { PropType } from 'vue';
+declare const _default: import("vue").DefineComponent<{
     skin: {
-        type: PropType<"disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted">;
+        type: PropType<"disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary">;
         default: string;
     };
     size: {
-        type: PropType<"s" | "xl" | "l" | "m" | "xs">;
+        type: PropType<"s" | "m" | "xl" | "l" | "xs">;
         default: string;
     };
     disabled: {
@@ -23,30 +21,33 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
         default: string;
     };
 }, {
+    context: import("vue").SetupContext<{}>;
+}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+    skin: {
+        type: PropType<"disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary">;
+        default: string;
+    };
+    size: {
+        type: PropType<"s" | "m" | "xl" | "l" | "xs">;
+        default: string;
+    };
+    disabled: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    enhanced: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    tag: {
+        type: StringConstructor;
+        default: string;
+    };
+}>>, {
     disabled: boolean;
-    size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
+    size: "s" | "m" | "xl" | "l" | "xs";
+    skin: "disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary";
     tag: string;
     enhanced: boolean;
-} & {}> & Omit<import("vue").VueConstructor<import("vue").default>, never> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
-    disabled: boolean;
-    size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
-    tag: string;
-    enhanced: boolean;
-} & {}, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-}>, import("@vue/composition-api").Data, {}, {}, {}, {}, {}, {
-    disabled: boolean;
-    size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
-    tag: string;
-    enhanced: boolean;
-} & {}, {
-    disabled: boolean;
-    size: "s" | "xl" | "l" | "m" | "xs";
-    skin: "disabled" | "important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted";
-    tag: string;
-    enhanced: boolean;
-}, true>);
+}>;
 export default _default;

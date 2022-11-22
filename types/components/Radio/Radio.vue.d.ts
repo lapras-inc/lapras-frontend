@@ -1,7 +1,4 @@
-declare const _default: import("vue").ComponentOptions<import("vue").default, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-    onInput: (e: Event) => void;
-}> & import("@vue/composition-api").Data, {}, {}, {
+declare const _default: import("vue").DefineComponent<{
     value: {
         type: BooleanConstructor;
         default: boolean;
@@ -11,19 +8,19 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
         default: boolean;
     };
 }, {
-    value: boolean;
-    disabled: boolean;
-} & {}> & Omit<import("vue").VueConstructor<import("vue").default>, never> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
-    value: boolean;
-    disabled: boolean;
-} & {}, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
+    context: import("vue").SetupContext<{}>;
     onInput: (e: Event) => void;
-}>, import("@vue/composition-api").Data, {}, {}, {}, {}, {}, {
+}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+    value: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    disabled: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+}>>, {
     value: boolean;
     disabled: boolean;
-} & {}, {
-    value: boolean;
-    disabled: boolean;
-}, true>);
+}>;
 export default _default;
