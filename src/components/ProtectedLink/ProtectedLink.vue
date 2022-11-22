@@ -1,5 +1,5 @@
 <template>
-  <a v-bind="$attrs" :href="_href" :rel="_rel" :target="target"
+  <a v-bind="$attrs" :href="escapedHref" :rel="formattedRel" :target="target"
     ><slot></slot
   ></a>
 </template>
@@ -51,11 +51,11 @@ export default defineComponent({
     },
   },
   setup(props: ProtectedLinkProps) {
-    const _href = computed<string | undefined>(() => {
+    const escapedHref = computed<string | undefined>(() => {
       if (props.force) return props.href
       return filterXSSScheme(props.href)
     })
-    const _rel = computed<string | undefined>(() => {
+    const formattedRel = computed<string | undefined>(() => {
       if (props.target === '_blank') {
         return `noopener ${props.rel || ''}`.replace(/\s$/, '')
       }
@@ -63,8 +63,8 @@ export default defineComponent({
     })
 
     return {
-      _href,
-      _rel,
+      escapedHref,
+      formattedRel,
     }
   },
 })
