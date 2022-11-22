@@ -5,7 +5,7 @@
     :class="{ 'has-error': error }"
     v-bind="context.attrs"
     v-if="multiline"
-    @input="$emit('input', $event.target.value)"
+    @input="onInput"
     @focus="$emit('focus')"
     @blur="$emit('blur')"
     ref="textarea"
@@ -16,7 +16,7 @@
     :class="{ 'has-error': error }"
     type="text"
     v-bind="context.attrs"
-    @input="$emit('input', $event.target.value)"
+    @input="onInput"
     @focus="$emit('focus')"
     @blur="$emit('blur')"
     v-else
@@ -61,6 +61,10 @@ export default defineComponent({
       }
     }
 
+    const onInput = (e: Event) => {
+      context.emit('input', (e.target as HTMLInputElement).value)
+    }
+
     const { value } = toRefs(props)
     watch(
       value,
@@ -74,6 +78,7 @@ export default defineComponent({
     return {
       context,
       textarea,
+      onInput,
     }
   },
 })

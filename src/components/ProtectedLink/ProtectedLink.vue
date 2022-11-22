@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { computed, defineComponent } from 'vue'
 
 // http://koseki.hatenablog.com/entry/20120212/uricolon
 // https://github.com/masatokinugawa/filterbypass/wiki/Browser's-XSS-Filter-Bypass-Cheat-Sheet
@@ -27,7 +27,7 @@ type ProtectedLinkProps = {
   target: string | undefined
 }
 
-export default defineComponent<ProtectedLinkProps>({
+export default defineComponent({
   // root属性によるcomputedのオーバーライドを防ぐ
   // https://jp.vuejs.org/v2/guide/components-props.html
   inheritAttrs: false,
@@ -50,17 +50,22 @@ export default defineComponent<ProtectedLinkProps>({
       type: String,
     },
   },
-  computed: {
-    _href(this: ProtectedLinkProps): string | undefined {
-      if (this.force) return this.href
-      return filterXSSScheme(this.href as string)
-    },
-    _rel(this: ProtectedLinkProps): string | undefined {
-      if (this.target === '_blank') {
-        return `noopener ${this.rel || ''}`.replace(/\s$/, '')
+  setup(props: ProtectedLinkProps) {
+    const _href = computed<string | undefined>(() => {
+      if (props.force) return props.href
+      return filterXSSScheme(props.href)
+    })
+    const _rel = computed<string | undefined>(() => {
+      if (props.target === '_blank') {
+        return `noopener ${props.rel || ''}`.replace(/\s$/, '')
       }
-      return this.rel
-    },
+      return props.rel
+    })
+
+    return {
+      _href,
+      _rel,
+    }
   },
 })
 </script>
