@@ -23,7 +23,7 @@ import {
   Options as PopperOptions,
   Instance as PopperInstance,
 } from '@popperjs/core'
-import { defineComponent, PropType, ref } from '@vue/composition-api'
+import { defineComponent, PropType, ref } from 'vue'
 import Icon from '../Icon/Icon.vue'
 
 export default defineComponent({

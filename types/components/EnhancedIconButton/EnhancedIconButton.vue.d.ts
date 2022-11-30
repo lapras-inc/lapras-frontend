@@ -1,19 +1,16 @@
-declare const _default: import("vue").ComponentOptions<import("vue").default, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-}> & import("@vue/composition-api").Data, {}, {}, {
+declare const _default: import("vue").DefineComponent<{
     tag: {
         type: StringConstructor;
         default: string;
     };
 }, {
+    context: import("vue").SetupContext<{}>;
+}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+    tag: {
+        type: StringConstructor;
+        default: string;
+    };
+}>>, {
     tag: string;
-} & {}> & Omit<import("vue").VueConstructor<import("vue").default>, never> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
-    tag: string;
-} & {}, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-}>, import("@vue/composition-api").Data, {}, {}, {}, {}, {}, {
-    tag: string;
-} & {}, {
-    tag: string;
-}, true>);
+}>;
 export default _default;
