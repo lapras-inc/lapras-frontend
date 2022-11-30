@@ -38,7 +38,6 @@ All notable changes to this project will be documented in this file. See [standa
 * update version ([98235c4](https://github.com/lapras-inc/lapras-frontend/commit/98235c4ba88dd3f4329f295d848186648b56aece))
 * 環境変数渡すの忘れてた ([2b98c59](https://github.com/lapras-inc/lapras-frontend/commit/2b98c59b2d9a5bc6ef6ac4d1966d3b041ae89a45))
 
-
 ### Bug Fixes
 
 * 🐛 ciでdistをリリースに含むときのコミットメッセージを修正 ([5779bec](https://github.com/lapras-inc/lapras-frontend/commit/5779bec1683af06943103c70453896be2ec91b45))
