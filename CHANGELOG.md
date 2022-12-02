@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.50...v0.1.0) (2022-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Vueのアップデート
+
+### Bug Fixes
+
+* **protectedlink:** vue2.7から_や$で変数名を始めたらダメになったため修正 ([199fe25](https://github.com/lapras-inc/lapras-frontend/commit/199fe257b1f6d05efbb6801ac551410bbeea8943))
+
+
+* vueを2.7にアップデート ([82dc88b](https://github.com/lapras-inc/lapras-frontend/commit/82dc88b3deb8ae39a8d4f0762ed0730791956286))
+
 ### [0.0.50](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.49...v0.0.50) (2022-11-08)
 
 
