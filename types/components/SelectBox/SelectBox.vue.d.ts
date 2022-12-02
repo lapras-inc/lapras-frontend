@@ -1,12 +1,9 @@
-import { PropType } from '@vue/composition-api';
+import { PropType } from 'vue';
 export interface SelectBoxOption {
     value: string | number;
     label: string;
 }
-declare const _default: import("vue").ComponentOptions<import("vue").default, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
-    onInput: (e: Event) => void;
-}> & import("@vue/composition-api").Data, {}, {}, {
+declare const _default: import("vue").DefineComponent<{
     options: {
         type: PropType<SelectBoxOption[]>;
         default: () => never[];
@@ -20,23 +17,24 @@ declare const _default: import("vue").ComponentOptions<import("vue").default, im
         default: string;
     };
 }, {
-    value: string;
-    options: SelectBoxOption[];
-    placeholder: string;
-} & {}> & Omit<import("vue").VueConstructor<import("vue").default>, never> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
-    value: string;
-    options: SelectBoxOption[];
-    placeholder: string;
-} & {}, import("@vue/composition-api").ShallowUnwrapRef<{
-    context: import("@vue/composition-api").SetupContext<{}>;
+    context: import("vue").SetupContext<{}>;
     onInput: (e: Event) => void;
-}>, import("@vue/composition-api").Data, {}, {}, {}, {}, {}, {
+}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+    options: {
+        type: PropType<SelectBoxOption[]>;
+        default: () => never[];
+    };
+    placeholder: {
+        type: StringConstructor;
+        default: string;
+    };
+    value: {
+        type: StringConstructor;
+        default: string;
+    };
+}>>, {
     value: string;
     options: SelectBoxOption[];
     placeholder: string;
-} & {}, {
-    value: string;
-    options: SelectBoxOption[];
-    placeholder: string;
-}, true>);
+}>;
 export default _default;
