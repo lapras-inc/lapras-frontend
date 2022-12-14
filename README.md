@@ -41,7 +41,7 @@ $ yarn commit
 同様に既存アイコンのsvgファイル`fonts/scouty-icon.svg`アイコンを選択してImportを行う<br>
 ※新規のアイコンが末尾に来るように『Move UP/Move Down』等でSetの入れ替えを行うこと
 
-アイコン登録後、右下の『Generate Font』をクリックし、フォントを生成しダウンロード
+アイコン登録後全てのアイコンを選択した上で、右下の『Generate Font』をクリックし、フォントを生成しダウンロード
 
 zip解凍後、``$ for f in `ls`; do mv $f ${f/icomoon/scouty-icon}; done``で
 ファイル名を変更して、`fonts/`ディレクトリ下に配置
