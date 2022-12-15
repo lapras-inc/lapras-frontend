@@ -116,5 +116,6 @@ declare const _default: {
     view: string;
     balloon: string;
     lightbulb: string;
+    sword: string;
 };
 export default _default;
