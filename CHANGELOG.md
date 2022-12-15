@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.0...v0.1.1) (2022-12-15)
+
+
+### Features
+
+* **icon:** add sword icon ([1ba7c0e](https://github.com/lapras-inc/lapras-frontend/commit/1ba7c0e490e2c6dba6e1fd0672b2d0834d5c18f1))
+
 ## [0.1.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.0.50...v0.1.0) (2022-12-02)
 
 
