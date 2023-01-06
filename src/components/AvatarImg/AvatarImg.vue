@@ -1,9 +1,9 @@
 <template>
   <div
+    v-bind="context.attrs"
     :style="{ backgroundImage: `url(${src || avatarDefault})` }"
     class="avatar-icon"
     role="img"
-    v-bind="context.attrs"
     v-on="context.listeners"
   ></div>
 </template>

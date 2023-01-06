@@ -1,12 +1,12 @@
 <template>
   <label class="toggle-switch">
     <input
+      v-bind="context.attrs"
       :checked="value"
       :disabled="disabled"
       @change="onInput"
       class="checkbox"
       type="checkbox"
-      v-bind="context.attrs"
     />
     <div class="switch-base" :class="{ 'is-disabled': disabled }">
       <div class="toggle"></div>
