@@ -1,11 +1,11 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
+      v-bind="context.attrs"
       :checked="value"
       @change="onInput"
       class="input"
       type="radio"
-      v-bind="context.attrs"
     />
     <div class="dot"></div>
   </label>
