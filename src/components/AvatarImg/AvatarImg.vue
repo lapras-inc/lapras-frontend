@@ -4,7 +4,6 @@
     :style="{ backgroundImage: `url(${src || avatarDefault})` }"
     class="avatar-icon"
     role="img"
-    v-on="context.listeners"
   ></div>
 </template>
 

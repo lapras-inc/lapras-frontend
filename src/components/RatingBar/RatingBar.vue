@@ -1,5 +1,5 @@
 <template>
-  <div class="score-bar" v-bind="context.attrs" v-on="context.listeners">
+  <div class="score-bar" v-bind="context.attrs">
     <div
       class="inner"
       :style="{

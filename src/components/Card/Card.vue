@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="`is-skin-${skin}`"
-    class="card"
-    v-bind="context.attrs"
-    v-on="context.listeners"
-  >
+  <div :class="`is-skin-${skin}`" class="card" v-bind="context.attrs">
     <slot />
   </div>
 </template>

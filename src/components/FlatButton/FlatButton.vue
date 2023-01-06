@@ -5,7 +5,6 @@
     :disabled="disabled"
     :is="tag"
     class="flat-button"
-    v-on="context.listeners"
   >
     <div class="icon-wrap is-left" v-if="context.slots.leftIcon">
       <slot name="leftIcon" />

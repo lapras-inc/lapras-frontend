@@ -3,7 +3,6 @@
     :style="{ background: background, color: color }"
     class="tag-label"
     v-bind="context.attrs"
-    v-on="context.listeners"
   >
     <p class="sub" v-if="context.slots.subLabel">
       <slot name="subLabel" />
