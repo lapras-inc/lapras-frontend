@@ -1,12 +1,12 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
+      v-bind="context.attrs"
       :checked="value"
       :disabled="disabled"
       @change="onInput"
       class="input"
       type="checkbox"
-      v-bind="context.attrs"
     />
     <div class="icon-wrap">
       <Icon name="check" />
