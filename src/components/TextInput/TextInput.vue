@@ -1,9 +1,9 @@
 <template>
   <textarea
+    v-bind="context.attrs"
     :value="value"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
-    v-bind="context.attrs"
     v-if="multiline"
     @input="onInput"
     @focus="$emit('focus')"
@@ -11,11 +11,11 @@
     ref="textarea"
   ></textarea>
   <input
+    v-bind="context.attrs"
     :value="value"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
     type="text"
-    v-bind="context.attrs"
     @input="onInput"
     @focus="$emit('focus')"
     @blur="$emit('blur')"
