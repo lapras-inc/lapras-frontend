@@ -1,7 +1,7 @@
 <template>
   <textarea
     v-bind="context.attrs"
-    :value="value"
+    :value="modelValue"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
     v-if="multiline"
@@ -12,7 +12,7 @@
   ></textarea>
   <input
     v-bind="context.attrs"
-    :value="value"
+    :value="modelValue"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
     type="text"
@@ -32,7 +32,7 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
-    value: {
+    modelValue: {
       type: String,
       default: '',
     },
@@ -50,7 +50,7 @@ export default defineComponent({
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
     blur: null,
     focus: null,
   },
@@ -67,12 +67,12 @@ export default defineComponent({
     }
 
     const onInput = (e: Event) => {
-      context.emit('input', (e.target as HTMLInputElement).value)
+      context.emit('update:modelValue', (e.target as HTMLInputElement).value)
     }
 
-    const { value } = toRefs(props)
+    const { modelValue } = toRefs(props)
     watch(
-      value,
+      modelValue,
       async () => {
         await nextTick()
         resizeTextareaIfAutoExpand()

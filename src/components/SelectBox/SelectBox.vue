@@ -1,6 +1,6 @@
 <template>
   <div class="select-box">
-    <select class="select" :value="value" @change="onInput">
+    <select class="select" :value="modelValue" @change="onInput">
       <option :value="null" v-if="placeholder" v-show="false">
         {{ placeholder }}
       </option>
@@ -40,16 +40,17 @@ export default defineComponent({
       type: String,
       default: '',
     },
-    value: {
+    modelValue: {
       type: String,
       default: '',
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
   },
   setup(_, context) {
-    const emitInput = (value: string) => context.emit('input', value)
+    const emitInput = (value: string) =>
+      context.emit('update:modelValue', value)
     const onInput = (e: Event) =>
       emitInput((e.target as HTMLSelectElement).value)
     return {
