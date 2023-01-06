@@ -26,7 +26,6 @@
   "dependencies": {
     "@popperjs/core": "^2.2.1",
     "@types/body-scroll-lock": "^2.6.1",
-    "@vue/compat": "3.2.45",
     "body-scroll-lock": "^3.0.1",
     "core-js": "^3.6.4",
     "gh-pages": "^2.2.0",
