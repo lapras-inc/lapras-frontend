@@ -73,6 +73,9 @@ export default defineComponent({
       default: true,
     },
   },
+  emits: {
+    close: null,
+  },
 })
 </script>
 

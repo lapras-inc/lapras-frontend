@@ -25,6 +25,9 @@ export default defineComponent({
       default: false,
     },
   },
+  emits: {
+    input: null,
+  },
   setup(_, context) {
     const emitInput = (checked: boolean) => {
       if (checked) {

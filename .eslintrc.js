@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/require-explicit-emits': 'error',
   },
   // # Storybookのビルド時に生成される一時ファイル
   ignorePatterns: ['generated-stories-entry.js'],

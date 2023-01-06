@@ -44,6 +44,9 @@ export default defineComponent({
       default: '',
     },
   },
+  emits: {
+    input: null,
+  },
   setup(_, context) {
     const emitInput = (value: string) => context.emit('input', value)
     const onInput = (e: Event) =>
