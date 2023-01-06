@@ -1,15 +1,16 @@
 <template>
   <div class="select-box">
     <select class="select" :value="value" @change="onInput">
-      <option :value="null" v-if="placeholder" v-show="false">{{
-        placeholder
-      }}</option>
+      <option :value="null" v-if="placeholder" v-show="false">
+        {{ placeholder }}
+      </option>
       <option
         :value="option.value"
         v-for="option in options"
         :key="option.value"
-        >{{ option.label }}</option
       >
+        {{ option.label }}
+      </option>
     </select>
     <div class="icon-wrap">
       <Icon name="arrow-down" />
