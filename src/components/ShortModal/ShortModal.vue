@@ -132,7 +132,10 @@ export default defineComponent({
   display: inline-block;
   margin: 0;
   font-size: 1.2rem;
-  font-weght: bold;
+
+  .icon {
+    font-weight: bold;
+  }
 
   @include base-hover;
 }
