@@ -2,7 +2,7 @@
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
       v-bind="context.attrs"
-      :checked="value"
+      :checked="modelValue"
       @change="onInput"
       class="input"
       type="checkbox"
@@ -22,7 +22,7 @@ export default defineComponent({
     Icon,
   },
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },
@@ -32,12 +32,16 @@ export default defineComponent({
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
   },
   setup(_, context) {
-    const emitInput = (value: boolean) => context.emit('input', value)
-    const onInput = (e: Event) =>
+    const emitInput = (value: boolean) =>
+      context.emit('update:modelValue', value)
+
+    const onInput = (e: Event) => {
       emitInput((e.target as HTMLInputElement).checked)
+    }
+
     return {
       context,
       onInput,
