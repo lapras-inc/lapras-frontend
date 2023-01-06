@@ -1,7 +1,5 @@
 <template>
-  <i class="icon" v-bind="context.attrs" v-on="context.listeners">{{
-    iconMap[name]
-  }}</i>
+  <i class="icon" v-bind="context.attrs">{{ iconMap[name] }}</i>
 </template>
 
 <script lang="ts">
