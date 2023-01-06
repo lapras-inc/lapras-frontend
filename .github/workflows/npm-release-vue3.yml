@@ -6,7 +6,7 @@ name: npm release legacy
 on:
   push:
     branches:
-      - legacy-release
+      - vue3-release
 
 jobs:
   publish-gpr:
@@ -50,7 +50,7 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
-          branch: legacy-release
+          branch: vue3-release
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tags: true
       - name: Create Release

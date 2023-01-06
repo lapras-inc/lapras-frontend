@@ -50,11 +50,11 @@ zip解凍後、``$ for f in `ls`; do mv $f ${f/icomoon/scouty-icon}; done``で
 
 
 ## Release
-※ Vue2.6 >=
-1. `legacy-release`ブランチへのPRを**手動で**作成する
-2. [PRをマージするとGitHubでリリースされる](.github/workflows/npm-release-legacy.yml)
-
-※ Vue2.7
+※ Vue2.7 >=
 1. `release`ブランチへのPRを作成する
 2. [PRをマージするとGitHubでリリースされる](.github/workflows/npm-release.yml)
+
+※ Vue3
+1. `vue3-release`ブランチへのPRを**手動で**作成する
+2. [PRをマージするとGitHubでリリースされる](.github/workflows/npm-release-vue3.yml)
 
