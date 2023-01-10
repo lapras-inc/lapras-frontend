@@ -64,6 +64,9 @@ export default defineComponent({
       default: 10,
     },
   },
+  emits: {
+    close: null,
+  },
   watch: {
     visible: {
       immediate: true,
@@ -97,7 +100,7 @@ export default defineComponent({
   transition: opacity 0.2s ease;
 }
 
-.fade-enter,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }

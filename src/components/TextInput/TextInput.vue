@@ -1,9 +1,9 @@
 <template>
   <textarea
-    :value="value"
+    v-bind="context.attrs"
+    :value="modelValue"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
-    v-bind="context.attrs"
     v-if="multiline"
     @input="onInput"
     @focus="$emit('focus')"
@@ -11,11 +11,11 @@
     ref="textarea"
   ></textarea>
   <input
-    :value="value"
+    v-bind="context.attrs"
+    :value="modelValue"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
     type="text"
-    v-bind="context.attrs"
     @input="onInput"
     @focus="$emit('focus')"
     @blur="$emit('blur')"
@@ -32,7 +32,7 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
-    value: {
+    modelValue: {
       type: String,
       default: '',
     },
@@ -49,6 +49,11 @@ export default defineComponent({
       default: 56,
     },
   },
+  emits: {
+    'update:modelValue': null,
+    blur: null,
+    focus: null,
+  },
   setup(props, context) {
     const textarea = ref<HTMLElement | null>(null)
     const resizeTextareaIfAutoExpand = () => {
@@ -62,12 +67,12 @@ export default defineComponent({
     }
 
     const onInput = (e: Event) => {
-      context.emit('input', (e.target as HTMLInputElement).value)
+      context.emit('update:modelValue', (e.target as HTMLInputElement).value)
     }
 
-    const { value } = toRefs(props)
+    const { modelValue } = toRefs(props)
     watch(
-      value,
+      modelValue,
       async () => {
         await nextTick()
         resizeTextareaIfAutoExpand()

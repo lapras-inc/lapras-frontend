@@ -1,11 +1,11 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
-      :checked="value"
+      v-bind="context.attrs"
+      :checked="modelValue"
       @change="onInput"
       class="input"
       type="radio"
-      v-bind="context.attrs"
     />
     <div class="dot"></div>
   </label>
@@ -13,14 +13,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
-  components: {
-    Icon,
-  },
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },
@@ -29,10 +25,13 @@ export default defineComponent({
       default: false,
     },
   },
+  emits: {
+    'update:modelValue': null,
+  },
   setup(_, context) {
     const emitInput = (checked: boolean) => {
       if (checked) {
-        context.emit('input', true)
+        context.emit('update:modelValue', true)
       }
     }
     const onInput = (e: Event) =>

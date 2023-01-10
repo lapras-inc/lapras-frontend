@@ -73,6 +73,9 @@ export default defineComponent({
       default: true,
     },
   },
+  emits: {
+    close: null,
+  },
 })
 </script>
 
@@ -82,7 +85,7 @@ export default defineComponent({
   transition: opacity 0.2s ease;
 }
 
-.fade-enter,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
@@ -129,7 +132,10 @@ export default defineComponent({
   display: inline-block;
   margin: 0;
   font-size: 1.2rem;
-  font-weght: bold;
+
+  .icon {
+    font-weight: bold;
+  }
 
   @include base-hover;
 }
