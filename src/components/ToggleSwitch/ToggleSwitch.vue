@@ -1,12 +1,12 @@
 <template>
   <label class="toggle-switch">
     <input
-      :checked="value"
+      v-bind="context.attrs"
+      :checked="modelValue"
       :disabled="disabled"
       @change="onInput"
       class="checkbox"
       type="checkbox"
-      v-bind="context.attrs"
     />
     <div class="switch-base" :class="{ 'is-disabled': disabled }">
       <div class="toggle"></div>
@@ -19,7 +19,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },
@@ -29,10 +29,11 @@ export default defineComponent({
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
   },
   setup(props, context) {
-    const emitInput = (value: boolean) => context.emit('input', value)
+    const emitInput = (value: boolean) =>
+      context.emit('update:modelValue', value)
     const onInput = (e: Event) =>
       emitInput((e.target as HTMLInputElement).checked)
     return {

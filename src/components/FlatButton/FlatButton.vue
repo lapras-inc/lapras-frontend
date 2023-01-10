@@ -1,11 +1,10 @@
 <template>
   <component
+    v-bind="context.attrs"
     :class="[`skin-${skin}`, `size-${size}`, enhanced && 'is-enhanced']"
     :disabled="disabled"
     :is="tag"
     class="flat-button"
-    v-bind="context.attrs"
-    v-on="context.listeners"
   >
     <div class="icon-wrap is-left" v-if="context.slots.leftIcon">
       <slot name="leftIcon" />

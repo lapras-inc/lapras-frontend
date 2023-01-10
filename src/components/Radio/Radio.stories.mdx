@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs';
 import Radio from './Radio.vue';
 
 <Meta title="Radio" component={Radio} />
@@ -14,8 +14,8 @@ import Radio from './Radio.vue';
       components: { Radio },
       template: `
         <div>
-          <Radio @input="value = 'a'" :value="value === 'a'" />
-          <Radio @input="value = 'b'" :value="value === 'b'" />
+          <Radio @update:modelValue="value = 'a'" :modelValue="value === 'a'" />
+          <Radio @update:modelValue="value = 'b'" :modelValue="value === 'b'" />
           <p>{{ value }}</p>
         </div>
       `,

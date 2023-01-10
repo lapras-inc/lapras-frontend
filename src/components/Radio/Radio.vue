@@ -1,11 +1,11 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
-      :checked="value"
+      v-bind="context.attrs"
+      :checked="modelValue"
       @change="onInput"
       class="input"
       type="radio"
-      v-bind="context.attrs"
     />
     <div class="dot"></div>
   </label>
@@ -16,7 +16,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },
@@ -26,12 +26,12 @@ export default defineComponent({
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
   },
   setup(_, context) {
     const emitInput = (checked: boolean) => {
       if (checked) {
-        context.emit('input', true)
+        context.emit('update:modelValue', true)
       }
     }
     const onInput = (e: Event) =>
