@@ -1,5 +1,5 @@
 declare const _default: import("vue").DefineComponent<{
-    value: {
+    modelValue: {
         type: BooleanConstructor;
         default: boolean;
     };
@@ -8,10 +8,14 @@ declare const _default: import("vue").DefineComponent<{
         default: boolean;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
+    context: import("vue").SetupContext<{
+        'update:modelValue': null;
+    }>;
     onInput: (e: Event) => void;
-}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
-    value: {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    'update:modelValue': null;
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+    modelValue: {
         type: BooleanConstructor;
         default: boolean;
     };
@@ -19,8 +23,10 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-}>>, {
-    value: boolean;
+}>> & {
+    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+}, {
     disabled: boolean;
+    modelValue: boolean;
 }>;
 export default _default;

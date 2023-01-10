@@ -3,7 +3,7 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-    value: {
+    modelValue: {
         type: StringConstructor;
         default: string;
     };
@@ -20,15 +20,23 @@ declare const _default: import("vue").DefineComponent<{
         default: number;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
+    context: import("vue").SetupContext<{
+        'update:modelValue': null;
+        blur: null;
+        focus: null;
+    }>;
     textarea: import("vue").Ref<HTMLElement | null>;
     onInput: (e: Event) => void;
-}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    'update:modelValue': null;
+    blur: null;
+    focus: null;
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     multiline: {
         type: BooleanConstructor;
         default: boolean;
     };
-    value: {
+    modelValue: {
         type: StringConstructor;
         default: string;
     };
@@ -44,9 +52,13 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
-}>>, {
+}>> & {
+    onFocus?: ((...args: any[]) => any) | undefined;
+    onBlur?: ((...args: any[]) => any) | undefined;
+    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+}, {
     error: boolean;
-    value: string;
+    modelValue: string;
     multiline: boolean;
     autoExpand: boolean;
     baseTextareaHeight: number;

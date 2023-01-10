@@ -6,7 +6,7 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, {
     context: import("vue").SetupContext<{}>;
-}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     skin: {
         type: PropType<"default" | "background" | "background-line">;
         default: string;

@@ -16,7 +16,7 @@ declare const _default: import("vue").DefineComponent<{
 }, {
     escapedHref: import("vue").ComputedRef<string | undefined>;
     formattedRel: import("vue").ComputedRef<string | undefined>;
-}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     href: {
         type: StringConstructor;
         validator(value: string): boolean;
