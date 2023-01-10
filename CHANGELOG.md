@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.1...v0.2.0) (2023-01-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue3:** 完全にVue3化
+* **vue3:** listenersを消していいのはVue3のみ
+
+### Features
+
+* **storybook:** storybookのVue3対応 ([dc81bf9](https://github.com/lapras-inc/lapras-frontend/commit/dc81bf9bdc894926b2af434e55716857d7329002))
+* **vue3:** v-modelの仕様変更対応 ([6c25d24](https://github.com/lapras-inc/lapras-frontend/commit/6c25d2451b3397bf9b7e14adcfe9d16da554f4be))
+* **vue3:** vueの移行ビルドを追加 ([a70737a](https://github.com/lapras-inc/lapras-frontend/commit/a70737a2a034e38227640e093c6b657c5b1409a1))
+
+
+### Bug Fixes
+
+* **shortmodal:** タイポかつ上書きされていたCSSを効くように修正 ([e97fbd8](https://github.com/lapras-inc/lapras-frontend/commit/e97fbd80d09ad19e14802f7841d25257c9ef2bc6))
+* **vue3:** listenersはattrsに統合され不要になったため削除 ([be39298](https://github.com/lapras-inc/lapras-frontend/commit/be39298771f3d90505d2ba052d6d81876233264f))
+* **vue3:** transitionクラスの名前が変わったのに対応 ([55782db](https://github.com/lapras-inc/lapras-frontend/commit/55782dbf9897fb66c6088acb90d6e7b8edbe2432))
+* **vue3:** v-bindの仕様変更に対応 ([fe33c1f](https://github.com/lapras-inc/lapras-frontend/commit/fe33c1f4c9bc7327b2b15f923a74500ce935c624))
+
+
+* **vue3:** 移行ビルドを削除し、完全にVue3化 ([f901d0c](https://github.com/lapras-inc/lapras-frontend/commit/f901d0cb57ebd297764412e1c0aa2fb8fb9d447d))
+
 ### [0.1.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.0...v0.1.1) (2022-12-15)
 
 
