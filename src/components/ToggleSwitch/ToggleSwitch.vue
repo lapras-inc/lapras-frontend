@@ -28,6 +28,9 @@ export default defineComponent({
       default: false,
     },
   },
+  emits: {
+    input: null,
+  },
   setup(props, context) {
     const emitInput = (value: boolean) => context.emit('input', value)
     const onInput = (e: Event) =>
