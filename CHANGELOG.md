@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.2.0...v0.2.1) (2023-01-11)
+
+
+### Bug Fixes
+
+* **webpack:** webpackのアセットのパスの先頭に/がつくようになっていたのを修正 ([38ddd8c](https://github.com/lapras-inc/lapras-frontend/commit/38ddd8c9d15c9658c11b0314ab1e285ab766321d))
+
 ## [0.2.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.1...v0.2.0) (2023-01-10)
 
 
