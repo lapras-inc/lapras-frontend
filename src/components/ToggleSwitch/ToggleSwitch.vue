@@ -3,7 +3,7 @@
     <input
       v-bind="context.attrs"
       :checked="modelValue"
-      :disabled="disabled"
+      :disabled="disabled || undefined"
       @change="onInput"
       class="checkbox"
       type="checkbox"
@@ -25,7 +25,7 @@ export default defineComponent({
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: undefined,
     },
   },
   emits: {
