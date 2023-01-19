@@ -2,7 +2,7 @@
   <component
     v-bind="context.attrs"
     :class="[`skin-${skin}`, `size-${size}`, enhanced && 'is-enhanced']"
-    :disabled="disabled"
+    :disabled="disabled || undefined"
     :is="tag"
     class="flat-button"
   >
@@ -43,7 +43,7 @@ export default defineComponent({
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: undefined,
     },
     enhanced: {
       type: Boolean,
