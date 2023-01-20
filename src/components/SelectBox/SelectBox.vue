@@ -1,7 +1,7 @@
 <template>
   <div class="select-box">
     <select class="select" :value="modelValue" @change="onInput">
-      <option :value="null" v-if="placeholder" v-show="false">
+      <option value v-if="placeholder" v-show="false">
         {{ placeholder }}
       </option>
       <option
