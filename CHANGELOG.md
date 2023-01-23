@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.1...v0.1.2) (2023-01-23)
+
+
+### Bug Fixes
+
+* **modal:** ブラウザバックでスクロールがロックされる問題を修正 ([1b1ac87](https://github.com/lapras-inc/lapras-frontend/commit/1b1ac87cf356000aa1862561436cacaf5a17d629))
+* **shortmodal:** タイポかつ上書きされていたCSSを効くように修正 ([e97fbd8](https://github.com/lapras-inc/lapras-frontend/commit/e97fbd80d09ad19e14802f7841d25257c9ef2bc6))
+
 ### [0.1.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.0...v0.1.1) (2022-12-15)
 
 
