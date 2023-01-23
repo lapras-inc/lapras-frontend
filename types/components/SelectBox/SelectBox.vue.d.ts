@@ -17,9 +17,13 @@ declare const _default: import("vue").DefineComponent<{
         default: string;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
+    context: import("vue").SetupContext<{
+        input: null;
+    }>;
     onInput: (e: Event) => void;
-}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, {
+    input: null;
+}, string, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<SelectBoxOption[]>;
         default: () => never[];
