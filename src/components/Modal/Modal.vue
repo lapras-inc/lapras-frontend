@@ -15,8 +15,8 @@
 
       <div class="modal-container" :style="{ margin: `${gutter}px` }">
         <div class="modal-body">
-          <div class="close-wrap" v-if="hasClose">
-            <button class="close" aria-label="閉じる" @click="$emit('close')">
+          <div class="close-wrap" v-if="hasClose" @click="$emit('close')">
+            <button class="close" aria-label="閉じる">
               <Icon name="close" />
             </button>
           </div>
