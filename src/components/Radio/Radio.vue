@@ -13,12 +13,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
-  components: {
-    Icon,
-  },
   props: {
     value: {
       type: Boolean,
@@ -28,6 +24,9 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+  },
+  emits: {
+    input: null,
   },
   setup(_, context) {
     const emitInput = (checked: boolean) => {

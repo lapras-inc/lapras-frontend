@@ -64,6 +64,9 @@ export default defineComponent({
       default: 10,
     },
   },
+  emits: {
+    close: null,
+  },
   watch: {
     visible: {
       immediate: true,
@@ -75,6 +78,9 @@ export default defineComponent({
         clearAllBodyScrollLocks()
       },
     },
+  },
+  beforeDestroy() {
+    clearAllBodyScrollLocks()
   },
 })
 </script>

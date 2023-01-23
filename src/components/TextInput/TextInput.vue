@@ -49,6 +49,11 @@ export default defineComponent({
       default: 56,
     },
   },
+  emits: {
+    input: null,
+    blur: null,
+    focus: null,
+  },
   setup(props, context) {
     const textarea = ref<HTMLElement | null>(null)
     const resizeTextareaIfAutoExpand = () => {
