@@ -79,6 +79,9 @@ export default defineComponent({
       },
     },
   },
+  beforeDestroy() {
+    clearAllBodyScrollLocks()
+  },
 })
 </script>
 

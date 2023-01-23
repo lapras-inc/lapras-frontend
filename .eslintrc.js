@@ -17,6 +17,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/require-explicit-emits': 'error',
+    // Vue3化時に有効化する
+    'vue/no-deprecated-destroyed-lifecycle': 'off'
   },
   // # Storybookのビルド時に生成される一時ファイル
   ignorePatterns: ['generated-stories-entry.js'],
