@@ -18,6 +18,7 @@ import { defineComponent } from 'vue'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   components: {
     Icon,
   },
