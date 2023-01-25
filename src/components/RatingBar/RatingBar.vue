@@ -1,5 +1,5 @@
 <template>
-  <div class="score-bar" v-bind="context.attrs">
+  <div v-bind="$attrs" class="score-bar">
     <div
       class="inner"
       :style="{
@@ -14,6 +14,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     max: {
       type: Number,
@@ -35,11 +36,6 @@ export default defineComponent({
       type: String,
       default: '#ff5a5f',
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

@@ -1,7 +1,7 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
-      v-bind="context.attrs"
+      v-bind="$attrs"
       :checked="modelValue"
       @change="onInput"
       class="input"
@@ -15,6 +15,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: Boolean,
@@ -37,7 +38,6 @@ export default defineComponent({
     const onInput = (e: Event) =>
       emitInput((e.target as HTMLInputElement).checked)
     return {
-      context,
       onInput,
     }
   },

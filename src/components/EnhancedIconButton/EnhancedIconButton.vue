@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" class="enhanced-icon" v-bind="context.attrs">
+  <component v-bind="$attrs" :is="tag" class="enhanced-icon">
     <svg class="svg" viewBox="0 0 40 40">
       <defs>
         <circle id="path1" cx="20" cy="20" r="20"></circle>
@@ -49,16 +49,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     tag: {
       type: String,
       default: 'button',
     },
-  },
-  setup(_, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

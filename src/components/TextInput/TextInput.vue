@@ -1,6 +1,6 @@
 <template>
   <textarea
-    v-bind="context.attrs"
+    v-bind="$attrs"
     :value="modelValue"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
@@ -11,7 +11,7 @@
     ref="textarea"
   ></textarea>
   <input
-    v-bind="context.attrs"
+    v-bind="$attrs"
     :value="modelValue"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
@@ -27,6 +27,7 @@
 import { defineComponent, ref, watch, toRefs, nextTick } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     multiline: {
       type: Boolean,
@@ -81,7 +82,6 @@ export default defineComponent({
     )
 
     return {
-      context,
       textarea,
       onInput,
     }
