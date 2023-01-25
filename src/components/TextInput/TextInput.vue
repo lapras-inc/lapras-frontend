@@ -27,6 +27,7 @@
 import { defineComponent, ref, watch, toRefs, nextTick } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     multiline: {
       type: Boolean,

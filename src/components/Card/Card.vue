@@ -8,6 +8,7 @@
 import { defineComponent, PropType } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     skin: {
       type: String as PropType<'default' | 'background' | 'background-line'>,
