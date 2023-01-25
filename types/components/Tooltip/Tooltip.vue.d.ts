@@ -14,7 +14,6 @@ declare const _default: import("vue").DefineComponent<{
         default: number;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
     hoverEvent: () => void;
     trigger: import("vue").Ref<HTMLElement | null>;
     container: import("vue").Ref<HTMLElement | null>;

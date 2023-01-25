@@ -20,11 +20,6 @@ declare const _default: import("vue").DefineComponent<{
         default: number;
     };
 }, {
-    context: import("vue").SetupContext<{
-        'update:modelValue': null;
-        blur: null;
-        focus: null;
-    }>;
     textarea: import("vue").Ref<HTMLElement | null>;
     onInput: (e: Event) => void;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {

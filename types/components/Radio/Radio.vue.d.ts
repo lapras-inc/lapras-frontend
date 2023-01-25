@@ -8,9 +8,6 @@ declare const _default: import("vue").DefineComponent<{
         default: boolean;
     };
 }, {
-    context: import("vue").SetupContext<{
-        'update:modelValue': null;
-    }>;
     onInput: (e: Event) => void;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;

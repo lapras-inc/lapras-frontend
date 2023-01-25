@@ -5,7 +5,6 @@ declare const _default: import("vue").DefineComponent<{
         required: true;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
     iconMap: {
         'add-document': string;
         'add-user': string;

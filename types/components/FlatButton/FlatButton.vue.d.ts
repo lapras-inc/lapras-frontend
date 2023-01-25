@@ -10,7 +10,7 @@ declare const _default: import("vue").DefineComponent<{
     };
     disabled: {
         type: BooleanConstructor;
-        default: boolean;
+        default: undefined;
     };
     enhanced: {
         type: BooleanConstructor;
@@ -20,9 +20,7 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-}, {
-    context: import("vue").SetupContext<{}>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     skin: {
         type: PropType<"disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary">;
         default: string;
@@ -33,7 +31,7 @@ declare const _default: import("vue").DefineComponent<{
     };
     disabled: {
         type: BooleanConstructor;
-        default: boolean;
+        default: undefined;
     };
     enhanced: {
         type: BooleanConstructor;
