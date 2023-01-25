@@ -1,7 +1,7 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
-      v-bind="context.attrs"
+      v-bind="$attrs"
       :checked="modelValue"
       @change="onInput"
       class="input"
@@ -18,6 +18,7 @@ import { defineComponent } from 'vue'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   components: {
     Icon,
   },
@@ -43,7 +44,6 @@ export default defineComponent({
     }
 
     return {
-      context,
       onInput,
     }
   },

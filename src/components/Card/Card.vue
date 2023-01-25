@@ -1,5 +1,5 @@
 <template>
-  <div :class="`is-skin-${skin}`" class="card" v-bind="context.attrs">
+  <div v-bind="$attrs" :class="`is-skin-${skin}`" class="card">
     <slot />
   </div>
 </template>
@@ -8,16 +8,12 @@
 import { defineComponent, PropType } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     skin: {
       type: String as PropType<'default' | 'background' | 'background-line'>,
       default: 'default',
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

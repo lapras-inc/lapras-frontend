@@ -1,5 +1,5 @@
 <template>
-  <i class="icon" v-bind="context.attrs">{{ iconMap[name] }}</i>
+  <i v-bind="$attrs" class="icon">{{ iconMap[name] }}</i>
 </template>
 
 <script lang="ts">
@@ -9,15 +9,15 @@ import iconMap from './iconMap'
 type IconKey = keyof typeof iconMap
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     name: {
       type: String as PropType<IconKey>,
       required: true,
     },
   },
-  setup(props, context) {
+  setup(props) {
     return {
-      context,
       iconMap,
     }
   },

@@ -1,9 +1,9 @@
 <template>
   <label class="toggle-switch">
     <input
-      v-bind="context.attrs"
+      v-bind="$attrs"
       :checked="modelValue"
-      :disabled="disabled"
+      :disabled="disabled || undefined"
       @change="onInput"
       class="checkbox"
       type="checkbox"
@@ -18,6 +18,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: Boolean,
@@ -25,7 +26,7 @@ export default defineComponent({
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: undefined,
     },
   },
   emits: {
@@ -36,9 +37,9 @@ export default defineComponent({
       context.emit('update:modelValue', value)
     const onInput = (e: Event) =>
       emitInput((e.target as HTMLInputElement).checked)
+
     return {
       onInput,
-      context,
     }
   },
 })
