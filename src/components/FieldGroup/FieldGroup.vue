@@ -1,5 +1,5 @@
 <template>
-  <div class="field-group" v-bind="context.attrs">
+  <div v-bind="$attrs" class="field-group">
     <div class="label-line" v-if="label">
       <p class="label">
         {{ label }}<small v-if="subLabel">{{ subLabel }}</small>
@@ -40,11 +40,6 @@ export default defineComponent({
       type: Boolean as PropType<boolean | null>,
       default: null,
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>
