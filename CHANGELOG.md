@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.2.1...v0.3.0) (2023-01-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue3:** 完全にVue3化
+* **vue3:** listenersを消していいのはVue3のみ
+
+### Features
+
+* **storybook:** storybookのVue3対応 ([4ab0ab3](https://github.com/lapras-inc/lapras-frontend/commit/4ab0ab379f11d43f1fcf6992a949b0bb978998e6))
+* **vue3:** disabled周りの修正 ([ddfdcc7](https://github.com/lapras-inc/lapras-frontend/commit/ddfdcc7384525a8a8adc34f00e0c99c241d1891c))
+* **vue3:** v-modelの仕様変更対応 ([9e513b9](https://github.com/lapras-inc/lapras-frontend/commit/9e513b9bd614b2a5a8e33dbf964df6224a5c8563))
+* **vue3:** vueの移行ビルドを追加 ([875daa5](https://github.com/lapras-inc/lapras-frontend/commit/875daa5c8bf6667cc2e722c1bf781464197e543b))
+
+
+### Bug Fixes
+
+* **selectbox:** [fix] Vue3からはnullやundefinedを渡すと属性自体が消えてしまうため修正 ([8e1ee8e](https://github.com/lapras-inc/lapras-frontend/commit/8e1ee8eae969727d37437c6d047b9dda786e52ec))
+* **textinput:** ストーリーの書き方を修正 ([8d4fdbf](https://github.com/lapras-inc/lapras-frontend/commit/8d4fdbf3b03bf9af543ea0d41765bd2bb19f1427))
+* **vue3:** listenersはattrsに統合され不要になったため削除 ([9092b65](https://github.com/lapras-inc/lapras-frontend/commit/9092b657427340ccffdb23754c8cfe47a5f745d1))
+* **vue3:** transitionクラスの名前が変わったのに対応 ([529dd1e](https://github.com/lapras-inc/lapras-frontend/commit/529dd1e1f011c0bc694e09be29b38e962507d182))
+* **vue3:** v-bind="context.attrs"をしているコンポーネントにinheritAttrs: falseの付与 ([388e5c0](https://github.com/lapras-inc/lapras-frontend/commit/388e5c014ae91dad75c7750ca919dcd137fcfb2b))
+* **vue3:** v-bindの仕様変更に対応 ([32c1b5b](https://github.com/lapras-inc/lapras-frontend/commit/32c1b5b17f93f647070459a45e99e2b6909636c6))
+
+
+* **vue3:** 移行ビルドを削除し、完全にVue3化 ([9f8f717](https://github.com/lapras-inc/lapras-frontend/commit/9f8f7172340bcf898d4391f53e8cbe694ee58fc0))
+
 ### [0.2.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.2.0...v0.2.1) (2023-01-11)
 
 
