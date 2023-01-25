@@ -1,5 +1,5 @@
 <template>
-  <div :class="`is-skin-${skin}`" class="card" v-bind="context.attrs">
+  <div v-bind="$attrs" :class="`is-skin-${skin}`" class="card">
     <slot />
   </div>
 </template>
@@ -14,11 +14,6 @@ export default defineComponent({
       type: String as PropType<'default' | 'background' | 'background-line'>,
       default: 'default',
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <i class="icon" v-bind="context.attrs">{{ iconMap[name] }}</i>
+  <i v-bind="$attrs" class="icon">{{ iconMap[name] }}</i>
 </template>
 
 <script lang="ts">
@@ -16,9 +16,8 @@ export default defineComponent({
       required: true,
     },
   },
-  setup(props, context) {
+  setup(props) {
     return {
-      context,
       iconMap,
     }
   },

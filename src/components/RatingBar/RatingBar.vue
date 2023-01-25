@@ -1,5 +1,5 @@
 <template>
-  <div class="score-bar" v-bind="context.attrs">
+  <div v-bind="$attrs" class="score-bar">
     <div
       class="inner"
       :style="{
@@ -36,11 +36,6 @@ export default defineComponent({
       type: String,
       default: '#ff5a5f',
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

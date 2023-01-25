@@ -1,6 +1,6 @@
 <template>
   <div
-    v-bind="context.attrs"
+    v-bind="$attrs"
     :style="{ backgroundImage: `url(${src || avatarDefault})` }"
     class="avatar-icon"
     role="img"
@@ -20,10 +20,9 @@ export default defineComponent({
       type: String,
     },
   },
-  setup(props, context) {
+  setup() {
     return {
       avatarDefault,
-      context,
     }
   },
 })
