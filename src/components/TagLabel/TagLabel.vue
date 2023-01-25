@@ -17,6 +17,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     background: {
       type: String,

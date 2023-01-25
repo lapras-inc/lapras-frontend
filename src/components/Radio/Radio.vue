@@ -15,6 +15,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: Boolean,

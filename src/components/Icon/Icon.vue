@@ -9,6 +9,7 @@ import iconMap from './iconMap'
 type IconKey = keyof typeof iconMap
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     name: {
       type: String as PropType<IconKey>,

@@ -22,6 +22,7 @@
 import { defineComponent, PropType } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     label: {
       type: String,
