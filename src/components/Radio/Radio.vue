@@ -1,7 +1,7 @@
 <template>
   <label class="radio" :class="{ 'is-disabled': disabled }">
     <input
-      v-bind="context.attrs"
+      v-bind="$attrs"
       :checked="modelValue"
       @change="onInput"
       class="input"
@@ -38,7 +38,6 @@ export default defineComponent({
     const onInput = (e: Event) =>
       emitInput((e.target as HTMLInputElement).checked)
     return {
-      context,
       onInput,
     }
   },

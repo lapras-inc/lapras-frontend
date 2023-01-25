@@ -1,7 +1,7 @@
 <template>
   <span class="tooltip">
     <span class="trigger" ref="trigger" @mouseenter="hoverEvent">
-      <slot name="trigger" /><Icon name="info" v-if="!context.slots.trigger" />
+      <slot name="trigger" /><Icon name="info" v-if="!$slots.trigger" />
     </span>
     <div class="container" ref="container">
       <div
@@ -44,7 +44,7 @@ export default defineComponent({
       default: 320,
     },
   },
-  setup(props, context) {
+  setup(props) {
     const trigger = ref<HTMLElement | null>(null)
     const container = ref<HTMLElement | null>(null)
     let popper: PopperInstance
@@ -64,7 +64,7 @@ export default defineComponent({
       })
     }
 
-    return { context, hoverEvent, trigger, container }
+    return { hoverEvent, trigger, container }
   },
 })
 </script>

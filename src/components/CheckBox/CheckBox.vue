@@ -1,7 +1,7 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
-      v-bind="context.attrs"
+      v-bind="$attrs"
       :checked="modelValue"
       @change="onInput"
       class="input"
@@ -44,7 +44,6 @@ export default defineComponent({
     }
 
     return {
-      context,
       onInput,
     }
   },
