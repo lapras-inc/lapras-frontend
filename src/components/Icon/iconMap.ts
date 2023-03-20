@@ -118,4 +118,5 @@ export default {
   'balloon': '\ue96c',
   'lightbulb': '\ue96d',
   'sword': '\ue96e',
+  'crown': '\ue96f',
 }
