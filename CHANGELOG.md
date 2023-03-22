@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.2...v0.1.3) (2023-03-22)
+
+
+### Features
+
+* **icon:** add crown icon ([cae5edb](https://github.com/lapras-inc/lapras-frontend/commit/cae5edbf8241e22f40728d8c88c527cacf611c93))
+
+
+### Bug Fixes
+
+* **modal:** [clean] やはりbuttonにもクリックイベントを付ける ([b115727](https://github.com/lapras-inc/lapras-frontend/commit/b1157277c7c36fb7042f48ae3943e74f6d779741))
+* **modal:** [clean] 閉じるボタンの右側の領域を押してもモーダルが閉じられなかったを修正 ([5486382](https://github.com/lapras-inc/lapras-frontend/commit/548638259a1d7e49fcb91782ed66e5e99bf86ae8))
+* **modal:** modalの周囲20pxを押してもModalが閉じられなかったのを修正 ([ee8bb0e](https://github.com/lapras-inc/lapras-frontend/commit/ee8bb0e662cd4cda3198e4594b56b5c7bba1a376))
+
 ### [0.1.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.1...v0.1.2) (2023-01-23)
 
 
