@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.3.0...v0.3.1) (2023-03-22)
+
+
+### Features
+
+* **icon:** add crown icon ([e401222](https://github.com/lapras-inc/lapras-frontend/commit/e401222111d96aa35183f8d5ac750c61ad438439))
+
 ## [0.3.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.2.1...v0.3.0) (2023-01-25)
 
 
