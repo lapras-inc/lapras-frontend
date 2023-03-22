@@ -6618,7 +6618,8 @@ function Iconvue_type_template_id_affd1b9e_scoped_true_ts_true_render(_ctx, _cac
   'view': "\uE942",
   'balloon': "\uE96C",
   'lightbulb': "\uE96D",
-  'sword': "\uE96E"
+  'sword': "\uE96E",
+  'crown': "\uE96F"
 });
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader/index.js??clonedRuleSet-86.use[2]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Icon/Icon.vue?vue&type=script&lang=ts
 
