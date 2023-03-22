@@ -12,10 +12,16 @@
         @click="$emit('close')"
         :style="{ background: filterBackground }"
       ></div>
-      <div class="modal-container" :style="{ padding: `${gutter}px` }">
+
+      <div class="modal-container" :style="{ margin: `${gutter}px` }">
         <div class="modal-body">
-          <div class="close-wrap" v-if="hasClose">
-            <button class="close" aria-label="閉じる" @click="$emit('close')">
+          <div class="close-wrap" v-if="hasClose" @click="$emit('close')">
+            <button
+              type="button"
+              class="close"
+              aria-label="閉じる"
+              @click.stop="$emit('close')"
+            >
               <Icon name="close" />
             </button>
           </div>
