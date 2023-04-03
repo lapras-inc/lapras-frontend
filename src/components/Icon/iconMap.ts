@@ -119,4 +119,5 @@ export default {
   'lightbulb': '\ue96d',
   'sword': '\ue96e',
   'crown': '\ue96f',
+  'sparkle': '\ue970',
 }
