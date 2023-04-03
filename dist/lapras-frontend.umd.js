@@ -6858,7 +6858,8 @@ var Iconvue_type_template_id_5d27a97f_scoped_true_staticRenderFns = [];
   'balloon': "\uE96C",
   'lightbulb': "\uE96D",
   'sword': "\uE96E",
-  'crown': "\uE96F"
+  'crown': "\uE96F",
+  'sparkle': "\uE970"
 });
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--15-3!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Icon/Icon.vue?vue&type=script&lang=ts&
 

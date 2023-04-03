@@ -118,5 +118,6 @@ declare const _default: {
     lightbulb: string;
     sword: string;
     crown: string;
+    sparkle: string;
 };
 export default _default;
