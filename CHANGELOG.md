@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.3.1...v0.3.2) (2023-04-03)
+
+
+### Features
+
+* add sparkle icon for vue3 ([bded1c2](https://github.com/lapras-inc/lapras-frontend/commit/bded1c2fc219303dfa78424e0b1d09d8b2f9866e))
+
 ### [0.3.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.3.0...v0.3.1) (2023-03-22)
 
 
