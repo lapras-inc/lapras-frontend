@@ -2,6 +2,7 @@
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
       :checked="value"
+      :disabled="disabled"
       @change="onInput"
       class="input"
       type="checkbox"
