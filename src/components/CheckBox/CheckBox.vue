@@ -3,6 +3,7 @@
     <input
       v-bind="$attrs"
       :checked="modelValue"
+      :disabled="disabled"
       @change="onInput"
       class="input"
       type="checkbox"
