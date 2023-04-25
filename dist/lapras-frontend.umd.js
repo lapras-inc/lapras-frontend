@@ -6456,16 +6456,16 @@ function Cardvue_type_template_id_4de09868_ts_true_render(_ctx, _cache, $props, 
 const Card_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Cardvue_type_script_lang_ts, [['render',Cardvue_type_template_id_4de09868_ts_true_render]])
 
 /* harmony default export */ var Card = (Card_exports_);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader/index.js??clonedRuleSet-86.use[2]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/CheckBox/CheckBox.vue?vue&type=template&id=420ea007&scoped=true&ts=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader/index.js??clonedRuleSet-86.use[2]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/CheckBox/CheckBox.vue?vue&type=template&id=58b84aec&scoped=true&ts=true
 
 var _withScopeId = function _withScopeId(n) {
-  return _pushScopeId("data-v-420ea007"), n = n(), _popScopeId(), n;
+  return _pushScopeId("data-v-58b84aec"), n = n(), _popScopeId(), n;
 };
-var _hoisted_1 = ["checked"];
+var _hoisted_1 = ["checked", "disabled"];
 var _hoisted_2 = {
   class: "icon-wrap"
 };
-function CheckBoxvue_type_template_id_420ea007_scoped_true_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function CheckBoxvue_type_template_id_58b84aec_scoped_true_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Icon = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.resolveComponent)("Icon");
   return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("label", {
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["check-box", {
@@ -6473,6 +6473,7 @@ function CheckBoxvue_type_template_id_420ea007_scoped_true_ts_true_render(_ctx, 
     }])
   }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("input", (0,external_commonjs_vue_commonjs2_vue_root_Vue_.mergeProps)(_ctx.$attrs, {
     checked: _ctx.modelValue,
+    disabled: _ctx.disabled,
     onChange: _cache[0] || (_cache[0] =
     //@ts-ignore
     function () {
@@ -6484,7 +6485,7 @@ function CheckBoxvue_type_template_id_420ea007_scoped_true_ts_true_render(_ctx, 
     name: "check"
   })])], 2);
 }
-;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue?vue&type=template&id=420ea007&scoped=true&ts=true
+;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue?vue&type=template&id=58b84aec&scoped=true&ts=true
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__(8309);
@@ -6692,10 +6693,10 @@ const Icon_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Iconvue_type_
 }));
 ;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue?vue&type=script&lang=ts
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-67.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-67.use[1]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-67.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-67.use[3]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/CheckBox/CheckBox.vue?vue&type=style&index=0&id=420ea007&lang=scss&scoped=true
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-67.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-67.use[1]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-67.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-67.use[3]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/CheckBox/CheckBox.vue?vue&type=style&index=0&id=58b84aec&lang=scss&scoped=true
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue?vue&type=style&index=0&id=420ea007&lang=scss&scoped=true
+;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue?vue&type=style&index=0&id=58b84aec&lang=scss&scoped=true
 
 ;// CONCATENATED MODULE: ./src/components/CheckBox/CheckBox.vue
 
@@ -6705,7 +6706,7 @@ const Icon_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Iconvue_type_
 ;
 
 
-const CheckBox_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(CheckBoxvue_type_script_lang_ts, [['render',CheckBoxvue_type_template_id_420ea007_scoped_true_ts_true_render],['__scopeId',"data-v-420ea007"]])
+const CheckBox_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(CheckBoxvue_type_script_lang_ts, [['render',CheckBoxvue_type_template_id_58b84aec_scoped_true_ts_true_render],['__scopeId',"data-v-58b84aec"]])
 
 /* harmony default export */ var CheckBox = (CheckBox_exports_);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader/index.js??clonedRuleSet-86.use[2]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/@vue/cli-service/node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/EnhancedIconButton/EnhancedIconButton.vue?vue&type=template&id=12a4334c&scoped=true&ts=true
