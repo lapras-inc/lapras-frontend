@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/lapras-inc/lapras-frontend/compare/v0.3.2...v0.3.3) (2023-04-25)
+
+
+### Bug Fixes
+
+* **checkbox.vue:** make disabled checkbox truly disabled ([9a6bd03](https://github.com/lapras-inc/lapras-frontend/commit/9a6bd034c2bb705913485503789b21f8e7d15bb3))
+
 ### [0.3.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.3.1...v0.3.2) (2023-04-03)
 
 
