@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs';
 import { action } from "@storybook/addon-actions";
 import TextInput from './TextInput.vue';
 
@@ -25,7 +25,6 @@ import TextInput from './TextInput.vue';
 # TextInput
 
 export const DefaultTemplate = (args, { argTypes }) => ({
-  props: Object.keys(argTypes).filter((x) => x !== 'value'),
   components: { TextInput },
   data() {
     return { value: "" }
@@ -33,8 +32,11 @@ export const DefaultTemplate = (args, { argTypes }) => ({
   methods: {
     onFocus: action('focus'),
   },
+  setup() {
+    return { args }
+  },
   template: `
-    <TextInput v-bind="$props" v-model="value" @focus="onFocus"/>
+    <TextInput v-bind="args" v-model="value" @focus="onFocus"/>
   `,
 });
 

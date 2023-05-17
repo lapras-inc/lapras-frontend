@@ -1,17 +1,16 @@
 <template>
   <component
+    v-bind="$attrs"
     :class="[`skin-${skin}`, `size-${size}`, enhanced && 'is-enhanced']"
-    :disabled="disabled"
+    :disabled="disabled || undefined"
     :is="tag"
     class="flat-button"
-    v-bind="context.attrs"
-    v-on="context.listeners"
   >
-    <div class="icon-wrap is-left" v-if="context.slots.leftIcon">
+    <div class="icon-wrap is-left" v-if="$slots.leftIcon">
       <slot name="leftIcon" />
     </div>
     <div class="body"><slot /></div>
-    <div class="icon-wrap is-right" v-if="context.slots.rightIcon">
+    <div class="icon-wrap is-right" v-if="$slots.rightIcon">
       <slot name="rightIcon" />
     </div>
   </component>
@@ -22,6 +21,7 @@ import { defineComponent, PropType } from 'vue'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   components: {
     Icon,
   },
@@ -44,7 +44,7 @@ export default defineComponent({
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: undefined,
     },
     enhanced: {
       type: Boolean,
@@ -54,11 +54,6 @@ export default defineComponent({
       type: String,
       default: 'button',
     },
-  },
-  setup(props, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

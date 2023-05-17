@@ -1,14 +1,13 @@
 <template>
   <div
+    v-bind="$attrs"
     :style="{ background: background, color: color }"
     class="tag-label"
-    v-bind="context.attrs"
-    v-on="context.listeners"
   >
-    <p class="sub" v-if="context.slots.subLabel">
+    <p class="sub" v-if="$slots.subLabel">
       <slot name="subLabel" />
     </p>
-    <p class="main" :class="{ 'has-sub-label': context.slots.subLabel }">
+    <p class="main" :class="{ 'has-sub-label': $slots.subLabel }">
       <slot />
     </p>
   </div>
@@ -18,6 +17,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     background: {
       type: String,
@@ -27,11 +27,6 @@ export default defineComponent({
       type: String,
       default: '#7F7F7F',
     },
-  },
-  setup(_, context) {
-    return {
-      context,
-    }
   },
 })
 </script>

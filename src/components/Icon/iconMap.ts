@@ -120,4 +120,5 @@ export default {
   'sword': '\ue96e',
   'crown': '\ue96f',
   'sparkle': '\ue970',
+  'activity': '\ue977'
 }

@@ -1,11 +1,12 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
-      :checked="value"
+      v-bind="$attrs"
+      :checked="modelValue"
+      :disabled="disabled"
       @change="onInput"
       class="input"
       type="checkbox"
-      v-bind="context.attrs"
     />
     <div class="icon-wrap">
       <Icon name="check" />
@@ -18,11 +19,12 @@ import { defineComponent } from 'vue'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
+  inheritAttrs: false,
   components: {
     Icon,
   },
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },
@@ -32,14 +34,17 @@ export default defineComponent({
     },
   },
   emits: {
-    input: null,
+    'update:modelValue': null,
   },
   setup(_, context) {
-    const emitInput = (value: boolean) => context.emit('input', value)
-    const onInput = (e: Event) =>
+    const emitInput = (value: boolean) =>
+      context.emit('update:modelValue', value)
+
+    const onInput = (e: Event) => {
       emitInput((e.target as HTMLInputElement).checked)
+    }
+
     return {
-      context,
       onInput,
     }
   },
