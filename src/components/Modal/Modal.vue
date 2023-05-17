@@ -85,7 +85,7 @@ export default defineComponent({
       },
     },
   },
-  beforeDestroy() {
+  beforeUnmount() {
     clearAllBodyScrollLocks()
   },
 })
