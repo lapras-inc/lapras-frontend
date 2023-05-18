@@ -14,11 +14,10 @@ declare const _default: import("vue").DefineComponent<{
         default: number;
     };
 }, {
-    context: import("vue").SetupContext<{}>;
     hoverEvent: () => void;
     trigger: import("vue").Ref<HTMLElement | null>;
     container: import("vue").Ref<HTMLElement | null>;
-}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, {}, string, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<Partial<PopperOptions>>;
         default: () => {};

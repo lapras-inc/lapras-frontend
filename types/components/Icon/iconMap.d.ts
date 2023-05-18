@@ -119,5 +119,6 @@ declare const _default: {
     sword: string;
     crown: string;
     sparkle: string;
+    activity: string;
 };
 export default _default;

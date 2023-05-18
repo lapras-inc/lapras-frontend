@@ -1,30 +1,29 @@
 declare const _default: import("vue").DefineComponent<{
-    value: {
+    modelValue: {
         type: BooleanConstructor;
         default: boolean;
     };
     disabled: {
         type: BooleanConstructor;
-        default: boolean;
+        default: undefined;
     };
 }, {
     onInput: (e: Event) => void;
-    context: import("vue").SetupContext<{
-        input: null;
-    }>;
-}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {
-    input: null;
-}, string, Readonly<import("vue").ExtractPropTypes<{
-    value: {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    'update:modelValue': null;
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+    modelValue: {
         type: BooleanConstructor;
         default: boolean;
     };
     disabled: {
         type: BooleanConstructor;
-        default: boolean;
+        default: undefined;
     };
-}>>, {
-    value: boolean;
+}>> & {
+    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+}, {
     disabled: boolean;
+    modelValue: boolean;
 }>;
 export default _default;

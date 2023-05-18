@@ -23,9 +23,9 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
-}, {}, {}, {}, {}, import("vue/types/v3-component-options.js").ComponentOptionsMixin, import("vue/types/v3-component-options.js").ComponentOptionsMixin, {
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     close: null;
-}, string, Readonly<import("vue").ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     filterBackground: {
         type: StringConstructor;
         default: string;
@@ -50,7 +50,9 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
-}>>, {
+}>> & {
+    onClose?: ((...args: any[]) => any) | undefined;
+}, {
     zIndex: number;
     visible: boolean;
     filterBackground: string;

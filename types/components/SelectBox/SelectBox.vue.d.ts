@@ -12,18 +12,18 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-    value: {
+    modelValue: {
         type: StringConstructor;
         default: string;
     };
 }, {
     context: import("vue").SetupContext<{
-        input: null;
+        'update:modelValue': null;
     }>;
     onInput: (e: Event) => void;
-}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, {
-    input: null;
-}, string, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    'update:modelValue': null;
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<SelectBoxOption[]>;
         default: () => never[];
@@ -32,13 +32,15 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-    value: {
+    modelValue: {
         type: StringConstructor;
         default: string;
     };
-}>>, {
-    value: string;
+}>> & {
+    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+}, {
     options: SelectBoxOption[];
     placeholder: string;
+    modelValue: string;
 }>;
 export default _default;
