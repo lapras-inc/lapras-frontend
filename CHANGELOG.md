@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.1...v0.4.2) (2023-05-19)
+
+
+### Bug Fixes
+
+* **vue:** build 時にパス解決が行えなくなっていた問題に対処 ([fe0a78c](https://github.com/lapras-inc/lapras-frontend/commit/fe0a78c9cc365c576cad1a9e37311881e931d272)), closes [#243](https://github.com/lapras-inc/lapras-frontend/issues/243)
+
 ### [0.4.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.0...v0.4.1) (2023-05-18)
 
 
