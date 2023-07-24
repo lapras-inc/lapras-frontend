@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.3](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.2...v0.4.3) (2023-07-24)
+
+
+### Features
+
+* add Interest icon ([52f8519](https://github.com/lapras-inc/lapras-frontend/commit/52f8519306fef5d07a15ebdfec15f66b51bc9e22))
+
 ### [0.4.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.1...v0.4.2) (2023-05-19)
 
 
