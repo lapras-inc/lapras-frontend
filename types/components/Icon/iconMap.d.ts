@@ -120,5 +120,6 @@ declare const _default: {
     crown: string;
     sparkle: string;
     activity: string;
+    interest: string;
 };
 export default _default;
