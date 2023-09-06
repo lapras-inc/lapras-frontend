@@ -77,6 +77,7 @@ export default {
   'openmail': '\ue941',
   'paper': '\ue938',
   'paperclip': '\ue91a',
+  'paper-plane': '\ue979',
   'parson': '\ue906',
   'pencil-circle': '\ue90f',
   'pencil': '\ue90e',
