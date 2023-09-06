@@ -143,7 +143,7 @@ export default defineComponent({
   }
 
   &.size-xl {
-    font-size: 16px;
+    font-size: 20px;
     min-height: 68px;
   }
 
