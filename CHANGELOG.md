@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.5](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.4...v0.4.5) (2023-09-06)
+
+
+### Features
+
+* **icon:** 送信ボタン用の紙飛行機アイコンを追加 ([b215235](https://github.com/lapras-inc/lapras-frontend/commit/b215235d1ca3cca2575088031bbd426df99c15fd))
+
 ### [0.4.4](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.3...v0.4.4) (2023-07-24)
 
 
