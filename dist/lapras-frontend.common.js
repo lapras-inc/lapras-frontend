@@ -6561,6 +6561,7 @@ function Iconvue_type_template_id_db0b34d2_scoped_true_ts_true_render(_ctx, _cac
   'openmail': "\uE941",
   'paper': "\uE938",
   'paperclip': "\uE91A",
+  'paper-plane': "\uE979",
   'parson': "\uE906",
   'pencil-circle': "\uE90F",
   'pencil': "\uE90E",

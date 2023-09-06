@@ -76,6 +76,7 @@ declare const _default: {
     openmail: string;
     paper: string;
     paperclip: string;
+    'paper-plane': string;
     parson: string;
     'pencil-circle': string;
     pencil: string;
