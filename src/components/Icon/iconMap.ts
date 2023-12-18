@@ -72,6 +72,7 @@ export default {
   'medal': '\ue908',
   'memo': '\ue94a',
   'menu': '\ue93f',
+  'money': '\ue97a',
   'more-button-dots': '\ue947',
   'note-edit': '\ue913',
   'openmail': '\ue941',
