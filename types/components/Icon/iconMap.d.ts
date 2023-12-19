@@ -71,6 +71,7 @@ declare const _default: {
     medal: string;
     memo: string;
     menu: string;
+    money: string;
     'more-button-dots': string;
     'note-edit': string;
     openmail: string;

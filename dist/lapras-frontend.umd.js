@@ -6574,6 +6574,7 @@ function Iconvue_type_template_id_db0b34d2_scoped_true_ts_true_render(_ctx, _cac
   'medal': "\uE908",
   'memo': "\uE94A",
   'menu': "\uE93F",
+  'money': "\uE97A",
   'more-button-dots': "\uE947",
   'note-edit': "\uE913",
   'openmail': "\uE941",
