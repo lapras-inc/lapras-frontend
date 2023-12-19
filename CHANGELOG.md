@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.6](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.5...v0.4.6) (2023-12-19)
+
+
+### Features
+
+* **icon:** 年収表示用の円マークアイコンを追加 ([48ca83f](https://github.com/lapras-inc/lapras-frontend/commit/48ca83fb27f998b2afd6cc41493e65516fd8df2a))
+
 ### [0.4.5](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.4...v0.4.5) (2023-09-06)
 
 
