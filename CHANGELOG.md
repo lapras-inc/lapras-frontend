@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.7](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.6...v0.4.7) (2024-02-29)
+
+
+### Features
+
+* **fonts/scouty-icon.*, iconmap.ts:** add icons for job search page ([75de0fc](https://github.com/lapras-inc/lapras-frontend/commit/75de0fc6687a4915f901cb729af2d9484d344d43))
+
 ### [0.4.6](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.5...v0.4.6) (2023-12-19)
 
 
