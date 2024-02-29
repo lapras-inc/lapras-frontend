@@ -88,6 +88,7 @@ export default {
   'pin': '\ue911',
   'placemap': '\ue91c',
   'plus': '\ue955',
+  'minus': '\ue97b',
   'profile': '\ue912',
   'refresh': '\ue90a',
   'replymail': '\ue949',
@@ -123,5 +124,6 @@ export default {
   'crown': '\ue96f',
   'sparkle': '\ue970',
   'activity': '\ue977',
-  'interest': '\ue978'
+  'interest': '\ue978',
+  'remote': '\ue97c',
 }
