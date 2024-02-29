@@ -87,6 +87,7 @@ declare const _default: {
     pin: string;
     placemap: string;
     plus: string;
+    minus: string;
     profile: string;
     refresh: string;
     replymail: string;
@@ -123,5 +124,6 @@ declare const _default: {
     sparkle: string;
     activity: string;
     interest: string;
+    remote: string;
 };
 export default _default;
