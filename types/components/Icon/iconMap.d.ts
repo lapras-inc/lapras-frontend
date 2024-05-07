@@ -125,5 +125,6 @@ declare const _default: {
     activity: string;
     interest: string;
     remote: string;
+    'upload-document': string;
 };
 export default _default;
