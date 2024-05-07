@@ -126,4 +126,5 @@ export default {
   'activity': '\ue977',
   'interest': '\ue978',
   'remote': '\ue97c',
+  'upload-document': '\ue97d',
 }
