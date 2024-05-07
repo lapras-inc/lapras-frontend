@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.8](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.7...v0.4.8) (2024-05-07)
+
+
+### Features
+
+* **icon:** upload-document iconをiconMap.tsへ追加 ([53efcf1](https://github.com/lapras-inc/lapras-frontend/commit/53efcf17d4ecb50d3c7a6fc3682235e7efd5e892))
+* **icon:** upload-document iconを追加 ([cb3aa36](https://github.com/lapras-inc/lapras-frontend/commit/cb3aa36e7f2229829ee0ad1b9592ba55f1cd6a5b))
+
 ### [0.4.7](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.6...v0.4.7) (2024-02-29)
 
 
