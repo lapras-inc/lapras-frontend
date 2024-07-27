@@ -47,8 +47,6 @@
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^5.1.0",
     "@vue/compiler-sfc": "3.4.34",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^9.1.0",
     "@vue/runtime-dom": "^3.4.34",
     "chromatic": "^5.7.0",
     "commitizen": "^4.2.3",
