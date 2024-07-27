@@ -6,7 +6,7 @@
     "build": "npm run build:types && npm run build:vue",
     "lint": "vue-cli-service lint",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly && tsc-alias -p tsconfig.json",
-    "build:vue": "vue-cli-service build --target lib --name lapras-frontend ./src/main.ts",
+    "build:vue": "vite build",
     "chromatic": "npx chromatic storybook:build --project-token $CHROMATIC_TOKEN -b storybook:build --exit-zero-on-changes",
     "commit": "git-cz",
     "lint:ci": "yarn lint && yarn lint:commit --from=origin/master",
@@ -45,6 +45,7 @@
     "@storybook/vue3": "^6.5.15",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^5.1.0",
     "@vue/compiler-sfc": "3.4.34",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
@@ -63,6 +64,7 @@
     "standard-version": "^8.0.0",
     "tsc-alias": "1.6.11",
     "typescript": "5.3.3",
+    "vite": "^5.3.5",
     "vue-tsc": "2.0.29"
   },
   "config": {
