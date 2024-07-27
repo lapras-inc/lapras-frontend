@@ -25,14 +25,14 @@
   ],
   "dependencies": {
     "@popperjs/core": "^2.2.1",
-    "@types/body-scroll-lock": "^2.6.1",
     "body-scroll-lock": "^3.0.1",
     "core-js": "^3.6.4",
-    "gh-pages": "^2.2.0",
-    "storybook": "8.2.6",
     "vue": "3.4.34"
   },
   "devDependencies": {
+    "@types/body-scroll-lock": "^2.6.1",
+    "gh-pages": "^2.2.0",
+    "storybook": "8.2.6",
     "@chromatic-com/storybook": "^1.6.1",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
