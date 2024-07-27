@@ -12,11 +12,11 @@
     "lint:ci": "yarn lint && yarn lint:commit --from=origin/master",
     "lint:commit": "commitlint",
     "release": "standard-version",
-    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:build": "storybook build",
     "storybook:deploy": "gh-pages -d storybook-static",
     "storybook:deploy:ci": "gh-pages -r 'https://action:'$GITHUB_TOKEN'@github.com/lapras-inc/lapras-frontend.git' -x -d storybook-static",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "test": "echo 'not implemented now'"
+    "test": "echo 'not implemented now'",
+    "storybook:serve": "storybook dev -p 6006"
   },
   "main": "dist/lapras-frontend.common.js",
   "files": [
@@ -29,21 +29,18 @@
     "body-scroll-lock": "^3.0.1",
     "core-js": "^3.6.4",
     "gh-pages": "^2.2.0",
-    "storybook": "6.5.15",
+    "storybook": "8.2.6",
     "vue": "3.4.34"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@eslint/js": "^9.8.0",
-    "@storybook/addon-actions": ">=6.5.15",
-    "@storybook/addon-docs": ">=6.5.15",
-    "@storybook/addon-essentials": "^6.5.15",
-    "@storybook/addon-links": ">=6.5.15",
-    "@storybook/builder-webpack5": "^6.5.15",
-    "@storybook/core": "^6.5.15",
-    "@storybook/manager-webpack5": "^6.5.15",
-    "@storybook/vue3": "^6.5.15",
+    "@storybook/addon-essentials": "8.2.6",
+    "@storybook/blocks": "8.2.6",
+    "@storybook/core": "8.2.6",
+    "@storybook/vue3-vite": "^8.2.6",
     "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -56,6 +53,7 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.27.0",
     "husky": "^4.2.5",
     "prettier": "^3.3.3",
@@ -79,5 +77,10 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
-  "types": "types/main.d.ts"
+  "types": "types/main.d.ts",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
