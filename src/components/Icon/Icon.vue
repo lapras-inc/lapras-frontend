@@ -30,7 +30,8 @@ $font_dir: '../../../fonts';
 @font-face {
   font-family: 'scouty-icon';
   src: url('#{$font_dir}/scouty-icon.eot');
-  src: url('#{$font_dir}/scouty-icon.eot') format('embedded-opentype'),
+  src:
+    url('#{$font_dir}/scouty-icon.eot') format('embedded-opentype'),
     url('#{$font_dir}/scouty-icon.ttf') format('truetype'),
     url('#{$font_dir}/scouty-icon.woff') format('woff'),
     url('#{$font_dir}/scouty-icon.svg') format('svg');
