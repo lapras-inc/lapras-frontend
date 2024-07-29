@@ -1,4 +1,4 @@
-import{C as r}from"./CheckBox-Brmx__a7.js";import"./vue.esm-bundler-CXKGtDvb.js";import"./Icon-DvnrdZbN.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const b={title:"CheckBox",component:r,render:m=>({components:{CheckBox:r},setup(){return{args:m}},template:`
+import{C as r}from"./CheckBox-CN-J1-3Q.js";import"./vue.esm-bundler-CXKGtDvb.js";import"./Icon-gV1avNZM.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const b={title:"CheckBox",component:r,render:m=>({components:{CheckBox:r},setup(){return{args:m}},template:`
       <div>
         <CheckBox v-model="args.modelValue" :disabled="args.disabled" class="additional" />
         <p>{{ args.modelValue ? 'on' : 'off' }}</p>

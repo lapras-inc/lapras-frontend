@@ -1,4 +1,4 @@
-import{T as r}from"./ToggleSwitch-BQwUveFg.js";import{r as c}from"./vue.esm-bundler-CXKGtDvb.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const g={title:"ToggleSwitch",component:r,render:s=>({components:{ToggleSwitch:r},setup(){const u=c(s.value);return{args:s,value:u}},template:`
+import{T as r}from"./ToggleSwitch-Cs4W-V_9.js";import{r as c}from"./vue.esm-bundler-CXKGtDvb.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const g={title:"ToggleSwitch",component:r,render:s=>({components:{ToggleSwitch:r},setup(){const u=c(s.value);return{args:s,value:u}},template:`
       <div>
         <ToggleSwitch v-model="value" :disabled="args.disabled" />
         <p>{{ value ? 'on' : 'off' }}</p>
