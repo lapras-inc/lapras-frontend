@@ -13,8 +13,8 @@
     "lint:commit": "commitlint",
     "release": "standard-version",
     "storybook:build": "storybook build",
-    "storybook:deploy": "gh-pages -d storybook-static",
-    "storybook:deploy:ci": "gh-pages -r 'https://action:'$GITHUB_TOKEN'@github.com/lapras-inc/lapras-frontend.git' -x -d storybook-static",
+    "storybook:deploy": "gh-pages --nojekyll -d storybook-static",
+    "storybook:deploy:ci": "gh-pages --nojekyll -r 'https://action:'$GITHUB_TOKEN'@github.com/lapras-inc/lapras-frontend.git' -x -d storybook-static",
     "test": "echo 'not implemented now'",
     "storybook:serve": "storybook dev -p 6006"
   },
