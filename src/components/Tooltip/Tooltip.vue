@@ -94,7 +94,9 @@ export default defineComponent({
   &.has-skin {
     font-size: 12px;
     padding: 1em;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
     color: $white;
     background: $text-base;
   }
