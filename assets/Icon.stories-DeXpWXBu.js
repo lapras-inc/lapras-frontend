@@ -1,4 +1,4 @@
-import{I as t,i}from"./Icon-gV1avNZM.js";import"./vue.esm-bundler-CXKGtDvb.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const c={title:"Icon",component:t,render:a=>({components:{Icon:t},setup(){return{args:a,iconMap:i}},template:`
+import{I as t,i}from"./Icon-DvnrdZbN.js";import"./vue.esm-bundler-CXKGtDvb.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const c={title:"Icon",component:t,render:a=>({components:{Icon:t},setup(){return{args:a,iconMap:i}},template:`
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); color: #2C2C2C;">
         <div v-for="name in Object.keys(iconMap)" :key="name" style="text-align: center; border: 1px solid #efefef; padding: 12px;">
           <Icon :name="name" style="font-size: 38px;" />
