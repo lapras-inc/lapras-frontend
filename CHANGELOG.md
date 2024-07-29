@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.10](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.9...v0.4.10) (2024-07-29)
+
+
+### Bug Fixes
+
+* nojekyllのオプションを追加 ([051ceb9](https://github.com/lapras-inc/lapras-frontend/commit/051ceb9c1c9e62ae22b6f6b28bfcb7e383fb27d7))
+
 ### [0.4.9](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.8...v0.4.9) (2024-07-29)
 
 ### [0.4.8](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.7...v0.4.8) (2024-05-07)
