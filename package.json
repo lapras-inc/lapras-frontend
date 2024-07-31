@@ -3,8 +3,8 @@
   "version": "0.3.5",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
-    "build": "yarn run check:types && npm run build:vue",
-    "check:types": "vue-tsc --noEmit",
+    "build": "npm run build:types && npm run build:vue",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly -p tsconfig.types.json && tsc-alias -p tsconfig.json",
     "lint": "eslint \"src/**/*.{ts,vue}\"",
     "build:vue": "vite build",
     "chromatic": "npx chromatic storybook:build --project-token $CHROMATIC_TOKEN -b storybook:build --exit-zero-on-changes",
@@ -20,7 +20,8 @@
   },
   "main": "dist/lapras-frontend.js",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -62,7 +63,6 @@
     "typescript": "^5.5.4",
     "typescript-eslint": "^7.17.0",
     "vite": "^5.3.5",
-    "vite-plugin-dts": "^4.0.0-beta.1",
     "vue-eslint-parser": "^9.4.3",
     "vue-tsc": "2.0.29"
   },
@@ -76,7 +76,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
-  "types": "dist/main.d.ts",
+  "types": "types/main.d.ts",
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
