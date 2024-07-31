@@ -17,13 +17,20 @@ declare const _default: import("vue").DefineComponent<{
         default: string;
     };
 }, {
-    context: import("vue").SetupContext<{
-        'update:modelValue': null;
-    }>;
+    context: {
+        attrs: {
+            [x: string]: unknown;
+        };
+        slots: Readonly<{
+            [name: string]: import("vue").Slot<any> | undefined;
+        }>;
+        emit: (event: "update:modelValue", ...args: any[]) => void;
+        expose: <Exposed extends Record<string, any> = Record<string, any>>(exposed?: Exposed) => void;
+    };
     onInput: (e: Event) => void;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;
-}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<SelectBoxOption[]>;
         default: () => never[];
@@ -42,5 +49,5 @@ declare const _default: import("vue").DefineComponent<{
     options: SelectBoxOption[];
     placeholder: string;
     modelValue: string;
-}>;
+}, {}>;
 export default _default;

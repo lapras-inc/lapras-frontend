@@ -16,7 +16,7 @@ declare const _default: import("vue").DefineComponent<{
         type: PropType<boolean | null>;
         default: null;
     };
-}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     label: {
         type: StringConstructor;
         default: string;
@@ -38,5 +38,5 @@ declare const _default: import("vue").DefineComponent<{
     label: string;
     subLabel: string;
     errorMessage: string;
-}>;
+}, {}>;
 export default _default;
