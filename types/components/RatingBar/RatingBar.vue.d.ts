@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     max: {
         type: NumberConstructor;
         default: number;
@@ -19,7 +19,7 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-}, unknown, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     max: {
         type: NumberConstructor;
         default: number;
@@ -46,5 +46,5 @@ declare const _default: import('vue').DefineComponent<{
     barColor: string;
     highThreshold: number;
     highBarColor: string;
-}, {}>;
+}>;
 export default _default;

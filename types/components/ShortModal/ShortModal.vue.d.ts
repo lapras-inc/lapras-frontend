@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     filterBackground: {
         type: StringConstructor;
         default: string;
@@ -27,9 +27,9 @@ declare const _default: import('vue').DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-}, unknown, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     close: null;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     filterBackground: {
         type: StringConstructor;
         default: string;
@@ -61,12 +61,12 @@ declare const _default: import('vue').DefineComponent<{
 }>> & {
     onClose?: ((...args: any[]) => any) | undefined;
 }, {
+    zIndex: number;
     visible: boolean;
     filterBackground: string;
     hasClose: boolean;
     panel: boolean;
     gutter: number;
-    zIndex: number;
     outerClose: boolean;
-}, {}>;
+}>;
 export default _default;

@@ -1,7 +1,6 @@
 import { Options as PopperOptions } from '@popperjs/core';
 import { PropType } from 'vue';
-
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     options: {
         type: PropType<Partial<PopperOptions>>;
         default: () => {};
@@ -16,9 +15,9 @@ declare const _default: import('vue').DefineComponent<{
     };
 }, {
     hoverEvent: () => void;
-    trigger: import('vue').Ref<HTMLElement | null>;
-    container: import('vue').Ref<HTMLElement | null>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
+    trigger: import("vue").Ref<HTMLElement | null>;
+    container: import("vue").Ref<HTMLElement | null>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<Partial<PopperOptions>>;
         default: () => {};
@@ -32,8 +31,8 @@ declare const _default: import('vue').DefineComponent<{
         default: number;
     };
 }>>, {
+    maxWidth: number;
     options: Partial<PopperOptions>;
     skeleton: boolean;
-    maxWidth: number;
-}, {}>;
+}>;
 export default _default;

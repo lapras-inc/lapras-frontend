@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     multiline: {
         type: BooleanConstructor;
         default: boolean;
@@ -20,13 +20,13 @@ declare const _default: import('vue').DefineComponent<{
         default: number;
     };
 }, {
-    textarea: import('vue').Ref<HTMLElement | null>;
+    textarea: import("vue").Ref<HTMLElement | null>;
     onInput: (e: Event) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;
     blur: null;
     focus: null;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     multiline: {
         type: BooleanConstructor;
         default: boolean;
@@ -52,10 +52,10 @@ declare const _default: import('vue').DefineComponent<{
     onBlur?: ((...args: any[]) => any) | undefined;
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
 }, {
-    modelValue: string;
-    multiline: boolean;
     error: boolean;
+    multiline: boolean;
+    modelValue: string;
     autoExpand: boolean;
     baseTextareaHeight: number;
-}, {}>;
+}>;
 export default _default;

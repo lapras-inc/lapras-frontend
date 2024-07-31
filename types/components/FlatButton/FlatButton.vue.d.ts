@@ -1,11 +1,11 @@
 import { PropType } from 'vue';
 declare const _default: import("vue").DefineComponent<{
     skin: {
-        type: PropType<"disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary">;
+        type: PropType<"important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted" | "disabled">;
         default: string;
     };
     size: {
-        type: PropType<"s" | "m" | "xl" | "l" | "xs">;
+        type: PropType<"xl" | "l" | "m" | "s" | "xs">;
         default: string;
     };
     disabled: {
@@ -22,11 +22,11 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     skin: {
-        type: PropType<"disabled" | "muted" | "important" | "primary" | "primary-line" | "secondary" | "tertiary">;
+        type: PropType<"important" | "primary" | "primary-line" | "secondary" | "tertiary" | "muted" | "disabled">;
         default: string;
     };
     size: {
-        type: PropType<"s" | "m" | "xl" | "l" | "xs">;
+        type: PropType<"xl" | "l" | "m" | "s" | "xs">;
         default: string;
     };
     disabled: {
