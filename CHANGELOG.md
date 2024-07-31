@@ -2,6 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.10](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.9...v0.4.10) (2024-07-29)
+
+
+### Bug Fixes
+
+* nojekyllのオプションを追加 ([051ceb9](https://github.com/lapras-inc/lapras-frontend/commit/051ceb9c1c9e62ae22b6f6b28bfcb7e383fb27d7))
+
+### [0.4.9](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.8...v0.4.9) (2024-07-29)
+
+### [0.4.8](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.7...v0.4.8) (2024-05-07)
+
+
+### Features
+
+* **icon:** upload-document iconをiconMap.tsへ追加 ([53efcf1](https://github.com/lapras-inc/lapras-frontend/commit/53efcf17d4ecb50d3c7a6fc3682235e7efd5e892))
+* **icon:** upload-document iconを追加 ([cb3aa36](https://github.com/lapras-inc/lapras-frontend/commit/cb3aa36e7f2229829ee0ad1b9592ba55f1cd6a5b))
+
+### [0.4.7](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.6...v0.4.7) (2024-02-29)
+
+
+### Features
+
+* **fonts/scouty-icon.*, iconmap.ts:** add icons for job search page ([75de0fc](https://github.com/lapras-inc/lapras-frontend/commit/75de0fc6687a4915f901cb729af2d9484d344d43))
+
+### [0.4.6](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.5...v0.4.6) (2023-12-19)
+
+
+### Features
+
+* **icon:** 年収表示用の円マークアイコンを追加 ([48ca83f](https://github.com/lapras-inc/lapras-frontend/commit/48ca83fb27f998b2afd6cc41493e65516fd8df2a))
+
+### [0.4.5](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.4...v0.4.5) (2023-09-06)
+
+
+### Features
+
+* **icon:** 送信ボタン用の紙飛行機アイコンを追加 ([b215235](https://github.com/lapras-inc/lapras-frontend/commit/b215235d1ca3cca2575088031bbd426df99c15fd))
+
+### [0.4.4](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.3...v0.4.4) (2023-07-24)
+
+
+### Features
+
+* add interest icon ([6586e27](https://github.com/lapras-inc/lapras-frontend/commit/6586e27ec1f45e192abc8a79b95b99a48831325f))
+
+### [0.4.3](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.2...v0.4.3) (2023-07-24)
+
+
+### Features
+
+* add Interest icon ([52f8519](https://github.com/lapras-inc/lapras-frontend/commit/52f8519306fef5d07a15ebdfec15f66b51bc9e22))
+
+### [0.4.2](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.1...v0.4.2) (2023-05-19)
+
+
+### Bug Fixes
+
+* **vue:** build 時にパス解決が行えなくなっていた問題に対処 ([fe0a78c](https://github.com/lapras-inc/lapras-frontend/commit/fe0a78c9cc365c576cad1a9e37311881e931d272)), closes [#243](https://github.com/lapras-inc/lapras-frontend/issues/243)
+
+### [0.4.1](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.0...v0.4.1) (2023-05-18)
+
+
+### Bug Fixes
+
+* **fonts directory:** fix fonts binary files ([92541f0](https://github.com/lapras-inc/lapras-frontend/commit/92541f078f9d4ba1a6ad4ad55591c2deb56e80cd))
+
+## [0.4.0](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.4...v0.4.0) (2023-05-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue3:** 完全にVue3化
+* **vue3:** listenersを消していいのはVue3のみ
+
+### Features
+
+* **checkbox.vue:** make disabled checkbox truly disabled ([8c93c04](https://github.com/lapras-inc/lapras-frontend/commit/8c93c04ea4779f5db57614706d05f61679a2b1c9))
+* **icon:** add lapras activity icon ([35cd52d](https://github.com/lapras-inc/lapras-frontend/commit/35cd52dbd1c0bde0a7ac4b2b596004d6cbae0926))
+* **storybook:** storybookのVue3対応 ([73ab8a5](https://github.com/lapras-inc/lapras-frontend/commit/73ab8a5f52b4336d207a3dbb59609d68d5d2119c))
+* **vue3:** disabled周りの修正 ([1d7a066](https://github.com/lapras-inc/lapras-frontend/commit/1d7a06680b565f085123516870a010296e15adb2))
+* **vue3:** v-modelの仕様変更対応 ([954ab36](https://github.com/lapras-inc/lapras-frontend/commit/954ab36afd684f5475592a365762c63e65dcb845))
+* **vue3:** vueの移行ビルドを追加 ([03b9df9](https://github.com/lapras-inc/lapras-frontend/commit/03b9df9cef3b65ac719ec2b3b41c18339ee8f3cd))
+
+
+### Bug Fixes
+
+* **selectbox:** [fix] Vue3からはnullやundefinedを渡すと属性自体が消えてしまうため修正 ([37b3a40](https://github.com/lapras-inc/lapras-frontend/commit/37b3a4057828aa546c4f73d83338ed32bbec8828))
+* **textinput:** ストーリーの書き方を修正 ([784d0b1](https://github.com/lapras-inc/lapras-frontend/commit/784d0b1f6aa46864d37d2c676678c773986c0dd0))
+* **vue3:** listenersはattrsに統合され不要になったため削除 ([fbc8b7f](https://github.com/lapras-inc/lapras-frontend/commit/fbc8b7f48b5e328fa96934630af9745c6ce122ae))
+* **vue3:** transitionクラスの名前が変わったのに対応 ([7823510](https://github.com/lapras-inc/lapras-frontend/commit/7823510d2d8266c39da85aa2e2316457faafea4c))
+* **vue3:** v-bind="context.attrs"をしているコンポーネントにinheritAttrs: falseの付与 ([1f2ad9e](https://github.com/lapras-inc/lapras-frontend/commit/1f2ad9e532f0cee7cf23ef90d855d0c4871e94c3))
+* **vue3:** v-bindの仕様変更に対応 ([f6d5d8f](https://github.com/lapras-inc/lapras-frontend/commit/f6d5d8fbeb60961f5f61c83dd04dfa9d8d4c6a14))
+
+
+* **vue3:** 移行ビルドを削除し、完全にVue3化 ([90fdfcb](https://github.com/lapras-inc/lapras-frontend/commit/90fdfcbc9f3d59980671c78d90c7dead27de220e))
+
 ### [0.1.4](https://github.com/lapras-inc/lapras-frontend/compare/v0.1.3...v0.1.4) (2023-04-03)
 
 

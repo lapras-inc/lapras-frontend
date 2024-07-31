@@ -17,7 +17,7 @@ declare const _default: import("vue").DefineComponent<{
     hoverEvent: () => void;
     trigger: import("vue").Ref<HTMLElement | null>;
     container: import("vue").Ref<HTMLElement | null>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
         type: PropType<Partial<PopperOptions>>;
         default: () => {};
@@ -34,5 +34,5 @@ declare const _default: import("vue").DefineComponent<{
     maxWidth: number;
     options: Partial<PopperOptions>;
     skeleton: boolean;
-}, {}>;
+}>;
 export default _default;

@@ -26,7 +26,7 @@ declare const _default: import("vue").DefineComponent<{
     'update:modelValue': null;
     blur: null;
     focus: null;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     multiline: {
         type: BooleanConstructor;
         default: boolean;
@@ -57,5 +57,5 @@ declare const _default: import("vue").DefineComponent<{
     modelValue: string;
     autoExpand: boolean;
     baseTextareaHeight: number;
-}, {}>;
+}>;
 export default _default;

@@ -11,7 +11,7 @@ declare const _default: import("vue").DefineComponent<{
     onInput: (e: Event) => void;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
         type: BooleanConstructor;
         default: boolean;
@@ -25,5 +25,5 @@ declare const _default: import("vue").DefineComponent<{
 }, {
     disabled: boolean;
     modelValue: boolean;
-}, {}>;
+}>;
 export default _default;

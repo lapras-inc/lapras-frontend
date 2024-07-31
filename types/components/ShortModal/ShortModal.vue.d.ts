@@ -29,7 +29,7 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     close: null;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     filterBackground: {
         type: StringConstructor;
         default: string;
@@ -68,5 +68,5 @@ declare const _default: import("vue").DefineComponent<{
     panel: boolean;
     gutter: number;
     outerClose: boolean;
-}, {}>;
+}>;
 export default _default;
