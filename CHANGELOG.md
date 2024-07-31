@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.11](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.10...v0.4.11) (2024-07-31)
+
+
+### Bug Fixes
+
+* vue-tsc経由で型を出力するように修正 ([efbf1d7](https://github.com/lapras-inc/lapras-frontend/commit/efbf1d7c25cbcee09dee23454ad1b4365d7f19c9))
+
 ### [0.4.10](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.9...v0.4.10) (2024-07-29)
 
 
