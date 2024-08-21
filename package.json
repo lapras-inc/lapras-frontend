@@ -26,8 +26,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "body-scroll-lock": "^3.1.5",
-    "core-js": "^3.37.1",
-    "vue": "3.4.34"
+    "core-js": "^3.37.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
@@ -84,5 +83,8 @@
   },
   "engines": {
     "node": "20.x"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.34"
   }
 }
