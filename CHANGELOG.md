@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.12](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.11...v0.4.12) (2024-08-21)
+
+
+### Bug Fixes
+
+* devDependenceisにも追加 ([9de463b](https://github.com/lapras-inc/lapras-frontend/commit/9de463b1309e6eb95f33601fa7990d0785baa959))
+* vueをpeerDependenciesへ ([75efe56](https://github.com/lapras-inc/lapras-frontend/commit/75efe568736363e5e60ac386b8ff3d2fe1b1cecc))
+
 ### [0.4.11](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.10...v0.4.11) (2024-07-31)
 
 
