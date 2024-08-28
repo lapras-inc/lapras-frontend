@@ -71,7 +71,7 @@ export default defineComponent({
   display: inline-block;
   margin: 0 0 0 7px;
   padding: 0.5em 1em;
-  color: $white;
+  color: $black-000;
   border-radius: 2em;
   background: $line-color;
 

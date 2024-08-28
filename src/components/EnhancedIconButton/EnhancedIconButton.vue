@@ -88,7 +88,7 @@ export default defineComponent({
   right: 0;
   left: 0;
   text-align: center;
-  color: $white;
+  color: $black-000;
   margin: 0;
 }
 

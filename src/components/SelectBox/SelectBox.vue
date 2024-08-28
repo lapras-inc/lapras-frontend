@@ -67,7 +67,7 @@ export default defineComponent({
   color: $lapras-sec;
   border: 1px solid;
   border-radius: 4px;
-  background: $white;
+  background: $black-000;
 
   @include base-hover;
 }

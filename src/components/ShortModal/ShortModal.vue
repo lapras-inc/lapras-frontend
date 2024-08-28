@@ -119,7 +119,7 @@ export default defineComponent({
     margin: auto auto 3px;
 
     .close {
-      color: $white;
+      color: $black-000;
       font-size: 18px;
     }
   }
@@ -147,7 +147,7 @@ export default defineComponent({
 .panel {
   overflow: hidden;
   border-radius: $corner-r;
-  background: $white;
+  background: $black-000;
   width: calc(100vw - 40px);
   height: calc(100vh - 80px);
   display: flex;
