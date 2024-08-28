@@ -130,7 +130,7 @@ export default defineComponent({
 }
 
 .close {
-  color: $white;
+  color: $black-000;
   line-height: 1;
   cursor: pointer;
   display: inline-block;
@@ -144,7 +144,7 @@ export default defineComponent({
   overflow: hidden;
   max-width: 850px;
   border-radius: $corner-r;
-  background: $white;
+  background: $black-000;
 }
 
 .close {

@@ -21,7 +21,7 @@ export default defineComponent({
 <style lang="scss">
 .card {
   &.is-skin-default {
-    background: $white;
+    background: $black-000;
     border-radius: $corner-r-l;
     box-shadow: 0 0 4px 0 #d0d0d0;
   }

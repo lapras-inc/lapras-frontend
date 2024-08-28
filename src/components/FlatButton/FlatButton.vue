@@ -104,42 +104,42 @@ export default defineComponent({
   @include base-hover;
 
   &.skin-important {
-    color: $white;
+    color: $black-000;
     background: $green;
   }
 
   &.skin-primary {
-    color: $white;
+    color: $black-000;
     background: $lapras-sec;
   }
 
   &.skin-primary-line {
     color: $lapras-sec;
     border: 1px solid;
-    background: $white;
+    background: $black-000;
   }
 
   &.skin-secondary {
-    color: $white;
+    color: $black-000;
     background: $lapras-blue;
   }
 
   &.skin-tertiary {
-    color: $white;
+    color: $black-000;
     background: #9eacc2;
   }
 
   &.skin-muted {
     color: $text-base;
     border: 1px solid $line-color;
-    background: $white;
+    background: $black-000;
   }
 
   &:disabled,
   &.skin-disabled {
     pointer-events: none;
-    color: $white;
-    background: $ultra-light-gray;
+    color: $black-000;
+    background: $black-200;
   }
 
   &.size-xl {

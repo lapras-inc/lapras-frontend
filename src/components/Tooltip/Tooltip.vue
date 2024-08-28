@@ -97,7 +97,7 @@ export default defineComponent({
     transition:
       opacity 0.3s ease,
       visibility 0.3s ease;
-    color: $white;
+    color: $black-000;
     background: $text-base;
   }
 }

@@ -75,7 +75,7 @@ export default defineComponent({
   height: 14px;
   transition: left 0.2s ease;
   border-radius: 7px;
-  background: $white;
+  background: $black-000;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -84,7 +84,7 @@ export default defineComponent({
 }
 
 .checkbox:checked + .switch-base {
-  background: $dark-gray;
+  background: $black-700;
 
   .toggle {
     left: 22px;

@@ -119,6 +119,6 @@ export default defineComponent({
 }
 
 .text-input::placeholder {
-  color: $light-gray;
+  color: $black-400;
 }
 </style>
