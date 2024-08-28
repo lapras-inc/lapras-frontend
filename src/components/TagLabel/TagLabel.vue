@@ -46,7 +46,7 @@ export default defineComponent({
   font-weight: bold;
   color: $white;
   padding: 5px 8px;
-  background: $gray;
+  background: $black-600;
   margin: 0;
 }
 

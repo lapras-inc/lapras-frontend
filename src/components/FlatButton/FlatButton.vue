@@ -139,7 +139,7 @@ export default defineComponent({
   &.skin-disabled {
     pointer-events: none;
     color: $white;
-    background: $ultra-light-gray;
+    background: $black-200;
   }
 
   &.size-xl {

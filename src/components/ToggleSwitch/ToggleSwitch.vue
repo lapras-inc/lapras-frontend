@@ -84,7 +84,7 @@ export default defineComponent({
 }
 
 .checkbox:checked + .switch-base {
-  background: $dark-gray;
+  background: $black-700;
 
   .toggle {
     left: 22px;

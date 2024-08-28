@@ -61,7 +61,7 @@ export default defineComponent({
   small {
     font-weight: normal;
     margin-left: 7px;
-    color: $gray;
+    color: $black-600;
   }
 }
 
@@ -76,7 +76,7 @@ export default defineComponent({
   background: $line-color;
 
   &.is-required {
-    background: $dark-gray;
+    background: $black-700;
   }
 }
 
@@ -89,6 +89,6 @@ export default defineComponent({
 .note {
   margin: 15px 0 0;
   font-size: 12px;
-  color: $gray;
+  color: $black-600;
 }
 </style>
