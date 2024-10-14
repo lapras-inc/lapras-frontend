@@ -85,6 +85,7 @@ const lines = computed(() => {
 .circle {
   background-color: #ccc;
   border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes pulse {
