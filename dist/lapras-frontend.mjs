@@ -229,7 +229,7 @@ function cr(e, t, r, n, o, a) {
     ])
   ], 2);
 }
-const Mn = /* @__PURE__ */ x(lr, [["render", cr], ["__scopeId", "data-v-130587c5"]]), pr = C({
+const Mn = /* @__PURE__ */ x(lr, [["render", cr], ["__scopeId", "data-v-76efe8b1"]]), pr = C({
   inheritAttrs: !1,
   props: {
     tag: {
@@ -237,7 +237,7 @@ const Mn = /* @__PURE__ */ x(lr, [["render", cr], ["__scopeId", "data-v-130587c5
       default: "button"
     }
   }
-}), fr = (e) => (Ue("data-v-99143396"), e = e(), Xe(), e), vr = /* @__PURE__ */ fr(() => /* @__PURE__ */ c("svg", {
+}), fr = (e) => (Ue("data-v-55c59436"), e = e(), Xe(), e), vr = /* @__PURE__ */ fr(() => /* @__PURE__ */ c("svg", {
   class: "svg",
   viewBox: "0 0 40 40"
 }, [
@@ -297,7 +297,7 @@ function mr(e, t, r, n, o, a) {
     _: 3
   }, 16);
 }
-const Fn = /* @__PURE__ */ x(pr, [["render", mr], ["__scopeId", "data-v-99143396"]]), gr = C({
+const Fn = /* @__PURE__ */ x(pr, [["render", mr], ["__scopeId", "data-v-55c59436"]]), gr = C({
   inheritAttrs: !1,
   props: {
     label: {
@@ -345,7 +345,7 @@ function Br(e, t, r, n, o, a) {
     ])
   ], 16);
 }
-const Hn = /* @__PURE__ */ x(gr, [["render", Br], ["__scopeId", "data-v-1a297517"]]), Ir = C({
+const Hn = /* @__PURE__ */ x(gr, [["render", Br], ["__scopeId", "data-v-3b2fbddf"]]), Ir = C({
   inheritAttrs: !1,
   components: {
     Icon: ve
@@ -398,7 +398,7 @@ function Cr(e, t, r, n, o, a) {
     _: 3
   }, 16, ["class", "disabled"]);
 }
-const Wn = /* @__PURE__ */ x(Ir, [["render", Cr], ["__scopeId", "data-v-5249a286"]]), vt = (e) => {
+const Wn = /* @__PURE__ */ x(Ir, [["render", Cr], ["__scopeId", "data-v-ef3a5852"]]), vt = (e) => {
   if (e && !(e.includes(":") && !e.match(/^https?:\/\//i)))
     return e;
 }, xr = C({
@@ -596,7 +596,7 @@ function Hr(e, t, r, n, o, a) {
     _: 3
   });
 }
-const zn = /* @__PURE__ */ x(Mr, [["render", Hr], ["__scopeId", "data-v-2db1b433"]]), Wr = C({
+const zn = /* @__PURE__ */ x(Mr, [["render", Hr], ["__scopeId", "data-v-c5d54c35"]]), Wr = C({
   inheritAttrs: !1,
   props: {
     modelValue: {
@@ -619,7 +619,7 @@ const zn = /* @__PURE__ */ x(Mr, [["render", Hr], ["__scopeId", "data-v-2db1b433
       onInput: (o) => r(o.target.checked)
     };
   }
-}), Nr = (e) => (Ue("data-v-4f75ed60"), e = e(), Xe(), e), zr = ["checked"], qr = /* @__PURE__ */ Nr(() => /* @__PURE__ */ c("div", { class: "dot" }, null, -1));
+}), Nr = (e) => (Ue("data-v-0a65636e"), e = e(), Xe(), e), zr = ["checked"], qr = /* @__PURE__ */ Nr(() => /* @__PURE__ */ c("div", { class: "dot" }, null, -1));
 function Yr(e, t, r, n, o, a) {
   return v(), g("label", {
     class: U(["radio", { "is-disabled": e.disabled }])
@@ -633,7 +633,7 @@ function Yr(e, t, r, n, o, a) {
     qr
   ], 2);
 }
-const qn = /* @__PURE__ */ x(Wr, [["render", Yr], ["__scopeId", "data-v-4f75ed60"]]), Ur = C({
+const qn = /* @__PURE__ */ x(Wr, [["render", Yr], ["__scopeId", "data-v-0a65636e"]]), Ur = C({
   inheritAttrs: !1,
   props: {
     max: {
@@ -669,7 +669,7 @@ function Xr(e, t, r, n, o, a) {
     }, null, 4)
   ], 16);
 }
-const Yn = /* @__PURE__ */ x(Ur, [["render", Xr], ["__scopeId", "data-v-814aab7c"]]), Gr = C({
+const Yn = /* @__PURE__ */ x(Ur, [["render", Xr], ["__scopeId", "data-v-80af665b"]]), Gr = C({
   components: {
     Icon: ve
   },
@@ -722,7 +722,7 @@ function eo(e, t, r, n, o, a) {
     ])
   ]);
 }
-const Un = /* @__PURE__ */ x(Gr, [["render", eo], ["__scopeId", "data-v-e11577f7"]]), to = C({
+const Un = /* @__PURE__ */ x(Gr, [["render", eo], ["__scopeId", "data-v-d6a6e489"]]), to = C({
   components: {
     Icon: ve
   },
@@ -817,7 +817,7 @@ function ao(e, t, r, n, o, a) {
     _: 3
   });
 }
-const Xn = /* @__PURE__ */ x(to, [["render", ao], ["__scopeId", "data-v-d21b0974"]]), io = C({
+const Xn = /* @__PURE__ */ x(to, [["render", ao], ["__scopeId", "data-v-5cf391b8"]]), io = C({
   inheritAttrs: !1,
   props: {
     background: {
@@ -848,7 +848,7 @@ function lo(e, t, r, n, o, a) {
     ], 2)
   ], 16);
 }
-const Gn = /* @__PURE__ */ x(io, [["render", lo], ["__scopeId", "data-v-b448a5a6"]]), uo = C({
+const Gn = /* @__PURE__ */ x(io, [["render", lo], ["__scopeId", "data-v-b80e4e79"]]), uo = C({
   inheritAttrs: !1,
   props: {
     multiline: {
@@ -915,7 +915,7 @@ function fo(e, t, r, n, o, a) {
     onBlur: t[5] || (t[5] = (s) => e.$emit("blur"))
   }), null, 16, po));
 }
-const Zn = /* @__PURE__ */ x(uo, [["render", fo], ["__scopeId", "data-v-b0dc756c"]]), vo = C({
+const Zn = /* @__PURE__ */ x(uo, [["render", fo], ["__scopeId", "data-v-2edfa012"]]), vo = C({
   props: {
     isActive: {
       type: Boolean,
@@ -973,7 +973,7 @@ const Jn = /* @__PURE__ */ x(vo, [["render", go], ["__scopeId", "data-v-29bfced2
       onInput: (o) => r(o.target.checked)
     };
   }
-}), bo = (e) => (Ue("data-v-b0aac0b1"), e = e(), Xe(), e), wo = { class: "toggle-switch" }, $o = ["checked", "disabled"], ko = /* @__PURE__ */ bo(() => /* @__PURE__ */ c("div", { class: "toggle" }, null, -1)), Oo = [
+}), bo = (e) => (Ue("data-v-36bffd3f"), e = e(), Xe(), e), wo = { class: "toggle-switch" }, $o = ["checked", "disabled"], ko = /* @__PURE__ */ bo(() => /* @__PURE__ */ c("div", { class: "toggle" }, null, -1)), Oo = [
   ko
 ];
 function Bo(e, t, r, n, o, a) {
@@ -990,7 +990,7 @@ function Bo(e, t, r, n, o, a) {
     }, Oo, 2)
   ]);
 }
-const Kn = /* @__PURE__ */ x(yo, [["render", Bo], ["__scopeId", "data-v-b0aac0b1"]]);
+const Kn = /* @__PURE__ */ x(yo, [["render", Bo], ["__scopeId", "data-v-36bffd3f"]]);
 var R = "top", W = "bottom", N = "right", L = "left", Je = "auto", Ie = [R, W, N, L], de = "start", ke = "end", Io = "clippingParents", xt = "viewport", ge = "popper", Ao = "reference", gt = /* @__PURE__ */ Ie.reduce(function(e, t) {
   return e.concat([t + "-" + de, t + "-" + ke]);
 }, []), Dt = /* @__PURE__ */ [].concat(Ie, [Je]).reduce(function(e, t) {
@@ -1952,7 +1952,7 @@ function Rn(e, t, r, n, o, a) {
     ], 512)
   ]);
 }
-const Qn = /* @__PURE__ */ x(_n, [["render", Rn], ["__scopeId", "data-v-3e3124c5"]]);
+const Qn = /* @__PURE__ */ x(_n, [["render", Rn], ["__scopeId", "data-v-e8caa5d7"]]);
 export {
   Vn as AvatarImg,
   jn as Card,
