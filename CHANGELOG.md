@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.13](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.12...v0.4.13) (2024-10-15)
+
+
+### Features
+
+* content loader ([e46ffba](https://github.com/lapras-inc/lapras-frontend/commit/e46ffbaa4cb47870876b8ccceaf0e30bf46666c5))
+
+
+### Bug Fixes
+
+* add animation to circle ([174be08](https://github.com/lapras-inc/lapras-frontend/commit/174be085b53a0c61405ccb17551848c1c999d727))
+
 ### [0.4.12](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.11...v0.4.12) (2024-08-21)
 
 
