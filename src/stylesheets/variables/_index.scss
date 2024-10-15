@@ -2,24 +2,65 @@
 // Colors
 // ==========================================================================
 
+$logo-gradation: linear-gradient(160deg, #1ed2e6 0%, #19b0e9 14%, #1280ee 35%, #0f6ef0 45%, #003296 100%);
+$cyan: #1ED2E6;
+$s-lapras-blue: #0F6EF0;
+$s-lapras-sec: #0032AA;
 $lapras-blue: #1E86DE;
+$lapras-blue-800: #4B9EE5;
+$lapras-blue-600: #78B6EB;
+$lapras-blue-400: #BDE0FD;
+$lapras-blue-200: #D7E6F5;
+$lapras-blue-100: #D7E6F5;
 $lapras-sec: #003089;
-$white: #FFFFFF;
-$lapras-mid-blue: #BCE0FD;
-$red: #ff5a5f;
-$orange: #FFAB00;
-$yellow: #FFD600;
-$black: #000;
-$text-base: #2C2C2C;
-$semi-black: #424242;
-$dark-gray: #616161;
+$lapras-sec-800: #3359A1;
+$lapras-sec-600: #6683B8;
+$lapras-sec-400: #99ACD0;
+$lapras-sec-300: #BFCBE1;
+$lapras-sec-100: #DEE4F0;
+$blue-gray: #697A9B;
+$blue-gray-800: #8795AF;
+$blue-gray-600: #9EACC2;
+$blue-gray-400: #C3CAD7;
+$logo-black: #231815;
+$black: #000000;
+$black-900: #2C2C2C;
+$black-800: #424242;
+$black-700: #616161;
+$black-600: #7F7F7F;
+$black-500: #9E9E9E;
+$black-400: #C8C8C8;
+$black-300: #E0E0E0;
+$black-200: #EAEAEA;
+$black-100: #F5F5F5;
+$black-000: #FFFFFF;
+$blue-green: #18B0A8;
 $green: #18BF69;
-$gray: #7F7F7F;
-$light-gray: #C8C8C8;
-$line-color: #E0E0E0;
-$line-color-light: #EAEAEA;
-$ultra-light-gray: #EAEAEA;
-$background: #F5F5F5;
+$red: #FF5A5F;
+$yellow: #FFD600;
+$gold: #AE9301;
+$gold-100: #F7F4E6;
+$gold-50: #FBFAF2;
+$orange: #FFAB00;
+
+// for IVS 2024
+$ivs-logo-black: #231815;
+$ivs-black: #00081A;
+$ivs-black-030: #F7F8F8;
+$ivs-black-800: #333948;
+$ivs-black-100: #00081A1A;
+$ivs-blue: #2718A5;
+$ivs-yellow: #D0AF4C;
+
+$ivs-grad-start: #2D1CCD;
+$ivs-grad-end: #D251F3;
+$ivs-grad: linear-gradient(to right, $ivs-grad-start, $ivs-grad-end);
+
+// role color
+$text-base: $black-900;
+$line-color: $black-300;
+$line-color-light: $black-200;
+$background: $black-100;
 
 // ==========================================================================
 // Typography
@@ -117,12 +158,12 @@ $form-boder-color: #767676 !default;
 $form-border-radius: 3px !default;
 $form-transition-duration: 0.3s !default;
 $form-transition-property: border-color, box-shadow, background-color !default;
-$form-focus-border-color: #1589ee !default;
+$form-focus-border-color: #1589EE !default;
 $form-focus-box-shadow: 0 0 5px #1589ee !default;
 $form-placeholder-color: #767676 !default;
 $form-disabled-cursor: not-allowed !default;
 $form-disabled-opacity: 0.5 !default;
-$form-disabled-background-color: #ddd !default;
+$form-disabled-background-color: #DDD !default;
 
 // @desc - pxをremに変換します。
 // @param {Number} $px - 指定したいピクセル値。

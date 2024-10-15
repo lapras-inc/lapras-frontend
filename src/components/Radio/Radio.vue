@@ -52,7 +52,7 @@ export default defineComponent({
   height: 20px;
   border: 1px solid $line-color;
   border-radius: 50%;
-  background: $white;
+  background: $black-000;
   display: block;
   cursor: pointer;
 

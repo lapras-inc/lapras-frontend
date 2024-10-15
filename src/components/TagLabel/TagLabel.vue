@@ -44,9 +44,9 @@ export default defineComponent({
 
 .sub {
   font-weight: bold;
-  color: $white;
+  color: $black-000;
   padding: 5px 8px;
-  background: $gray;
+  background: $black-600;
   margin: 0;
 }
 
