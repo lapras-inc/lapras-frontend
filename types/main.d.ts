@@ -16,3 +16,4 @@ export { default as TextInput } from './components/TextInput/TextInput.vue';
 export { default as ToggleLabelSet } from './components/ToggleLabelSet/ToggleLabelSet.vue';
 export { default as ToggleSwitch } from './components/ToggleSwitch/ToggleSwitch.vue';
 export { default as Tooltip } from './components/Tooltip/Tooltip.vue';
+export { default as ContentLoader } from './components/ContentLoader/ContentLoader.vue';
