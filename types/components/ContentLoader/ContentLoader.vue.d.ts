@@ -1,28 +1,33 @@
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<{
     type?: "PARAGRAPH" | "BULLET_LIST" | "CIRCLE";
-    height?: number;
-    baseLineHeight?: number;
+    lineCount?: number;
+    lineHeight?: number;
+    randomLineWidth?: boolean;
     gap?: number;
 }>, {
     type: string;
-    height: number;
-    baseLineHeight: number;
+    lineCount: number;
+    lineHeight: number;
+    randomLineWidth: boolean;
     gap: number;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<{
     type?: "PARAGRAPH" | "BULLET_LIST" | "CIRCLE";
-    height?: number;
-    baseLineHeight?: number;
+    lineCount?: number;
+    lineHeight?: number;
+    randomLineWidth?: boolean;
     gap?: number;
 }>, {
     type: string;
-    height: number;
-    baseLineHeight: number;
+    lineCount: number;
+    lineHeight: number;
+    randomLineWidth: boolean;
     gap: number;
 }>>>, {
     type: "PARAGRAPH" | "BULLET_LIST" | "CIRCLE";
-    height: number;
     gap: number;
-    baseLineHeight: number;
+    lineHeight: number;
+    lineCount: number;
+    randomLineWidth: boolean;
 }, {}>;
 export default _default;
 type __VLS_WithDefaults<P, D> = {
