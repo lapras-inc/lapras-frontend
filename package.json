@@ -1,6 +1,6 @@
 {
   "name": "@lapras-inc/lapras-frontend",
-  "version": "0.4.13",
+  "version": "0.4.14",
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "scripts": {
     "build": "npm run build:types && npm run build:vue",
