@@ -4,6 +4,7 @@
     :value="modelValue"
     class="text-input is-multi-line"
     :class="{ 'has-error': error }"
+    :disabled="disabled"
     v-if="multiline"
     @input="onInput"
     @focus="$emit('focus')"
@@ -15,7 +16,8 @@
     :value="modelValue"
     class="text-input is-single-line"
     :class="{ 'has-error': error }"
-    type="text"
+    :disabled="disabled"
+    :type="type"
     @input="onInput"
     @focus="$emit('focus')"
     @blur="$emit('blur')"
@@ -48,6 +50,14 @@ export default defineComponent({
     baseTextareaHeight: {
       type: Number,
       default: 56,
+    },
+    type: {
+      type: String,
+      default: 'text',
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
   emits: {

@@ -19,6 +19,14 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
+    type: {
+        type: StringConstructor;
+        default: string;
+    };
+    disabled: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }, {
     textarea: import("vue").Ref<HTMLElement | null>;
     onInput: (e: Event) => void;
@@ -47,12 +55,22 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
+    type: {
+        type: StringConstructor;
+        default: string;
+    };
+    disabled: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }>> & {
     onFocus?: ((...args: any[]) => any) | undefined;
     onBlur?: ((...args: any[]) => any) | undefined;
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
 }, {
+    type: string;
     error: boolean;
+    disabled: boolean;
     multiline: boolean;
     modelValue: string;
     autoExpand: boolean;
