@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.16](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.15...v0.4.16) (2024-10-25)
+
+
+### Bug Fixes
+
+* typesとdisabledをpropsで受け取るように修正 ([156960b](https://github.com/lapras-inc/lapras-frontend/commit/156960b92ed4e0d0adaadf2306838cdd10e2ef73))
+
 ### [0.4.15](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.14...v0.4.15) (2024-10-25)
 
 
