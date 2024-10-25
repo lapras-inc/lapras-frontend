@@ -92,29 +92,33 @@ export default defineComponent({
 <style lang="scss" scoped>
 .text-input {
   font: inherit;
-  font-size: 14px;
+  // mobile safariでのfocus時の拡大を防ぐため16px以上が必要
+  font-size: 16px;
   box-sizing: border-box;
   width: 100%;
   margin: 0;
   color: $text-base;
   border: 0;
-  outline: 0;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid $line-color;
 
   &.has-error {
     border-color: $red;
+    background-color: $red-100;
+  }
+
+  @include mq-up(md) {
+    font-size: 14px;
   }
 }
 
 .is-single-line {
   line-height: 1;
-  padding: 7px 2px;
-  border-bottom: 1px solid $line-color;
+  border-radius: $corner-r;
 }
 
 .is-multi-line {
   line-height: 1.5;
-  padding: 7px 9px;
-  border: 1px solid $line-color;
   border-radius: $corner-r;
 }
 
