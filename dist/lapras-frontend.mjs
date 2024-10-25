@@ -401,7 +401,7 @@ function Sr(e, t, r, n, o, a) {
 const Nn = /* @__PURE__ */ S(Ar, [["render", Sr], ["__scopeId", "data-v-ef3a5852"]]), vt = (e) => {
   if (e && !(e.includes(":") && !e.match(/^https?:\/\//i)))
     return e;
-}, _r = E({
+}, Dr = E({
   // root属性によるcomputedのオーバーライドを防ぐ
   // https://jp.vuejs.org/v2/guide/components-props.html
   inheritAttrs: !1,
@@ -430,7 +430,7 @@ const Nn = /* @__PURE__ */ S(Ar, [["render", Sr], ["__scopeId", "data-v-ef3a5852
       formattedRel: r
     };
   }
-}), Dr = ["href", "rel", "target"];
+}), _r = ["href", "rel", "target"];
 function xr(e, t, r, n, o, a) {
   return c(), h("a", M(e.$attrs, {
     href: e.escapedHref,
@@ -438,9 +438,9 @@ function xr(e, t, r, n, o, a) {
     target: e.target
   }), [
     T(e.$slots, "default")
-  ], 16, Dr);
+  ], 16, _r);
 }
-const zn = /* @__PURE__ */ S(_r, [["render", xr]]);
+const zn = /* @__PURE__ */ S(Dr, [["render", xr]]);
 function Tr(e) {
   if (Array.isArray(e)) {
     for (var t = 0, r = Array(e.length); t < e.length; t++)
@@ -458,13 +458,13 @@ if (typeof window < "u") {
   };
   window.addEventListener("testPassive", null, ht), window.removeEventListener("testPassive", null, ht);
 }
-var _t = typeof window < "u" && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1), le = [], Pe = !1, Je = -1, ye = void 0, be = void 0, Dt = function(t) {
+var Dt = typeof window < "u" && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1), le = [], Pe = !1, Je = -1, ye = void 0, be = void 0, _t = function(t) {
   return le.some(function(r) {
     return !!(r.options.allowTouchMove && r.options.allowTouchMove(t));
   });
 }, Le = function(t) {
   var r = t || window.event;
-  return Dt(r.target) || r.touches.length > 1 ? !0 : (r.preventDefault && r.preventDefault(), !1);
+  return _t(r.target) || r.touches.length > 1 ? !0 : (r.preventDefault && r.preventDefault(), !1);
 }, Pr = function(t) {
   if (be === void 0) {
     var r = !!t, n = window.innerWidth - document.documentElement.clientWidth;
@@ -477,7 +477,7 @@ var _t = typeof window < "u" && window.navigator && window.navigator.platform &&
   return t ? t.scrollHeight - t.scrollTop <= t.clientHeight : !1;
 }, Vr = function(t, r) {
   var n = t.targetTouches[0].clientY - Je;
-  return Dt(t.target) ? !1 : r && r.scrollTop === 0 && n > 0 || Rr(r) && n < 0 ? Le(t) : (t.stopPropagation(), !0);
+  return _t(t.target) ? !1 : r && r.scrollTop === 0 && n > 0 || Rr(r) && n < 0 ? Le(t) : (t.stopPropagation(), !0);
 }, Mr = function(t, r) {
   if (!t) {
     console.error("disableBodyScroll unsuccessful - targetElement must be provided when calling disableBodyScroll on IOS devices.");
@@ -490,14 +490,14 @@ var _t = typeof window < "u" && window.navigator && window.navigator.platform &&
       targetElement: t,
       options: {}
     };
-    le = [].concat(Tr(le), [n]), _t ? (t.ontouchstart = function(o) {
+    le = [].concat(Tr(le), [n]), Dt ? (t.ontouchstart = function(o) {
       o.targetTouches.length === 1 && (Je = o.targetTouches[0].clientY);
     }, t.ontouchmove = function(o) {
       o.targetTouches.length === 1 && Vr(o, t);
     }, Pe || (document.addEventListener("touchmove", Le, Ze ? { passive: !1 } : void 0), Pe = !0)) : Pr(r);
   }
 }, mt = function() {
-  _t ? (le.forEach(function(t) {
+  Dt ? (le.forEach(function(t) {
     t.targetElement.ontouchstart = null, t.targetElement.ontouchmove = null;
   }), Pe && (document.removeEventListener("touchmove", Le, Ze ? { passive: !1 } : void 0), Pe = !1), Je = -1) : Lr(), le = [];
 };
@@ -870,6 +870,14 @@ const Zn = /* @__PURE__ */ S(io, [["render", lo], ["__scopeId", "data-v-b80e4e79
     baseTextareaHeight: {
       type: Number,
       default: 56
+    },
+    type: {
+      type: String,
+      default: "text"
+    },
+    disabled: {
+      type: Boolean,
+      default: !1
     }
   },
   emits: {
@@ -897,11 +905,12 @@ const Zn = /* @__PURE__ */ S(io, [["render", lo], ["__scopeId", "data-v-b80e4e79
       onInput: o
     };
   }
-}), co = ["value"], po = ["value"];
+}), co = ["value", "disabled"], po = ["value", "disabled", "type"];
 function fo(e, t, r, n, o, a) {
   return e.multiline ? (c(), h("textarea", M({ key: 0 }, e.$attrs, {
     value: e.modelValue,
     class: ["text-input is-multi-line", { "has-error": e.error }],
+    disabled: e.disabled,
     onInput: t[0] || (t[0] = (...s) => e.onInput && e.onInput(...s)),
     onFocus: t[1] || (t[1] = (s) => e.$emit("focus")),
     onBlur: t[2] || (t[2] = (s) => e.$emit("blur")),
@@ -909,13 +918,14 @@ function fo(e, t, r, n, o, a) {
   }), null, 16, co)) : (c(), h("input", M({ key: 1 }, e.$attrs, {
     value: e.modelValue,
     class: ["text-input is-single-line", { "has-error": e.error }],
-    type: "text",
+    disabled: e.disabled,
+    type: e.type,
     onInput: t[3] || (t[3] = (...s) => e.onInput && e.onInput(...s)),
     onFocus: t[4] || (t[4] = (s) => e.$emit("focus")),
     onBlur: t[5] || (t[5] = (s) => e.$emit("blur"))
   }), null, 16, po));
 }
-const Jn = /* @__PURE__ */ S(uo, [["render", fo], ["__scopeId", "data-v-2e736260"]]), vo = E({
+const Jn = /* @__PURE__ */ S(uo, [["render", fo], ["__scopeId", "data-v-f84d50db"]]), vo = E({
   props: {
     isActive: {
       type: Boolean,
@@ -995,7 +1005,7 @@ var R = "top", W = "bottom", N = "right", V = "left", Ke = "auto", Ae = [R, W, N
   return e.concat([t + "-" + de, t + "-" + ke]);
 }, []), Tt = /* @__PURE__ */ [].concat(Ae, [Ke]).reduce(function(e, t) {
   return e.concat([t, t + "-" + de, t + "-" + ke]);
-}, []), Co = "beforeRead", Eo = "read", So = "afterRead", _o = "beforeMain", Do = "main", xo = "afterMain", To = "beforeWrite", Po = "write", Lo = "afterWrite", Ro = [Co, Eo, So, _o, Do, xo, To, Po, Lo];
+}, []), Co = "beforeRead", Eo = "read", So = "afterRead", Do = "beforeMain", _o = "main", xo = "afterMain", To = "beforeWrite", Po = "write", Lo = "afterWrite", Ro = [Co, Eo, So, Do, _o, xo, To, Po, Lo];
 function G(e) {
   return e ? (e.nodeName || "").toLowerCase() : null;
 }
@@ -1199,8 +1209,8 @@ var No = function(t, r) {
 function zo(e) {
   var t, r = e.state, n = e.name, o = e.options, a = r.elements.arrow, s = r.modifiersData.popperOffsets, i = Y(r.placement), l = tt(i), d = [V, N].indexOf(i) >= 0, u = d ? "height" : "width";
   if (!(!a || !s)) {
-    var y = No(o.padding, r), w = et(a), f = l === "y" ? R : V, O = l === "y" ? W : N, g = r.rects.reference[u] + r.rects.reference[l] - s[l] - r.rects.popper[u], m = s[l] - r.rects.reference[l], k = Ie(a), A = k ? l === "y" ? k.clientHeight || 0 : k.clientWidth || 0 : 0, I = g / 2 - m / 2, v = y[f], b = A - w[u] - y[O], $ = A / 2 - w[u] / 2 + I, B = $e(v, $, b), D = l;
-    r.modifiersData[n] = (t = {}, t[D] = B, t.centerOffset = B - $, t);
+    var y = No(o.padding, r), w = et(a), f = l === "y" ? R : V, O = l === "y" ? W : N, g = r.rects.reference[u] + r.rects.reference[l] - s[l] - r.rects.popper[u], m = s[l] - r.rects.reference[l], k = Ie(a), A = k ? l === "y" ? k.clientHeight || 0 : k.clientWidth || 0 : 0, I = g / 2 - m / 2, v = y[f], b = A - w[u] - y[O], $ = A / 2 - w[u] / 2 + I, B = $e(v, $, b), _ = l;
+    r.modifiersData[n] = (t = {}, t[_] = B, t.centerOffset = B - $, t);
   }
 }
 function qo(e) {
@@ -1243,20 +1253,20 @@ function bt(e) {
   f = m.x, g = m.y;
   var k = s.hasOwnProperty("x"), A = s.hasOwnProperty("y"), I = V, v = R, b = window;
   if (d) {
-    var $ = Ie(r), B = "clientHeight", D = "clientWidth";
-    if ($ === F(r) && ($ = K(r), Z($).position !== "static" && i === "absolute" && (B = "scrollHeight", D = "scrollWidth")), $ = $, o === R || (o === V || o === N) && a === ke) {
+    var $ = Ie(r), B = "clientHeight", _ = "clientWidth";
+    if ($ === F(r) && ($ = K(r), Z($).position !== "static" && i === "absolute" && (B = "scrollHeight", _ = "scrollWidth")), $ = $, o === R || (o === V || o === N) && a === ke) {
       v = W;
-      var _ = y && $ === b && b.visualViewport ? b.visualViewport.height : (
+      var D = y && $ === b && b.visualViewport ? b.visualViewport.height : (
         // $FlowFixMe[prop-missing]
         $[B]
       );
-      g -= _ - n.height, g *= l ? 1 : -1;
+      g -= D - n.height, g *= l ? 1 : -1;
     }
     if (o === V || (o === R || o === W) && a === ke) {
       I = N;
       var C = y && $ === b && b.visualViewport ? b.visualViewport.width : (
         // $FlowFixMe[prop-missing]
-        $[D]
+        $[_]
       );
       f -= C - n.width, f *= l ? 1 : -1;
     }
@@ -1479,11 +1489,11 @@ function Oe(e, t) {
     element: I,
     strategy: "absolute",
     placement: o
-  }), D = Ue(Object.assign({}, I, B)), _ = w === ge ? D : $, C = {
-    top: b.top - _.top + k.top,
-    bottom: _.bottom - b.bottom + k.bottom,
-    left: b.left - _.left + k.left,
-    right: _.right - b.right + k.right
+  }), _ = Ue(Object.assign({}, I, B)), D = w === ge ? _ : $, C = {
+    top: b.top - D.top + k.top,
+    bottom: D.bottom - b.bottom + k.bottom,
+    left: b.left - D.left + k.left,
+    right: D.right - b.right + k.right
   }, x = e.modifiersData.offset;
   if (w === ge && x) {
     var z = x[o];
@@ -1532,7 +1542,7 @@ function un(e) {
         flipVariations: O,
         allowedAutoPlacements: g
       }) : J);
-    }, []), b = t.rects.reference, $ = t.rects.popper, B = /* @__PURE__ */ new Map(), D = !0, _ = v[0], C = 0; C < v.length; C++) {
+    }, []), b = t.rects.reference, $ = t.rects.popper, B = /* @__PURE__ */ new Map(), _ = !0, D = v[0], C = 0; C < v.length; C++) {
       var x = v[C], z = Y(x), P = fe(x) === de, Q = [R, W].indexOf(z) >= 0, ee = Q ? "width" : "height", j = Oe(t, {
         placement: x,
         boundary: u,
@@ -1545,27 +1555,27 @@ function un(e) {
       if (a && te.push(j[z] <= 0), i && te.push(j[q] <= 0, j[Ce] <= 0), te.every(function(se) {
         return se;
       })) {
-        _ = x, D = !1;
+        D = x, _ = !1;
         break;
       }
       B.set(x, te);
     }
-    if (D)
+    if (_)
       for (var Ee = O ? 3 : 1, je = function(J) {
-        var me = v.find(function(_e) {
-          var re = B.get(_e);
+        var me = v.find(function(De) {
+          var re = B.get(De);
           if (re)
             return re.slice(0, J).every(function(Fe) {
               return Fe;
             });
         });
         if (me)
-          return _ = me, "break";
+          return D = me, "break";
       }, he = Ee; he > 0; he--) {
         var Se = je(he);
         if (Se === "break") break;
       }
-    t.placement !== _ && (t.modifiersData[n]._skip = !0, t.placement = _, t.reset = !0);
+    t.placement !== D && (t.modifiersData[n]._skip = !0, t.placement = D, t.reset = !0);
   }
 }
 const dn = {
@@ -1667,28 +1677,28 @@ function bn(e) {
     rootBoundary: d,
     padding: y,
     altBoundary: u
-  }), k = Y(t.placement), A = fe(t.placement), I = !A, v = tt(k), b = yn(v), $ = t.modifiersData.popperOffsets, B = t.rects.reference, D = t.rects.popper, _ = typeof g == "function" ? g(Object.assign({}, t.rects, {
+  }), k = Y(t.placement), A = fe(t.placement), I = !A, v = tt(k), b = yn(v), $ = t.modifiersData.popperOffsets, B = t.rects.reference, _ = t.rects.popper, D = typeof g == "function" ? g(Object.assign({}, t.rects, {
     placement: t.placement
-  })) : g, C = typeof _ == "number" ? {
-    mainAxis: _,
-    altAxis: _
+  })) : g, C = typeof D == "number" ? {
+    mainAxis: D,
+    altAxis: D
   } : Object.assign({
     mainAxis: 0,
     altAxis: 0
-  }, _), x = t.modifiersData.offset ? t.modifiersData.offset[t.placement] : null, z = {
+  }, D), x = t.modifiersData.offset ? t.modifiersData.offset[t.placement] : null, z = {
     x: 0,
     y: 0
   };
   if ($) {
     if (a) {
-      var P, Q = v === "y" ? R : V, ee = v === "y" ? W : N, j = v === "y" ? "height" : "width", q = $[v], Ce = q + m[Q], te = q - m[ee], Ee = f ? -D[j] / 2 : 0, je = A === de ? B[j] : D[j], he = A === de ? -D[j] : -B[j], Se = t.elements.arrow, se = f && Se ? et(Se) : {
+      var P, Q = v === "y" ? R : V, ee = v === "y" ? W : N, j = v === "y" ? "height" : "width", q = $[v], Ce = q + m[Q], te = q - m[ee], Ee = f ? -_[j] / 2 : 0, je = A === de ? B[j] : _[j], he = A === de ? -_[j] : -B[j], Se = t.elements.arrow, se = f && Se ? et(Se) : {
         width: 0,
         height: 0
-      }, J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : Rt(), me = J[Q], _e = J[ee], re = $e(0, B[j], se[j]), Fe = I ? B[j] / 2 - Ee - re - me - C.mainAxis : je - re - me - C.mainAxis, Ht = I ? -B[j] / 2 + Ee + re + _e + C.mainAxis : he + re + _e + C.mainAxis, He = t.elements.arrow && Ie(t.elements.arrow), Wt = He ? v === "y" ? He.clientTop || 0 : He.clientLeft || 0 : 0, at = (P = x == null ? void 0 : x[v]) != null ? P : 0, Nt = q + Fe - at - Wt, zt = q + Ht - at, it = $e(f ? Re(Ce, Nt) : Ce, q, f ? ae(te, zt) : te);
+      }, J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : Rt(), me = J[Q], De = J[ee], re = $e(0, B[j], se[j]), Fe = I ? B[j] / 2 - Ee - re - me - C.mainAxis : je - re - me - C.mainAxis, Ht = I ? -B[j] / 2 + Ee + re + De + C.mainAxis : he + re + De + C.mainAxis, He = t.elements.arrow && Ie(t.elements.arrow), Wt = He ? v === "y" ? He.clientTop || 0 : He.clientLeft || 0 : 0, at = (P = x == null ? void 0 : x[v]) != null ? P : 0, Nt = q + Fe - at - Wt, zt = q + Ht - at, it = $e(f ? Re(Ce, Nt) : Ce, q, f ? ae(te, zt) : te);
       $[v] = it, z[v] = it - q;
     }
     if (i) {
-      var st, qt = v === "x" ? R : V, Ut = v === "x" ? W : N, oe = $[b], De = b === "y" ? "height" : "width", lt = oe + m[qt], ut = oe - m[Ut], We = [R, V].indexOf(k) !== -1, dt = (st = x == null ? void 0 : x[b]) != null ? st : 0, ct = We ? lt : oe - B[De] - D[De] - dt + C.altAxis, pt = We ? oe + B[De] + D[De] - dt - C.altAxis : ut, ft = f && We ? Wo(ct, oe, pt) : $e(f ? ct : lt, oe, f ? pt : ut);
+      var st, qt = v === "x" ? R : V, Ut = v === "x" ? W : N, oe = $[b], _e = b === "y" ? "height" : "width", lt = oe + m[qt], ut = oe - m[Ut], We = [R, V].indexOf(k) !== -1, dt = (st = x == null ? void 0 : x[b]) != null ? st : 0, ct = We ? lt : oe - B[_e] - _[_e] - dt + C.altAxis, pt = We ? oe + B[_e] + _[_e] - dt - C.altAxis : ut, ft = f && We ? Wo(ct, oe, pt) : $e(f ? ct : lt, oe, f ? pt : ut);
       $[b] = ft, z[b] = ft - oe;
     }
     t.modifiersData[n] = z;
@@ -1841,11 +1851,11 @@ function Sn(e) {
                 u.reset = !1, v = -1;
                 continue;
               }
-              var b = u.orderedModifiers[v], $ = b.fn, B = b.options, D = B === void 0 ? {} : B, _ = b.name;
+              var b = u.orderedModifiers[v], $ = b.fn, B = b.options, _ = B === void 0 ? {} : B, D = b.name;
               typeof $ == "function" && (u = $({
                 state: u,
-                options: D,
-                name: _,
+                options: _,
+                name: D,
                 instance: f
               }) || u);
             }
@@ -1891,8 +1901,8 @@ function Sn(e) {
     return f;
   };
 }
-var _n = [Ko, gn, Zo, jo, hn, dn, $n, Uo, pn], Dn = /* @__PURE__ */ Sn({
-  defaultModifiers: _n
+var Dn = [Ko, gn, Zo, jo, hn, dn, $n, Uo, pn], _n = /* @__PURE__ */ Sn({
+  defaultModifiers: Dn
 });
 const xn = E({
   components: {
@@ -1916,7 +1926,7 @@ const xn = E({
     const t = ze(null), r = ze(null);
     let n;
     return { hoverEvent: () => {
-      !t.value || !r.value || (n && n.destroy(), n = Dn(t.value, r.value, {
+      !t.value || !r.value || (n && n.destroy(), n = _n(t.value, r.value, {
         placement: "top",
         ...e.options
       }));
