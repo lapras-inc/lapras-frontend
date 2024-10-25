@@ -76,14 +76,14 @@ const lines = computed(() => {
 }
 
 .line {
-  background-color: #ccc;
+  background-color: $line-color-light;
   animation: pulse 1.5s ease-in-out infinite;
   border-radius: 0.25rem;
   flex-grow: 1;
 }
 
 .circle {
-  background-color: #ccc;
+  background-color: $line-color-light;
   border-radius: 50%;
   animation: pulse 1.5s ease-in-out infinite;
 }
