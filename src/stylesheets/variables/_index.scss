@@ -37,6 +37,7 @@ $black-000: #FFFFFF;
 $blue-green: #18B0A8;
 $green: #18BF69;
 $red: #FF5A5F;
+$red-100: #FDEEEE;
 $yellow: #FFD600;
 $gold: #AE9301;
 $gold-100: #F7F4E6;
@@ -90,24 +91,23 @@ $font-family-en: 'Roboto', 'Noto Sans JP', sans-serif;
 // `md`: iPad幅（ポートレート・縦）
 // `lg`: iPad幅（ランドスケープ・横）
 // `xl`: デスクトップ想定
-$breakpoint-up: (
-  'sm': 'print, screen and (min-width: 300px)',
-  'md': 'print, screen and (min-width: 768px)',
-  'lg': 'print, screen and (min-width: 1024px)',
-  'xl': 'print, screen and (min-width: 1440px)',
+$breakpoints: (
+  'sm': '300px',
+  'md': '768px',
+  'lg': '1024px',
+  'xl': '1440px',
 ) !default;
 
 @mixin mq-up($breakpoint) {
-  @if map-has-key($breakpoint-up, $breakpoint) {
-    @media #{inspect(map-get($breakpoint-up, $breakpoint))} {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media print, screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
   } @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-    + "Please make sure it is defined in `$breakpoint-up` map.";
+    + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
-
 
 // ==========================================================================
 // Layout
