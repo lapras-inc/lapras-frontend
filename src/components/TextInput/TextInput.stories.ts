@@ -20,6 +20,13 @@ const meta: Meta<TextInputPropsAndCustomArgs> = {
     autoExpand: false,
     baseTextareaHeight: 56,
   },
+  argTypes: {
+    type: {
+      control: { type: 'select' },
+      options: ['text', 'password', 'email', 'number', 'tel', 'date'],
+      defaultValue: 'text',
+    },
+  },
   render: (args) => ({
     components: { TextInput },
     setup() {
