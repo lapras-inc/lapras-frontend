@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.15](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.14...v0.4.15) (2024-10-25)
+
+
+### Bug Fixes
+
+* content-loaderの色を薄めに変更 ([a2b4fbc](https://github.com/lapras-inc/lapras-frontend/commit/a2b4fbc9f5f3db469505dcb1c3e4e9f97eec635c))
+* exportにcontent-loaderを追加 ([ff163b0](https://github.com/lapras-inc/lapras-frontend/commit/ff163b0ad24b7de7cb6fb35bb9944aee820ff539))
+* media-queryの指定をLAPRASに合わせて変更 & colorを追加 ([b2206e1](https://github.com/lapras-inc/lapras-frontend/commit/b2206e1dc66c1f16836e237ce4b1b353cf421f5c))
+* textinputの標準デザインを枠線ありに変更。その他微調整 ([27b5bb7](https://github.com/lapras-inc/lapras-frontend/commit/27b5bb7cb6783a2d37d0b1c25773f384fb55a851))
+
 ### [0.4.14](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.13...v0.4.14) (2024-10-22)
 
 
