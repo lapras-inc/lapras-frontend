@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.17](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.16...v0.4.17) (2024-11-12)
+
+
+### Bug Fixes
+
+* **avatarimg:** 括弧や空白が入っている文字列でも正しく表示できるように修正 ([3d397bf](https://github.com/lapras-inc/lapras-frontend/commit/3d397bf7122e1fe757083bcf5c152e162043efae))
+* typesとdisabledをpropsで受け取るように修正 ([76562c3](https://github.com/lapras-inc/lapras-frontend/commit/76562c3829fdaa32a46d80eb38450c851dfdb45f))
+
 ### [0.4.16](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.15...v0.4.16) (2024-10-25)
 
 
