@@ -19,12 +19,12 @@ const er = "data:image/svg+xml;charset=utf8,%3Csvg%20height%3D%22200%22%20viewBo
 };
 function rr(e, t, r, n, o, a) {
   return c(), h("div", M(e.$attrs, {
-    style: { backgroundImage: `url(${e.src || e.avatarDefault})` },
+    style: { backgroundImage: `url('${e.src || e.avatarDefault}')` },
     class: "avatar-icon",
     role: "img"
   }), null, 16);
 }
-const Mn = /* @__PURE__ */ S(tr, [["render", rr], ["__scopeId", "data-v-1e9b8680"]]), or = E({
+const Mn = /* @__PURE__ */ S(tr, [["render", rr], ["__scopeId", "data-v-ae8d1844"]]), or = E({
   inheritAttrs: !1,
   props: {
     skin: {
