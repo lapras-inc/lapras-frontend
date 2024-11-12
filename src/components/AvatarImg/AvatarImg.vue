@@ -1,7 +1,7 @@
 <template>
   <div
     v-bind="$attrs"
-    :style="{ backgroundImage: `url(${src || avatarDefault})` }"
+    :style="{ backgroundImage: `url('${src || avatarDefault}')` }"
     class="avatar-icon"
     role="img"
   ></div>
