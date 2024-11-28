@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.18](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.17...v0.4.18) (2024-11-28)
+
+
+### Bug Fixes
+
+* packageのバージョンは自動採番のため、変更前に戻す ([ab62552](https://github.com/lapras-inc/lapras-frontend/commit/ab625523056a974fda5c14aa70af1a896a8bf16a))
+
 ### [0.4.17](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.16...v0.4.17) (2024-11-12)
 
 
