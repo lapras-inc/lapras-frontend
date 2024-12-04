@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.19](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.18...v0.4.19) (2024-12-04)
+
+
+### Bug Fixes
+
+* **Radio:** disabledが効いてなかったのを修正 ([e25036e](https://github.com/lapras-inc/lapras-frontend/commit/e25036e44d6cebfb7bef1c1aebc2912a1ea809dd))
+
 ### [0.4.18](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.17...v0.4.18) (2024-11-28)
 
 
