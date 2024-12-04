@@ -6,6 +6,7 @@
       @change="onInput"
       class="input"
       type="radio"
+      :disabled="disabled"
     />
     <div class="dot"></div>
   </label>
