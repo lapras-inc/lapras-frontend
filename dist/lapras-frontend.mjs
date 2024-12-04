@@ -619,7 +619,7 @@ const qn = /* @__PURE__ */ S(jr, [["render", Hr], ["__scopeId", "data-v-c5d54c35
       onInput: (o) => r(o.target.checked)
     };
   }
-}), Nr = (e) => (Xe("data-v-0a65636e"), e = e(), Ge(), e), zr = ["checked"], qr = /* @__PURE__ */ Nr(() => /* @__PURE__ */ p("div", { class: "dot" }, null, -1));
+}), Nr = (e) => (Xe("data-v-2b146e1a"), e = e(), Ge(), e), zr = ["checked", "disabled"], qr = /* @__PURE__ */ Nr(() => /* @__PURE__ */ p("div", { class: "dot" }, null, -1));
 function Ur(e, t, r, n, o, a) {
   return c(), h("label", {
     class: X(["radio", { "is-disabled": e.disabled }])
@@ -628,12 +628,13 @@ function Ur(e, t, r, n, o, a) {
       checked: e.modelValue,
       onChange: t[0] || (t[0] = (...s) => e.onInput && e.onInput(...s)),
       class: "input",
-      type: "radio"
+      type: "radio",
+      disabled: e.disabled
     }), null, 16, zr),
     qr
   ], 2);
 }
-const Un = /* @__PURE__ */ S(Wr, [["render", Ur], ["__scopeId", "data-v-0a65636e"]]), Yr = E({
+const Un = /* @__PURE__ */ S(Wr, [["render", Ur], ["__scopeId", "data-v-2b146e1a"]]), Yr = E({
   inheritAttrs: !1,
   props: {
     max: {
