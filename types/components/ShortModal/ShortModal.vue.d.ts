@@ -27,6 +27,10 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
+    closeOnClickOutside: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     close: null;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
@@ -58,6 +62,10 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
+    closeOnClickOutside: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }>> & {
     onClose?: ((...args: any[]) => any) | undefined;
 }, {
@@ -68,5 +76,6 @@ declare const _default: import("vue").DefineComponent<{
     panel: boolean;
     gutter: number;
     outerClose: boolean;
+    closeOnClickOutside: boolean;
 }, {}>;
 export default _default;
