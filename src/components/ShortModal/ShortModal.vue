@@ -7,7 +7,7 @@
           background: filterBackground,
           zIndex,
         }"
-        @click="$emit('close')"
+        @click="() => closeOnClickOutside && $emit('close')"
       ></div>
       <div
         class="modal-container"
@@ -69,6 +69,10 @@ export default defineComponent({
     // バツボタンをダイアログの外に表示するか否か
     // 基本的に SCOUT は true、LAPRAS は false
     outerClose: {
+      type: Boolean,
+      default: true,
+    },
+    closeOnClickOutside: {
       type: Boolean,
       default: true,
     },
