@@ -75,7 +75,7 @@ declare const _default: import("vue").DefineComponent<{
     hasClose: boolean;
     panel: boolean;
     gutter: number;
-    outerClose: boolean;
     closeOnClickOutside: boolean;
+    outerClose: boolean;
 }, {}>;
 export default _default;
