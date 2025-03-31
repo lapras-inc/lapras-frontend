@@ -9,7 +9,7 @@
     >
       <div
         class="filter"
-        @click="$emit('close')"
+        @click="() => closeOnClickOutside && $emit('close')"
         :style="{ background: filterBackground }"
       ></div>
 
@@ -68,6 +68,10 @@ export default defineComponent({
     zIndex: {
       type: Number,
       default: 10,
+    },
+    closeOnClickOutside: {
+      type: Boolean,
+      default: true,
     },
   },
   emits: {
