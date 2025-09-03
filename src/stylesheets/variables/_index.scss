@@ -1,3 +1,4 @@
+@use "sass:map";
 // ==========================================================================
 // Colors
 // ==========================================================================
@@ -99,8 +100,8 @@ $breakpoints: (
 ) !default;
 
 @mixin mq-up($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media print, screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media print, screen and (min-width: #{map.get($breakpoints, $breakpoint)}) {
       @content;
     }
   } @else {
@@ -170,7 +171,7 @@ $form-disabled-background-color: #DDD !default;
 // @param {String} $key [sm] - 指定するブレイクポイントを`$font-size`のキーで指定。
 // @example - rem(15px) => 1rem
 @function rem($px, $key: 'none') {
-  $value: map-get($font-size, $key);
+  $value: map.get($font-size, $key);
   @return ($px / $value) * 1rem;
 }
 
