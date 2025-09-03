@@ -4,7 +4,7 @@ const pluginVue = require('eslint-plugin-vue');
 const tsEslint = require('typescript-eslint');
 const vueParser = require('vue-eslint-parser');
 const prettierConfig = require("eslint-plugin-prettier/recommended");
-
+const globals = require('globals');
 
 module.exports = [
   eslint.configs.recommended,
@@ -21,6 +21,7 @@ module.exports = [
         sourceType: "module",
         project: ["./tsconfig.json"],
       },
+      globals: { ...globals.browser }
     },
   },
   {
