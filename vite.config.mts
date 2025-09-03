@@ -9,6 +9,7 @@ export default defineConfig({
       scss: {
         // componentのscssで共通でimportするstyleの指定
         additionalData: `@use "@/stylesheets" as *;`,
+        api: 'modern'
       }
     }
   },
