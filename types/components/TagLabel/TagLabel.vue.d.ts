@@ -1,4 +1,4 @@
-declare const _default: import("vue").DefineComponent<import("vue").ExtractPropTypes<{
+declare const _default: import("vue").DefineComponent<{
     background: {
         type: StringConstructor;
         default: string;
@@ -7,7 +7,7 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: StringConstructor;
         default: string;
     };
-}>, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     background: {
         type: StringConstructor;
         default: string;
@@ -16,8 +16,8 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: StringConstructor;
         default: string;
     };
-}>> & Readonly<{}>, {
+}>>, {
     background: string;
     color: string;
-}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
+}, {}>;
 export default _default;

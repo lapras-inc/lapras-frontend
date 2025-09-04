@@ -1,17 +1,37 @@
 declare const _default: import("vue").DefineComponent<{
-    href: string | undefined;
-    force: boolean;
-    rel: string | undefined;
-    target: string | undefined;
+    href: {
+        type: StringConstructor;
+        validator(value: string): boolean;
+    };
+    force: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    target: {
+        type: StringConstructor;
+    };
+    rel: {
+        type: StringConstructor;
+    };
 }, {
     escapedHref: import("vue").ComputedRef<string | undefined>;
     formattedRel: import("vue").ComputedRef<string | undefined>;
-}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<{
-    href: string | undefined;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+    href: {
+        type: StringConstructor;
+        validator(value: string): boolean;
+    };
+    force: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    target: {
+        type: StringConstructor;
+    };
+    rel: {
+        type: StringConstructor;
+    };
+}>>, {
     force: boolean;
-    rel: string | undefined;
-    target: string | undefined;
-}> & Readonly<{}>, {
-    force: boolean;
-}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
+}, {}>;
 export default _default;

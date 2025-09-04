@@ -1,4 +1,4 @@
-declare const _default: import("vue").DefineComponent<import("vue").ExtractPropTypes<{
+declare const _default: import("vue").DefineComponent<{
     modelValue: {
         type: BooleanConstructor;
         default: boolean;
@@ -7,9 +7,9 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: BooleanConstructor;
         default: undefined;
     };
-}>, {
+}, {
     onInput: (e: Event) => void;
-}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
@@ -20,10 +20,10 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: BooleanConstructor;
         default: undefined;
     };
-}>> & Readonly<{
+}>> & {
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
-}>, {
+}, {
     disabled: boolean;
     modelValue: boolean;
-}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
+}, {}>;
 export default _default;
