@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/vue3'
+import { Meta, StoryObj } from '@storybook/vue3-vite'
 import { action } from '@storybook/addon-actions'
 import TextInput from './TextInput.vue'
 import type { ComponentProps } from 'vue-component-type-helpers'

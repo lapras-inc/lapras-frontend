@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import EnhancedIconButton from './EnhancedIconButton.vue'
 import Icon from '@/components/Icon/Icon.vue'
 
