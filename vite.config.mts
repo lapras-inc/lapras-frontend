@@ -8,7 +8,8 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // componentのscssで共通でimportするstyleの指定
-        additionalData: `@import "@/stylesheets";`
+        additionalData: `@use "@/stylesheets" as *;`,
+        api: 'modern'
       }
     }
   },
@@ -33,8 +34,8 @@ export default defineConfig({
         },
         assetFileNames: (assetInfo) => {
           // vue-cliでのbuild時の命名に合わせる
-          if (assetInfo.name === 'style.css') return 'lapras-frontend.css';
-          return assetInfo.name ?? '';
+          if (assetInfo?.name === 'style.css') return 'lapras-frontend.css';
+          return assetInfo?.name ?? '';
         }
       },
     },

@@ -1,7 +1,9 @@
+@use "base-hover";
+
 @mixin inline-link() {
   text-decoration-skip-ink: none;
   color: inherit;
   text-decoration: underline;
 
-  @include base-hover();
+  @include base-hover.base-hover();
 }
