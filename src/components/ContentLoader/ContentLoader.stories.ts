@@ -47,7 +47,7 @@ export const Default: Story = {
     type: 'PARAGRAPH',
     lineCount: 5,
     lineHeight: 1,
-    randomLineWidth: true,
+    randomLineWidth: false,
     gap: 0.8,
   },
 }
