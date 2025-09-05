@@ -407,7 +407,7 @@ const xn = /* @__PURE__ */ D(wr, [["render", Br], ["__scopeId", "data-v-ef3a5852
       validator(e) {
         return e ? !(e.includes(":") && !e.match(/^https?:\/\//i)) : !0;
       },
-      required: !0
+      default: void 0
     },
     force: {
       type: Boolean,

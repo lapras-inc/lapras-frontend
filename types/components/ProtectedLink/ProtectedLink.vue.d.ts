@@ -6,7 +6,7 @@ declare const __VLS_component: import("vue").DefineComponent<import("vue").Extra
     href: {
         type: StringConstructor;
         validator(value: string): boolean;
-        required: true;
+        default: undefined;
     };
     force: {
         type: BooleanConstructor;
@@ -24,7 +24,7 @@ declare const __VLS_component: import("vue").DefineComponent<import("vue").Extra
     href: {
         type: StringConstructor;
         validator(value: string): boolean;
-        required: true;
+        default: undefined;
     };
     force: {
         type: BooleanConstructor;
@@ -41,6 +41,7 @@ declare const __VLS_component: import("vue").DefineComponent<import("vue").Extra
 }>> & Readonly<{}>, {
     rel: string;
     target: string;
+    href: string;
     force: boolean;
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
