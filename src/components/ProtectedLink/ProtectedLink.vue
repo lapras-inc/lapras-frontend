@@ -34,7 +34,7 @@ const props = defineProps({
       }
       return true
     },
-    required: true,
+    default: undefined,
   },
   force: {
     type: Boolean,
