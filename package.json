@@ -32,12 +32,11 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.8.0",
-    "@storybook/addon-essentials": "^8.3.5",
-    "@storybook/blocks": "^8.3.5",
-    "@storybook/core": "^8.3.5",
+    "@storybook/addon-essentials": "8.6.14",
+    "@storybook/blocks": "8.6.14",
+    "@storybook/core": "8.6.14",
     "@storybook/vue3-vite": "^8.3.5",
     "@types/body-scroll-lock": "^3.1.2",
-    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "8.42.0",
     "@typescript-eslint/parser": "8.42.0",
     "@vitejs/plugin-vue": "^5.1.1",
@@ -47,14 +46,14 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-storybook": "^0.12.0",
     "eslint-plugin-vue": "10.4.0",
     "gh-pages": "^6.1.1",
     "husky": "^4.2.5",
     "prettier": "^3.3.3",
     "sass": "1.92.0",
     "standard-version": "^9.5.0",
-    "storybook": "^8.3.5",
+    "storybook": "8.6.14",
     "tsc-alias": "1.8.10",
     "typescript": "5.9.2",
     "typescript-eslint": "8.42.0",
@@ -74,11 +73,6 @@
   },
   "repository": "ssh://git@github.com/lapras-inc/lapras-frontend.git",
   "types": "types/main.d.ts",
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  },
   "engines": {
     "node": ">=20.x <=22.x"
   },
