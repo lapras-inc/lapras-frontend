@@ -11,8 +11,9 @@ const meta: Meta<typeof CheckBox> = {
     },
     template: `
       <div>
-        <CheckBox v-model="args.modelValue" :disabled="args.disabled" class="additional" />
-        <p>{{ args.modelValue ? 'on' : 'off' }}</p>
+        <CheckBox v-model="args.modelValue" v-model:indeterminate="args.indeterminate" :disabled="args.disabled" class="additional" />
+        <p>modelValue: {{ args.modelValue ? 'on' : 'off' }}</p>
+        <p>indeterminate: {{ args.indeterminate }}</p>
       </div>
     `,
   }),
@@ -27,6 +28,7 @@ export const Default: Story = {
   args: {
     modelValue: true,
     disabled: false,
+    indeterminate: false,
   },
 }
 
@@ -35,5 +37,15 @@ export const Disabled: Story = {
   args: {
     modelValue: true,
     disabled: true,
+    indeterminate: false,
+  },
+}
+
+export const Indeterminate: Story = {
+  name: 'indeterminate',
+  args: {
+    modelValue: false,
+    disabled: false,
+    indeterminate: true,
   },
 }

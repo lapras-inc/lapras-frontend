@@ -1,6 +1,7 @@
 <template>
   <label class="check-box" :class="{ 'is-disabled': disabled }">
     <input
+      ref="inputRef"
       v-bind="$attrs"
       :checked="modelValue"
       :disabled="disabled"
@@ -8,14 +9,20 @@
       class="input"
       type="checkbox"
     />
-    <div class="icon-wrap">
-      <Icon name="check" />
+    <div
+      class="icon-wrap"
+      :class="{
+        'is-checked': modelValue && !indeterminate,
+        'is-indeterminate': indeterminate,
+      }"
+    >
+      <Icon :name="iconName" />
     </div>
   </label>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { computed, defineComponent, onMounted, ref, watch } from 'vue'
 import Icon from '@/components/Icon/Icon.vue'
 
 export default defineComponent({
@@ -32,20 +39,52 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    indeterminate: {
+      type: Boolean,
+      default: false,
+    },
   },
   emits: {
     'update:modelValue': null,
+    'update:indeterminate': null,
   },
-  setup(_, context) {
+  setup(props, context) {
+    const inputRef = ref<HTMLInputElement>()
+
     const emitInput = (value: boolean) =>
       context.emit('update:modelValue', value)
 
     const onInput = (e: Event) => {
-      emitInput((e.target as HTMLInputElement).checked)
+      const target = e.target as HTMLInputElement
+
+      // indeterminate状態からクリックされた場合は、indeterminateをfalseにして、必ずチェック状態にする
+      if (props.indeterminate) {
+        context.emit('update:indeterminate', false)
+        if (inputRef.value) {
+          inputRef.value.checked = true
+        }
+      }
+
+      emitInput(target.checked)
     }
 
+    const iconName = computed(() => (props.indeterminate ? 'minus' : 'check'))
+
+    onMounted(() => {
+      if (inputRef.value) inputRef.value.indeterminate = props.indeterminate
+    })
+
+    watch(
+      () => props.indeterminate,
+      (value) => {
+        if (inputRef.value) inputRef.value.indeterminate = value
+      }
+    )
+
     return {
+      inputRef,
       onInput,
+      iconName,
     }
   },
 })
@@ -73,11 +112,6 @@ export default defineComponent({
 
 .input {
   display: none;
-
-  &:not(:checked) + .icon-wrap {
-    transform: translateY(-5px);
-    opacity: 0;
-  }
 }
 
 .icon-wrap {
@@ -86,7 +120,26 @@ export default defineComponent({
   position: absolute;
   top: -2px;
   left: 2px;
-  transition: all 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s;
   color: $lapras-blue;
+  transform: translateY(-5px);
+  opacity: 0;
+}
+
+.icon-wrap--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.icon-wrap.is-checked,
+.icon-wrap.is-indeterminate {
+  @extend .icon-wrap--visible;
+}
+
+.icon-wrap.is-indeterminate {
+  top: 0;
+  left: 0;
 }
 </style>
