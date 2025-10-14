@@ -7,10 +7,17 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: BooleanConstructor;
         default: boolean;
     };
+    indeterminate: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }>, {
+    inputRef: import("vue").Ref<HTMLInputElement | undefined, HTMLInputElement | undefined>;
     onInput: (e: Event) => void;
+    iconName: import("vue").ComputedRef<"minus" | "check">;
 }, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'update:modelValue': null;
+    'update:indeterminate': null;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
         type: BooleanConstructor;
@@ -20,10 +27,16 @@ declare const _default: import("vue").DefineComponent<import("vue").ExtractPropT
         type: BooleanConstructor;
         default: boolean;
     };
+    indeterminate: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }>> & Readonly<{
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+    "onUpdate:indeterminate"?: ((...args: any[]) => any) | undefined;
 }>, {
     disabled: boolean;
+    indeterminate: boolean;
     modelValue: boolean;
 }, {}, {
     Icon: import("vue").DefineComponent<import("vue").ExtractPropTypes<{
