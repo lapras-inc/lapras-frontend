@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import ToggleLabelSet from './ToggleLabelSet.vue'
 import type { ComponentProps } from 'vue-component-type-helpers'
 import CheckBox from '@/components/CheckBox/CheckBox.vue'
