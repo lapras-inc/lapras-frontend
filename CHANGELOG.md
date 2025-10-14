@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.26](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.25...v0.4.26) (2025-10-14)
+
 ### [0.4.25](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.24...v0.4.25) (2025-10-14)
 
 
