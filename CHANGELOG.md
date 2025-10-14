@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.25](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.24...v0.4.25) (2025-10-14)
+
+
+### Features
+
+* **checkbox:** indeterminate状態を追加 ([2cff5b8](https://github.com/lapras-inc/lapras-frontend/commit/2cff5b8acfbda513f9d41f4c2b08e93bc4cb9f11))
+
 ### [0.4.24](https://github.com/lapras-inc/lapras-frontend/compare/v0.4.23...v0.4.24) (2025-09-05)
 
 
