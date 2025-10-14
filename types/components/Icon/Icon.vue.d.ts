@@ -1,12 +1,12 @@
 import { PropType } from 'vue';
 import iconMap from './iconMap';
 type IconKey = keyof typeof iconMap;
-declare const _default: import("vue").DefineComponent<{
+declare const _default: import("vue").DefineComponent<import("vue").ExtractPropTypes<{
     name: {
         type: PropType<IconKey>;
         required: true;
     };
-}, {
+}>, {
     iconMap: {
         'add-document': string;
         'add-user': string;
@@ -136,10 +136,10 @@ declare const _default: import("vue").DefineComponent<{
         remote: string;
         'upload-document': string;
     };
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     name: {
         type: PropType<IconKey>;
         required: true;
     };
-}>>, {}, {}>;
+}>> & Readonly<{}>, {}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
 export default _default;
